@@ -802,6 +802,73 @@ section.programkami .isiprogram p {
 
 }
 
+
+/* pendaftaran */
+
+
+.pendaftaran {
+	font-size: 12px;
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pendaftaran h1 {
+	text-align: center;
+	padding: 20px 0 10px 0;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	font-size: 26px;
+}
+
+.pendaftaran .container-form {
+	background: rgb(255, 255, 255) !important;
+	border-radius: 10px;
+	width: 100%;
+
+	box-shadow: 0 2px 15px rgb(143, 143, 143);
+
+}
+
+.pendaftaran .form-link {
+	width: 100%;
+	padding-left: 3px;
+	border-radius: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+}
+
+.pendaftaran .form-link:focus {
+	border: 1px solid var(--background-button-fill);
+	box-shadow: 0 0 2px var(--background-button-fill);
+
+}
+
+.pendaftaran .form-group {
+	padding: 0px 20px 0 20px;
+}
+
+.pendaftaran textarea {
+	height: 100px;
+}
+
+.pendaftaran .btn-daftar {
+	background-color: var(--background-button-fill) !important;
+	color: rgb(255, 255, 255);
+	margin-bottom: 30px;
+	padding: 8px;
+	border-radius: 10px !important;
+	border: none;
+}
+
+.pendaftaran .btn-daftar:hover {
+	background-color: var(--background-button-hover) !important;
+	transition: .35s ease-in-out;
+}
+
+/* end pendaftaran */
+
 footer .logofooter {
 	margin: auto;
 
@@ -955,6 +1022,75 @@ section .teks-sejarah p {
 		margin-top: 20px;
 
 	}
+
+	/* pendaftaran */
+	section.pendaftaran img {
+		margin-top: 100px;
+
+	}
+
+	.pendaftaran {
+		font-size: 12px;
+		color: black;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.pendaftaran h1 {
+		text-align: center;
+		padding: 20px 0 10px 0;
+		font-weight: 300;
+		font-family: 'Poppins', sans-serif;
+		font-size: 26px;
+	}
+
+	.pendaftaran .container-form {
+		background: rgb(255, 255, 255) !important;
+		border-radius: 10px;
+		width: 100%;
+
+		box-shadow: 0 2px 15px rgb(143, 143, 143);
+
+	}
+
+	.pendaftaran .form-link {
+		width: 100%;
+		padding-left: 3px;
+		border-radius: 3px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+
+	}
+
+	.pendaftaran .form-link:focus {
+		border: 1px solid var(--background-button-fill);
+		box-shadow: 0 0 2px var(--background-button-fill);
+
+	}
+
+	.pendaftaran .form-group {
+		padding: 0px 20px 0 20px;
+	}
+
+	.pendaftaran textarea {
+		height: 100px;
+	}
+
+	.pendaftaran .btn-daftar {
+		background-color: var(--background-button-fill) !important;
+		color: rgb(255, 255, 255);
+		margin-bottom: 30px;
+		padding: 8px;
+		border-radius: 10px !important;
+		border: none;
+	}
+
+	.pendaftaran .btn-daftar:hover {
+		background-color: var(--background-button-hover) !important;
+		transition: .35s ease-in-out;
+	}
+
+	/* end pendaftaran */
 
 	/* footer */
 	footer {
@@ -1788,8 +1924,70 @@ section .teks-sejarah p {
 
 	/* pendaftaran */
 	section.pendaftaran img {
-		margin-top: 300px;
+		margin-top: 100px;
 
+
+	}
+
+	.pendaftaran {
+		font-size: 14px;
+		color: black;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.pendaftaran h1 {
+		text-align: center;
+		padding: 20px 0 10px 0;
+		font-weight: 300;
+		font-family: 'Poppins', sans-serif;
+		font-size: 32px;
+	}
+
+	.pendaftaran .container-form {
+		background: rgb(255, 255, 255) !important;
+		border-radius: 10px;
+		width: 100%;
+
+		box-shadow: 0 2px 15px rgb(143, 143, 143);
+
+	}
+
+	.pendaftaran .form-link {
+		width: 100%;
+		padding-left: 5px;
+		border-radius: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+	}
+
+	.pendaftaran .form-link:focus {
+		border: 1px solid var(--background-button-fill);
+		box-shadow: 0 0 2px var(--background-button-fill);
+
+	}
+
+	.pendaftaran .form-group {
+		padding: 0px 20px 0 20px;
+	}
+
+	.pendaftaran textarea {
+		height: 100px;
+	}
+
+	.pendaftaran .btn-daftar {
+		background-color: var(--background-button-fill) !important;
+		color: rgb(255, 255, 255);
+		margin-bottom: 30px;
+		padding: 8px;
+		border-radius: 10px !important;
+		border: none;
+	}
+
+	.pendaftaran .btn-daftar:hover {
+		background-color: var(--background-button-hover) !important;
+		transition: .35s ease-in-out;
 	}
 
 	/* end pendaftaran */

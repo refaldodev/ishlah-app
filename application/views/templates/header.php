@@ -126,7 +126,7 @@
         <div class="carousel-caption mb-5">
           <h5>SELAMAT DATANG</h5>
           <p>Di Website LDK ISHLAH Y.A.I</p>
-          <a href="<?= base_url('auth/registration'); ?>" class="btn button-warna ">Gabung</a>
+          <a href="<?= base_url('auth/pendaftaran'); ?>" class="btn button-warna ">Gabung</a>
 
         </div>
       </div>
@@ -135,7 +135,7 @@
         <div class="carousel-caption mb-5">
           <h5>TOGETHER BE BETTER</h5>
           <p>Mari bersama-sama menjadi manusia yang lebih baik lagi.</p>
-          <a href="<?= base_url('auth/registration'); ?>" class="btn button-warna">Gabung</a>
+          <a href="<?= base_url('auth/pendaftaran'); ?>" class="btn button-warna">Gabung</a>
         </div>
       </div>
       <div class="carousel-item">
@@ -143,7 +143,7 @@
         <div class="carousel-caption mb-5">
           <h5>MARI SEBARKAN KEBAIKAN</h5>
           <p>Karena kebaikan tidak cukup hanya sampai dikamu, mari sebarkan.</p>
-          <a href="<?= base_url('auth/registration'); ?>" class="btn button-warna">Gabung</a>
+          <a href="<?= base_url('auth/pendaftaran'); ?>" class="btn button-warna">Gabung</a>
         </div>
       </div>
     </div>
