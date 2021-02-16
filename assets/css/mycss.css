@@ -272,16 +272,16 @@ a.btn.button-warna:hover {
 
 /* carousel */
 .carousel .carousel-inner {
-	height: 500px !important;
+	height: 250px !important;
 }
 
 .carousel .carousel-inner img {
-	height: 500px !important;
+	height: 250px !important;
 	/* margin-top: 60px; */
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
-	margin-bottom: 130px !important;
+	margin-bottom: 100px !important;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
@@ -935,11 +935,11 @@ section .teks-sejarah p {
 
 	/* carousel */
 	.carousel .carousel-inner {
-		height: 600px !important;
+		height: 400px !important;
 	}
 
 	.carousel .carousel-inner img {
-		height: 600px !important;
+		height: 400px !important;
 		/* margin-top: 60px; */
 	}
 

@@ -83,36 +83,6 @@ $(document).ready(function() {
     
   });
 
-
-//   animate css
-
-function scrollAll(kelas, animasi, durasi=''){
-
-  function scroll(){
-    let judulPanel= document.querySelector(`.${kelas}`);
-    let judulPosition = judulPanel.getBoundingClientRect().top;
-    let judulScreen = window.innerHeight;
-    if(judulPosition < judulScreen){
-  judulPanel.classList.add(`${animasi}`);
-  judulPanel.style.setProperty('--animate-duration', `${durasi}`);
-    }
-  }
-  window,addEventListener('scroll', scroll);
-}
-  // galeri
-let card = scrollAll('submanfaat','animate__backInUp', '1s');
-
-let card2 = scrollAll('submanfaat2','animate__backInUp', '1.5s');
-let card3 = scrollAll('submanfaat3','animate__backInUp', '2s');
-let judulproker = scrollAll('judulprogram','animate__fadeInUp', '1s');
-let divproker = scrollAll('divproker','animate__zoomIn', '1s');
-let judulTesti = scrollAll('judultesti','animate__zoomIn', '1s');
-let testi = scrollAll('card-testi','animate__zoomIn', '2s');
-let judulManfaat = scrollAll('judul-artikel','animate__zoomIn', '1s');
-let cardManfaat = scrollAll('content-artikel','animate__backInUp', '1s');
-let cardButton = scrollAll('lihat','animate__fadeInUp', '1s');
-let tentangKiri = scrollAll('kiri','animate__fadeInUp', '1s');
-let tentangKanan = scrollAll('isi-kanan','animate__fadeInUp', '1s');
 //   const galeri = document.querySelector('img.galerii');
 //   const judulGaleri = document.querySelector('.judul-galeri');
 //   const isiTeks = document.querySelector('.tekss');

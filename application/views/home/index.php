@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-md-4 text-center animate__animated submanfaat2">
                     <img src="<?= base_url('assets/img/male.png') ?>" alt="">
-                    <h6 class="font-weight-bold mt-2 sub-judul">Teman yang soleh</h6>
+                    <h6 class="font-weight-bold mt-2 sub-judul">Teman yang Baik</h6>
                     <p>Bergabung bersama ishlah kita akan
                         mendapat teman yang sholeh InsyaAllah</p>
                 </div>
