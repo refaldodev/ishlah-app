@@ -272,11 +272,11 @@ a.btn.button-warna:hover {
 
 /* carousel */
 .carousel .carousel-inner {
-	height: 250px !important;
+	height: 350px !important;
 }
 
 .carousel .carousel-inner img {
-	height: 250px !important;
+	height: 350px !important;
 	/* margin-top: 60px; */
 }
 

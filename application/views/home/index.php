@@ -16,19 +16,19 @@
                     <img src="<?= base_url('assets/img/atmospherew.png') ?>" alt="">
                     <h6 class="font-weight-bold mt-2 sub-judul ">Ilmu Yang Bermanfaat</h6>
                     <p>Bergabung bersama ishlah akan membuat
-                        kita mendapat banyak ilmu yang
+                        kamu mendapat banyak ilmu yang
                         bermanfaatbaik ilmu dunia dan ilmu akhirat</p>
                 </div>
                 <div class="col-md-4 text-center animate__animated submanfaat2">
                     <img src="<?= base_url('assets/img/male.png') ?>" alt="">
                     <h6 class="font-weight-bold mt-2 sub-judul">Teman yang Baik</h6>
-                    <p>Bergabung bersama ishlah kita akan
-                        mendapat teman yang sholeh InsyaAllah</p>
+                    <p>Bergabung bersama ishlah kamu akan
+                        mendapat teman yang baik InsyaAllah</p>
                 </div>
                 <div class="col-md-4  text-center animate__animated submanfaat3">
                     <img src="<?= base_url('assets/img/think.png') ?>" alt="">
                     <h6 class="font-weight-bold mt-2 sub-judul">Wawasan yang luas</h6>
-                    <p>Bergabung bersama ishlah membuat kita memiliki pengetahuan yang luas </p>
+                    <p>Bergabung bersama ishlah membuat kamu memiliki pengetahuan yang luas </p>
                 </div>
             </div>
         </div>
