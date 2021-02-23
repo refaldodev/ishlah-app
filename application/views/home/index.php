@@ -50,169 +50,54 @@
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-semua" role="tab" aria-controls="pills-semua" aria-selected="true">SEMUA</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-bph-tab" data-toggle="pill" href="#pills-bph" role="tab" aria-controls="pills-bph" aria-selected="false">BPH</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-psdm-tab" data-toggle="pill" href="#pills-psdm" role="tab" aria-controls="pills-psdm" aria-selected="false">PSDM</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-syiar" role="tab" aria-controls="pills-syiar" aria-selected="false">SYIAR</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-kaderisasi" role="tab" aria-controls="pills-kaderisasi" aria-selected="false">KADERISASI</a>
-                    </li>
+                    <?php
+                    foreach ($row as $data) {
+                    ?>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-bph-tab" data-toggle="pill" href="#pills-<?= $data->nama_divisi ?>" role="tab" aria-controls="pills-<?= $data->nama_divisi ?>" aria-selected="false"><?= $data->nama_divisi ?></a>
+                        </li>
+                    <?php } ?>
                 </ul>
 
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-semua" role="tabpanel" aria-labelledby="pills-semua-tab">
                         <div class="row mb-3">
-                            <div class="col-6 col-lg-3 col-md   -6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-                                        <img src="<?= base_url(); ?>assets/img/12.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Ikhwan</p>
-                                        </div>
-                                    </a>
+                            <?php
+                            foreach ($row2 as $data) {
+                            ?>
+                                <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card program-kerja mb-3">
+                                        <a href="" class="text-decoration-none ">
+                                            <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text section-items"><?= $data->judul_proker ?></p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-                                        <img src="<?= base_url(); ?>assets/img/proker/p4.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
+                            <?php } ?>
 
-
-                                            <p class="card-text section-items">Kegiatan Ngeteh</p>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p3.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Akhwat</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Ikhwan</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-
-
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-
-                                            <p class="card-text section-items">Club Islamic Science Ikhwan</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p4.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Kegiatan Ngeteh</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p3.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Akhwat</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Ikhwan</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
-                    <div class="tab-pane fade" id="pills-kaderisasi" role="tabpanel" aria-labelledby="pills-kaderisasi-tab">
+                    <div class="tab-pane fade" id="pills-<?= $data->nama_divisi ?>" role="tabpanel" aria-labelledby="pills-<?= $data->nama_divisi ?>-tab">
                         <div class="row">
                             <div class="col-6 col-lg-3 col-md-6 col-sm-6">
                                 <div class="card program-kerja mb-3">
                                     <a href="" class="text-decoration-none ">
 
-                                        <img src="<?= base_url(); ?>assets/img/proker/p1.png" class="card-img-top" alt="...">
+                                        <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Ikhwan</p>
+                                            <p class="card-text section-items"><?= $data->judul_proker ?></p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
 
-                                        <img src="<?= base_url(); ?>assets/img/proker/p4.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Kegiatan Ngeteh</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p3.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Akhwat</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                <div class="card program-kerja mb-3">
-                                    <a href="" class="text-decoration-none ">
-
-                                        <img src="<?= base_url(); ?>assets/img/proker/p1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text section-items">Club Islamic Science Ikhwan</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-syiar" role="tabpanel" aria-labelledby="pills-syiar-tab">...</div>
-                    <div class="tab-pane fade" id="pills-psdm" role="tabpanel" aria-labelledby="pills-psdm-tab">psdm</div>
-                    <div class="tab-pane fade" id="pills-bph" role="tabpanel" aria-labelledby="pills-bph-tab">bph</div>
+
                 </div>
             </div>
         </div>
@@ -367,44 +252,24 @@
                 </div>
             </div>
             <div class="row content-artikel animate__animated">
+                <?php
+                foreach ($new_artikel as $data) {
+                ?>
+                    <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1 content-artikel ">
+                        <figure class="">
+                            <a href="<?= base_url('artikel/isiartikel/' . $data->id) ?>" class="text-decoration-none">
+                                <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
 
-                <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1 content-artikel ">
-                    <figure class="">
-                        <a href="" class="text-decoration-none">
-                            <img src="<?= base_url('assets/img/12.png') ?>" class="img-fluid rounded gambarartikel" alt="...">
+                                <figcaption class="figure-caption capt">
+                                    <p>Posted : <?= date('d F Y', $data->date_created); ?></p>
 
-                            <figcaption class="figure-caption capt">
-                                <p>Posted : 21 Januari 2020</p>
+                                    <h6><?= $data->judul_artikel ?></h6>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                <?php } ?>
 
-                                <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-2 content-artikel">
-                    <figure class="">
-                        <a href="" class="text-decoration-none">
-                            <img src="<?= base_url('assets/img/gambar2.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                            <figcaption class="figure-caption capt">
-                                <p>Posted : 21 Januari 2020</p>
-                                <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-3 content-artikel">
-                    <figure class="">
-                        <a href="" class="text-decoration-none">
-                            <img src="<?= base_url('assets/img/gambar1.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                            <figcaption class="figure-caption capt">
-                                <p>Posted : 21 Januari 2020</p>
-                                <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </div>
             </div>
             <div class="row text-center buttonl ">
                 <div class="col-12 ">
