@@ -33,7 +33,7 @@
                      <input type="text" class="form-control" name="post_by" value="<?= $user['name'] ?>" readonly>
                  </div>
                  <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>
-                 <button type="submit" class="btn btn-primary">Simpan</button>
+                 <button type="submit" class="btn btn-primary">Update</button>
                  <script>
                      CKEDITOR.replace('editor1');
                  </script>

@@ -45,9 +45,9 @@
                                  <td><?= $data->deskripsi_proker ?></td>
                                  <td><img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" alt="" width="90" height="110"></td>
                                  <td>
-                                     <?= anchor('divisi_proker/edit_isi/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
+                                     <?= anchor('divisi_proker/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
-                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->nama_divisi ?> ?')"><?= anchor('divisi_proker/hapus_isi/' . $data->id, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
+                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->nama_divisi ?> ?')"><?= anchor('divisi_proker/deletedata/' . $data->id . '/' . $data->cover_proker, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
 
 
                                  </td>
