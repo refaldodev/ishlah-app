@@ -108,7 +108,7 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item <?= isset($is_galeri) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('galeri/index_admin') ?>">
+                <a class="nav-link" href="<?= base_url('galeri_admin/index') ?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Galeri</span></a>
             </li>

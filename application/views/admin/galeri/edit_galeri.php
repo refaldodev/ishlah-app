@@ -12,26 +12,26 @@
              <h6 class="m-0 font-weight-bold text-primary">Data Galeri</h6>
          </div>
          <div class="card-body">
-             <?= form_open_multipart('galeri/updatedata'); ?>
+             <form method="POST" action="<?= base_url('galeri_admin/updatedata') ?>" enctype="multipart/form-data">
 
-             <div class="form-group">
-                 <label>Judul</label>
-                 <input type="text" class="form-control" name="judul" value="<?= $data->judul ?>" required>
-             </div>
-             <div class="form-group">
-                 <label>Upload Foto</label>
-                 <input type="file" class="form-control" name="fotopost" value="<?= $data->image_galeri ?>" required>
-             </div>
+                 <div class="form-group">
+                     <label>Judul</label>
+                     <input type="text" class="form-control" name="judul" value="<?= $data->judul ?>" required>
+                 </div>
+                 <div class="form-group">
+                     <label>Upload Foto</label>
+                     <input type="file" class="form-control" name="fotopost" value="<?= $data->image_galeri ?>" required>
+                 </div>
 
-             <!-- file lama -->
-             <input type="hidden" name="filelama" value="<?= $data->image_galeri ?>">
-             <!-- ID -->
-             <input type="hidden" name="id" value="<?= $data->id ?>">
+                 <!-- file lama -->
+                 <input type="hidden" name="filelama" value="<?= $data->image_galeri ?>">
+                 <!-- ID -->
+                 <input type="hidden" name="id" value="<?= $data->id ?>">
 
-             <a href="<?= base_url('galeri/index_admin') ?>" class="btn btn-secondary">Kembali</a>
-             <button type="submit" class="btn btn-primary">Simpan</button>
+                 <a href="<?= base_url('galeri/index_admin') ?>" class="btn btn-secondary">Kembali</a>
+                 <button type="submit" class="btn btn-primary">Simpan</button>
 
-             <?= form_close(); ?>
+             </form>
          </div>
 
      </div>
