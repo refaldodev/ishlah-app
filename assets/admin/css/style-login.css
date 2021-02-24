@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poopins:200,300,400,500,600,700,800,900&displa=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,7 @@
 	text-decoration: none;
 	list-style: none;
 }
+
 /*Login*/
 .container {
 	width: 100vw;
@@ -16,25 +18,31 @@
 	grid-gap: 7rem;
 	padding: 0 2rem;
 }
+
 .img {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
+
 .img img {
 	width: 500px;
 }
+
 .login-container {
 	display: flex;
 	align-items: center;
 	text-align: center;
 }
+
 form {
 	width: 350px;
 }
+
 .avatar {
 	width: 150px;
 }
+
 form h2 {
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -50,6 +58,7 @@ form h2 {
 	padding: 5px 0;
 	border-bottom: 2px solid #d9d9d9;
 }
+
 .input-div:after,
 .input-div:before {
 	content: "";
@@ -60,43 +69,54 @@ form h2 {
 	background-color: #38d39f;
 	transition: 0.3s;
 }
+
 .input-div:after {
 	right: 50%;
 }
+
 .input-div:before {
 	left: 50%;
 }
+
 .input-div.focus .i i {
 	color: #38d39f;
 }
+
 .input-div.focus div h5 {
 	top: -5px;
 	font-size: 15px;
 }
+
 .input-div.focus:after,
 .input-div.focus:before {
 	width: 50%;
 }
+
 .input-div.one {
 	margin-top: 0;
 }
+
 .input-div.two {
 	margin-bottom: 4px;
 }
+
 .i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .i i {
 	color: #d9d9d9;
 	transition: 0.3s;
 }
-.input-div > div {
+
+.input-div>div {
 	position: relative;
 	height: 45px;
 }
-.input-div > div h5 {
+
+.input-div>div h5 {
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -105,6 +125,7 @@ form h2 {
 	font-size: 18px;
 	transition: 0.3s;
 }
+
 .input {
 	position: absolute;
 	width: 100%;
@@ -119,6 +140,7 @@ form h2 {
 	font-family: "Poopins", sans-serif;
 	color: #555;
 }
+
 a {
 	display: block;
 	text-align: right;
@@ -127,9 +149,11 @@ a {
 	font-size: 0.9rem;
 	transition: 0.3s;
 }
+
 a:hover {
 	color: #38d39f;
 }
+
 .btn {
 	display: block;
 	width: 100%;
@@ -147,6 +171,7 @@ a:hover {
 	background-size: 200%;
 	transition: 0.5s;
 }
+
 .btn:hover {
 	background-position: right;
 }
@@ -155,6 +180,7 @@ a:hover {
 	.container {
 		grid-gap: 5rem;
 	}
+
 	h2 {
 		font-size: 5px;
 	}
@@ -164,10 +190,12 @@ a:hover {
 	form {
 		width: 290px;
 	}
+
 	form h2 {
 		font-size: 2.4rem;
 		margin: 8px 0;
 	}
+
 	.img img {
 		width: 400px;
 	}
@@ -177,16 +205,20 @@ a:hover {
 	.img {
 		display: none;
 	}
+
 	.avatar {
 		width: 150px;
 	}
+
 	form h2 {
 		font-size: 20px;
 		padding-bottom: 20px;
 	}
+
 	.container {
 		grid-template-columns: 1fr;
 	}
+
 	.login-container {
 		justify-content: center;
 	}

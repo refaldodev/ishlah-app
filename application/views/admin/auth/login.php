@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title><?= $title ?></title>
     <link rel="icon" href="<?= base_url('assets/img/') ?>logo.png">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/style-login.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>admin/css/style-login.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
@@ -15,7 +15,7 @@
 
     <div class="container">
         <div class="img">
-            <img src="<?= base_url('assets/img/') ?>undraw_mobile.svg">
+            <img src="<?= base_url('assets/img/') ?>undraw_posting_photo.svg">
         </div>
         <div class="login-container">
             <form action="<?= base_url('auth') ?>" method="POST">
