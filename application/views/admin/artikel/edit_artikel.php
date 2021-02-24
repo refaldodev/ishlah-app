@@ -28,7 +28,11 @@
                      <label>Upload Cover Artikel</label>
                      <input type="file" class="form-control" name="fotopost" required>
                  </div>
-                 <a href="<?= base_url('artikel/index_admin') ?>" class="btn btn-secondary">Kembali</a>
+                 <div class="form-group">
+                     <label>Uploader</label>
+                     <input type="text" class="form-control" name="post_by" value="<?= $user['name'] ?>" readonly>
+                 </div>
+                 <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                  <button type="submit" class="btn btn-primary">Simpan</button>
                  <script>
                      CKEDITOR.replace('editor1');
