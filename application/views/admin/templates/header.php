@@ -101,7 +101,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item <?= isset($is_artikel) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('artikel/index_admin') ?>">
+                <a class="nav-link" href="<?= base_url('artikel_admin/index') ?>">
                     <i class="fas fa-fw fa-book"></i>
                     <span>Artikel</span></a>
             </li>
