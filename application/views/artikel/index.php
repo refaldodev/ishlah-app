@@ -8,119 +8,24 @@
         </div>
         <div class="row ">
 
-            <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
-                <figure class="">
-                    <a href="<?= base_url('artikel/isiartikel') ?>" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/12.png') ?>" class="img-fluid rounded gambarartikel" alt="...">
+            <?php
+            foreach ($row as $data) {
+            ?>
+                <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
+                    <figure class="">
+                        <a href="<?= base_url('artikel/isiartikel/' . $data->id) ?>" class="text-decoration-none">
+                            <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
 
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
+                            <figcaption class="figure-caption capt">
+                                <p>Posted : <?= date('d F Y', $data->date_created); ?></p>
 
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-2">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/gambar2.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
+                                <h6><?= $data->judul_artikel ?></h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            <?php } ?>
 
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-3">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/gambar1.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-
-            <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/12.png') ?>" class="img-fluid rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-2">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/gambar2.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-3">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/gambar1.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-
-            <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/12.png') ?>" class="img-fluid rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-2">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/gambar2.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4 col-md-4 col-sm-12 content-3">
-                <figure class="">
-                    <a href="" class="text-decoration-none">
-                        <img src="<?= base_url('assets/img/gambar1.png') ?>" class="img-fluid  rounded gambarartikel" alt="...">
-
-                        <figcaption class="figure-caption capt">
-                            <p>Posted : 21 Januari 2020</p>
-                            <h6>Keutamaan membaca Al-Quran dengan baik dan Benar </h6>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
         </div>
 
 

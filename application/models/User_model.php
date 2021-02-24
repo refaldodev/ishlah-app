@@ -1,6 +1,7 @@
 <?php
 class User_model extends CI_model
 {
+    private $table_name = 'user';
 
     public function tambahDataPendaftar()
     {
@@ -23,5 +24,38 @@ class User_model extends CI_model
 
         ];
         $this->db->insert('users', $data);
+    }
+
+    public function get()
+    {
+        $query = $this->db->get($this->table_name);
+
+        return $query->result();
+    }
+    public function tambah($data)
+    {
+        $this->db->insert($this->table_name, $data);
+    }
+    public function hapus_data($where, $table)
+    {
+        $this->db->where($where);
+        $this->db->delete($table);
+    }
+    public function edit_data($where, $table)
+    {
+        return $this->db->get_where($table, $where);
+    }
+    public function update_data($where, $data, $table)
+    {
+        $this->db->where($where);
+        $this->db->update($table, $data);
+    }
+    public function keamanan()
+    {
+        $data = $this->session->userdata('email');
+        if (empty($data)) {
+            $this->session->sess_destroy();
+            redirect('auth');
+        }
     }
 }
