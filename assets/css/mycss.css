@@ -169,6 +169,7 @@ a.btn.button-warna:hover {
 	font-size: 12px;
 }
 
+/* awal artikel mobile */
 .isiartikel .button-warna:hover {
 	background-color: var(--background-button-hover) !important;
 	border-radius: 5px;
@@ -193,6 +194,7 @@ a.btn.button-warna:hover {
 	border-bottom: 1px solid #E8E8E8;
 	padding-bottom: 15px;
 }
+
 
 .isiartikel .komentar .isi-komentar {
 	padding-top: 25px;
@@ -269,6 +271,8 @@ a.btn.button-warna:hover {
 .inputkomentar label {
 	font-size: 12px !important;
 }
+
+/* akhir artikel  */
 
 /* carousel */
 .carousel .carousel-inner {
@@ -452,7 +456,6 @@ section.artikelt .buttonl a.lihat {
 
 .isiartikel p {
 	font-size: 13px;
-	color: #ACACAC;
 
 }
 
@@ -460,17 +463,20 @@ section.artikelt .buttonl a.lihat {
 	margin-top: 10px;
 	font-size: 10px;
 	font-family: 'Poppins', sans-serif;
+	color: #ACACAC;
+
 }
 
 .isiartikel p.namaeditor {
 	margin-top: -18px;
 	font-size: 10px;
 	font-family: 'Poppins', sans-serif;
+	color: #ACACAC;
+
 }
 
 .isiartikel p.isitulisan {
-	color: #443F3F;
-	font-size: 16px;
+
 	margin-top: 60px;
 
 }
@@ -1637,25 +1643,25 @@ section .teks-sejarah p {
 
 	.isiartikel p {
 		font-size: 13px;
-		color: #ACACAC;
+
 
 	}
 
 	.isiartikel p.tanggalpost {
 		font-family: 'Poppins', sans-serif;
 		font-size: 11px;
+		color: #ACACAC;
 	}
 
 	.isiartikel p.namaeditor {
 		margin-top: -15px;
 		font-size: 11px;
-
+		color: #ACACAC;
 	}
 
 	.isiartikel p.isitulisan {
-		color: #443F3F;
-		font-size: 16px;
-		margin-top: 60px;
+
+		margin-top: 50px;
 
 	}
 

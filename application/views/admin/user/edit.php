@@ -15,31 +15,34 @@
 
 
             <form action="" method="POST">
+                <input type="hidden" class="form-control" placeholder="Full Name" name="id" value="<?= $row['id']  ?>" required id="id">
+
                 <div class="form-group">
+
                     <label>Full Name</label>
-                    <input type="text" class="form-control" placeholder="Full Name" name="name" value="<?= set_value('name') ?>" required id="name">
+                    <input type="text" class="form-control" placeholder="Full Name" name="name" value="<?= $row['name']  ?>" required id="name">
                     <?= form_error('name'); ?>
                 </div>
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" class="form-control" placeholder="Username" name="username" value="<?= set_value('username') ?>" required>
+                    <input type="text" class="form-control" placeholder="Username" name="username" value="<?= $row['username']  ?>">
                     <?= form_error('username'); ?>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password" name="password" id="password1" required>
+                    <label>Password</label> <small>(Biarkan kosong jika tidak diganti) </small>
+                    <input type="password" class="form-control" placeholder="Password" name="password" id="password1" value="<?= $this->input->post('password') ?>">
                     <?= form_error('password'); ?>
                 </div>
                 <div class="form-group">
                     <label>Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Password" name="password2" id="password2" required>
+                    <input type="password" class="form-control" placeholder="Password" name="password2" id="password2" <?= $this->input->post('password2') ?>>
                     <?= form_error('password2'); ?>
                 </div>
                 <div class="form-group">
                     <label>Level</label> <br>
-                    <input type="radio" name="level" value="1">
+                    <input type="radio" name="level" value="1" <?= $row['level'] == 1 ? 'checked' : 'null' ?>>
                     <label for="">Admin</label>
-                    <input type="radio" name="level" value="2">
+                    <input type="radio" name="level" value="2" <?= $row['level'] == 2 ? 'checked' : 'null' ?>>
                     <label for="">Member</label>
                     <?= form_error('level'); ?>
                 </div>

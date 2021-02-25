@@ -20,6 +20,8 @@
                  <span class="text">Tambah User</span>
              </a>
              <div class="table-responsive">
+                 <?php $this->view('messages') ?>
+
                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                      <thead>
                          <tr>
@@ -40,8 +42,11 @@
                                      <?= $data->level == 2 ? 'Member' : '' ?></td>
                                  <td><?= date('d F Y', $data->date_created); ?></td>
                                  <td>
-                                     <?= anchor('user/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
+                                     <!-- <?= anchor('user/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?> -->
+                                     <a href="<?= site_url('user/edit/' . $data->id) ?>" class="btn btn-outline-primary">
+                                         <i class="far fa-edit"></i>
+                                     </a>
                                      <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->username ?> ?')"><?= anchor('user/hapus/' . $data->id, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
 
 

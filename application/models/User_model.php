@@ -32,19 +32,55 @@ class User_model extends CI_model
 
         return $query->result();
     }
+    public function getUserId($id)
+    {
+        return $this->db->get_where('user', ['id' => $id])->row_array();
+    }
     public function tambah($data)
     {
-        $this->db->insert($this->table_name, $data);
+        // $this->db->insert($this->table_name, $data);
+        $params['name'] = htmlspecialchars($data['name']);
+        $params['username'] = htmlspecialchars($data['username']);
+        $params['image'] = 'default.jpg';
+        $params['password'] = htmlspecialchars(password_hash($data['password'], PASSWORD_DEFAULT));
+        $params['level'] = htmlspecialchars($data['level']);
+        $params['date_created'] = time();
+        $this->db->insert('user', $params);
     }
-    public function hapus_data($where, $table)
+    public function hapus_data($id)
     {
-        $this->db->where($where);
-        $this->db->delete($table);
+
+        $this->db->where('id', $id);
+        $this->db->delete('user');
     }
-    public function edit_data($where, $table)
+
+
+
+    public function edit_data()
     {
-        return $this->db->get_where($table, $where);
+        // $this->db->insert($this->table_name, $data);
+        // $params['name'] = htmlspecialchars($post['name']);
+        // $params['username'] = htmlspecialchars($post['username']);
+        // $params['image'] = 'default.jpg';
+        // $params['password'] = htmlspecialchars(password_hash($post['password'], PASSWORD_DEFAULT));
+        // $params['level'] = htmlspecialchars($post['level']);
+        // $params['date_created'] = time();
+        $data = [
+            "name" =>  $this->input->post('name', true),
+            "username" =>  $this->input->post('username', true),
+            "image" =>  'default.jpg',
+            "password" =>  password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
+            "level" =>  $this->input->post('level', true),
+            'date_created' => time()
+
+        ];
+        $this->db->where('id', $this->input->post('id'));
+        $this->db->update('user', $data);
     }
+
+
+
+
     public function update_data($where, $data, $table)
     {
         $this->db->where($where);

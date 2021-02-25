@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-8 m-auto col-sm-12">
                 <img src="<?= base_url('assets/cover_artikel/' . $detail->cover_artikel) ?>" alt="">
-                <p class="isitulisan">
+                <p class="isitulisan ">
                     <?= $detail->isi_artikel ?>
                 </p>
             </div>

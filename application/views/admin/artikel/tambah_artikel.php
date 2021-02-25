@@ -31,7 +31,7 @@
                      <label>Uploader</label>
                      <input type="text" class="form-control" placeholder="Isi Judul Artikel" name="post_by" value="<?= $user['name'] ?>" readonly>
                  </div>
-                 <a href="<?= base_url('artikel/index_admin') ?>" class="btn btn-secondary">Kembali</a>
+                 <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                  <button type="submit" class="btn btn-primary">Simpan</button>
                  <script>
                      CKEDITOR.replace('editor1');
