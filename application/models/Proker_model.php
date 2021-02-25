@@ -23,22 +23,28 @@ class Proker_model extends CI_Model
 
         return $query->result();
     }
-    public function tambah_data($data)
+    public function get_by_id($kondisi)
     {
-        $this->db->insert($this->table_name, $data);
+        $this->db->from('isi_proker');
+        $this->db->where($kondisi);
+        $query = $this->db->get();
+        return $query->row();
     }
-    public function hapus_data($where, $table)
+
+    public function insert($data)
+    {
+        $this->db->insert('isi_proker', $data);
+        return TRUE;
+    }
+    public function delete($where)
     {
         $this->db->where($where);
-        $this->db->delete($table);
+        $this->db->delete('isi_proker');
+        return TRUE;
     }
-    public function edit_data($where, $table)
+    public function update($data, $kondisi)
     {
-        return $this->db->get_where($table, $where);
-    }
-    public function update_data($where, $data, $table)
-    {
-        $this->db->where($where);
-        $this->db->update($table, $data);
+        $this->db->update('isi_proker', $data, $kondisi);
+        return TRUE;
     }
 }

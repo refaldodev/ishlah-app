@@ -12,28 +12,35 @@ class Artikel_model extends CI_Model
 
         return $query->result();
     }
-    public function tambah_data($data)
-    {
-        $this->db->insert($this->table_name, $data);
-    }
 
-    public function hapus_data($where, $table)
-    {
-        $this->db->where($where);
-        $this->db->delete($table);
-    }
-    public function edit_data($where, $table)
-    {
-        return $this->db->get_where($table, $where);
-    }
-    public function update_data($where, $data, $table)
-    {
-        $this->db->where($where);
-        $this->db->update($table, $data);
-    }
     public function detail_data($id = NULL)
     {
         $query = $this->db->get_where($this->table_name, array('id' => $id))->row();
         return $query;
+    }
+
+    public function get_by_id($kondisi)
+    {
+        $this->db->from('tb_artikel');
+        $this->db->where($kondisi);
+        $query = $this->db->get();
+        return $query->row();
+    }
+
+    public function insert($data)
+    {
+        $this->db->insert('tb_artikel', $data);
+        return TRUE;
+    }
+    public function delete($where)
+    {
+        $this->db->where($where);
+        $this->db->delete('tb_artikel');
+        return TRUE;
+    }
+    public function update($data, $kondisi)
+    {
+        $this->db->update('tb_artikel', $data, $kondisi);
+        return TRUE;
     }
 }

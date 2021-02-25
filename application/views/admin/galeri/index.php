@@ -41,9 +41,9 @@
                                  <td><img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="" width="90" height="110"></td>
                                  <td>
 
-                                     <?= anchor('galeri/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
+                                     <?= anchor('galeri_admin/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
-                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->image_galeri ?> ?')"><?= anchor('galeri/deletedata/' . $data->id . '/' . $data->image_galeri, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
+                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->judul ?> ?')"><?= anchor('galeri_admin/deletedata/' . $data->id . '/' . $data->image_galeri, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
 
 
                                  </td>
@@ -72,15 +72,16 @@
                  </button>
              </div>
              <div class="modal-body">
-                 <?= form_open_multipart('galeri/insertdata'); ?>
-                 <div class="form-group">
-                     <label>Judul</label>
-                     <input type="text" class="form-control" placeholder="Isi Judul Galeri" name="judul" required>
-                 </div>
-                 <div class="form-group">
-                     <label>Upload Galeri</label>
-                     <input type="file" class="form-control" name="fotopost" required>
-                 </div>
+                 <form method="POST" action="<?= base_url('galeri_admin/insertdata') ?>" enctype="multipart/form-data">
+                     <div class="form-group">
+                         <label>Judul</label>
+                         <input type="text" class="form-control" placeholder="Isi Judul Galeri" name="judul" required>
+                     </div>
+                     <div class="form-group">
+                         <label>Upload Galeri</label>
+                         <input type="file" class="form-control" name="fotopost" required>
+                     </div>
+
 
              </div>
              <div class="modal-footer justify-content-between">
@@ -88,7 +89,8 @@
                  <button type="submit" class="btn btn-primary swalDefaultSuccess">Simpan</button>
              </div>
          </div>
-         <?= form_close(); ?>
+         </form>
+
          <!-- /.modal-content -->
      </div>
      <!-- /.modal-dialog -->

@@ -36,7 +36,7 @@
                          <td><?= $detail->post_by ?></td>
                      </tr>
                  </table>
-                 <a href="<?= base_url('artikel/index_admin') ?>" class="btn btn-secondary">Kembali</a>
+                 <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>
              </div>
          </div>
      </div>
