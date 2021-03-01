@@ -6,7 +6,9 @@ class Galeri_admin extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Galeri_model');
+        $this->load->model('User_model');
         $this->load->library('upload');
+        $this->User_model->keamanan();
     }
 
     public function index()
@@ -52,6 +54,7 @@ class Galeri_admin extends CI_Controller
                     'image_galeri'       => $foto['file_name']
                 );
                 $this->Galeri_model->insert($data);
+                $this->session->set_flashdata('flash', 'Ditambahkan');
                 redirect('galeri_admin/index');
             } else {
                 die("gagal upload");
@@ -69,6 +72,7 @@ class Galeri_admin extends CI_Controller
 
         $where = array('id' => $id);
         $this->Galeri_model->delete($where);
+        $this->session->set_flashdata('flash_hapus', 'Dihapus');
         return redirect('galeri_admin/index');
     }
 
@@ -121,6 +125,7 @@ class Galeri_admin extends CI_Controller
                 @unlink($path . $this->input->post('filelama'));
 
                 $this->Galeri_model->update($data, $kondisi);
+                $this->session->set_flashdata('flash', 'Diedit');
                 redirect('galeri_admin/index');
             } else {
                 die("gagal update");

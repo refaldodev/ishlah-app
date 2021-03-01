@@ -23,6 +23,8 @@ class Home extends CI_Controller
         // );
         $data['row'] = $get;
         $data['row2'] = $get2;
+
+
         $data['new_artikel'] = $this->db->query("SELECT art.*,
                                                     art.judul_artikel as judul,
                                                     art.isi_artikel as isi,

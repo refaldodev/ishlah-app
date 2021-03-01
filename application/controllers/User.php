@@ -10,6 +10,7 @@ class User extends CI_Controller
         $this->load->library('form_validation');
         $this->load->library('session');
         $this->load->model('User_model');
+        $this->User_model->keamanan();
     }
     public function index()
     {
@@ -91,7 +92,7 @@ class User extends CI_Controller
                 'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
             );
             $this->load->view('admin/templates/header', $data);
-            $this->load->view('admin/templates/topbar');
+            $this->load->view('admin/templates/topbar', $data);
             $this->load->view('admin/user/tambah');
             $this->load->view('admin/templates/footer');
         } else {

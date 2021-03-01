@@ -9,7 +9,7 @@ class Artikel_admin extends CI_Controller
         $this->load->library('session');
         $this->load->model('User_model');
         $this->load->library('upload');
-        // $this->M_users->keamanan();
+        $this->User_model->keamanan();
     }
 
     public function index()
@@ -93,6 +93,7 @@ class Artikel_admin extends CI_Controller
                     'cover_artikel'       => $foto['file_name']
                 );
                 $this->Artikel_model->insert($data);
+                $this->session->set_flashdata('flash', 'Ditambahkan');
                 redirect('artikel_admin/index');
             } else {
                 die("gagal upload");
@@ -110,6 +111,7 @@ class Artikel_admin extends CI_Controller
 
         $where = array('id' => $id);
         $this->Artikel_model->delete($where);
+        $this->session->set_flashdata('flash_hapus', 'Dihapus');
         return redirect('artikel_admin/index');
     }
 
@@ -167,6 +169,7 @@ class Artikel_admin extends CI_Controller
                 @unlink($path . $this->input->post('filelama'));
 
                 $this->Artikel_model->update($data, $kondisi);
+                $this->session->set_flashdata('flash', 'Diedit');
                 redirect('artikel_admin/index');
             } else {
                 die("gagal update");

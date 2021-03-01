@@ -74,14 +74,4 @@ class Auth extends CI_Controller
         $this->load->view('auth/login');
         $this->load->view('templates/auth_footer');
     }
-    public function pendaftaran()
-    {
-        $data['jpakaian'] = ['Pakaian Wanita', 'Pakaian Pria'];
-        $data['pakaian'] = ['Bh', 'lisptik', 'sempanseksi'];
-        $data["judul"] = "Pendaftaran LDK Ishlah";
-        $this->load->view('templates/auth_header', $data);
-        $this->load->view('auth/pendaftaran', $data);
-
-        $this->load->view('templates/auth_footer', $data);
-    }
 }
