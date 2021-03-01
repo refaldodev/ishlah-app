@@ -98,16 +98,7 @@
                 echo "aktif";
               } ?>" href="<?= base_url('jadwalkegiatan'); ?>">Jadwal Kegiatan</a>
           </li>
-          <li class="nav-item dropdown batas">
-            <a class="nav-link dropdown-toggle nav-hover drop mr-3 gambaruser" href="<?= base_url(); ?>profil" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="<?= base_url('assets/img/koment2.png') ?>" alt="" class="mr-2">Aisyah
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item " href=" <?= base_url('profil/index') ?>">Logout</a>
 
-
-            </div>
-          </li>
         </ul>
       </div>
     </div>

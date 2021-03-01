@@ -477,7 +477,7 @@ section.artikelt .buttonl a.lihat {
 
 .isiartikel p.isitulisan {
 
-	margin-top: 60px;
+	margin-top: 40px;
 
 }
 
@@ -1285,15 +1285,6 @@ section .teks-sejarah p {
 		color: #fff;
 	}
 
-	.navbar .batas {
-
-		padding: 0 5px 0 0;
-	}
-
-	.navbar a.gambaruser img {
-		height: 30px !important;
-		width: 30px !important;
-	}
 
 	.navbar .container .navbar-nav .nav-item .nav-link:hover {
 		color: #d1d1d1 !important;
