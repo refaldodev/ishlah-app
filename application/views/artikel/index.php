@@ -9,29 +9,39 @@
         <div class="row ">
 
             <?php
-            foreach ($row as $data) {
+            foreach ($artikel as $data) :
             ?>
                 <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
                     <figure class="">
-                        <a href="<?= base_url('artikel/isiartikel/' . $data->id) ?>" class="text-decoration-none">
-                            <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
+                        <a href="<?= base_url('artikel/isiartikel/' . $data['id']) ?>" class="text-decoration-none">
+                            <img src="<?= base_url('assets/cover_artikel/' . $data['cover_artikel']) ?>" class="img-fluid rounded gambarartikel" alt="...">
 
                             <figcaption class="figure-caption capt">
-                                <p>Posted : <?= date('d F Y', $data->date_created); ?></p>
+                                <p>Posted : <?= date('d F Y', $data['date_created']); ?></p>
 
-                                <h6><?= $data->judul_artikel ?></h6>
+                                <h6><?= $data['judul_artikel'] ?></h6>
                             </figcaption>
                         </a>
                     </figure>
                 </div>
-            <?php } ?>
+            <?php endforeach; ?>
 
         </div>
 
 
     </div>
 
+
+
     <div class="container pagi">
+        <div class="row">
+            <div class="col-12">
+                <?= $this->pagination->create_links(); ?>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container pagi">
         <div class="row">
             <div class="col-12">
                 <ul class="pagination">
@@ -49,5 +59,5 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>

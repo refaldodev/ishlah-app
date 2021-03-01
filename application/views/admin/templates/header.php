@@ -11,6 +11,8 @@
 
     <title><?= $title ?></title>
 
+    <link rel="icon" href="<?= base_url('assets/img/logo.png') ?>">
+
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/admin/vendor/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -109,13 +111,34 @@
             <!-- Nav Item - Tables -->
             <li class="nav-item <?= isset($is_galeri) ? "active" : "" ?>">
                 <a class="nav-link" href="<?= base_url('galeri_admin/index') ?>">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-images"></i>
                     <span>Galeri</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item <?= isset($is_struktur) ? "active" : "" ?>">
+                <a class="nav-link" href="<?= base_url('struktur/index') ?>">
+                    <i class="fas fa-fw fa-list-alt"></i>
+                    <span>Struktur Organisasi</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item <?= isset($is_pendaftar) ? "active" : "" ?>">
+                <a class="nav-link" href="<?= base_url('pendaftaran_admin/index') ?>">
+                    <i class="fas fa-fw fa-database"></i>
+                    <span>Pendaftar</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item <?= isset($is_jadwal) ? "active" : "" ?>">
+                <a class="nav-link" href="<?= base_url('jadwalkegiatan_admin/index') ?>">
+                    <i class="fas fa-fw fa-calendar"></i>
+                    <span>Jadwal Kegiatan</span></a>
             </li>
 
             <li class="nav-item <?= isset($is_proker) ? "active" : "" ?>">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#prokerPages" aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
+                    <i class="fas fa-fw fa-lightbulb"></i>
                     <span>Proker</span>
                 </a>
                 <div id="prokerPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">

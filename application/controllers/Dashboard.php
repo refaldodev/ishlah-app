@@ -6,6 +6,7 @@ class Dashboard extends CI_Controller
     {
         parent::__construct();
         $this->load->model('User_model');
+        $this->User_model->keamanan();
     }
 
     public function index()

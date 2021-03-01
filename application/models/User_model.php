@@ -88,10 +88,20 @@ class User_model extends CI_model
     }
     public function keamanan()
     {
-        $data = $this->session->userdata('email');
+        $data = $this->session->userdata('username');
         if (empty($data)) {
             $this->session->sess_destroy();
             redirect('auth');
         }
+    }
+
+    function get_prodi($id)
+    {
+        $query = $this->db->get_where('tb_prodi', array('id_fakultas' => $id));
+        return $query;
+    }
+    function tambah_pendaftar($data)
+    {
+        $this->db->insert('tb_pendaftar', $data);
     }
 }

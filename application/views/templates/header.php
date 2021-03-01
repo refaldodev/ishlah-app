@@ -126,7 +126,7 @@
         <div class="carousel-caption mb-5">
           <h5>SELAMAT DATANG</h5>
           <p>Di Website LDK ISHLAH Y.A.I</p>
-          <a href="<?= base_url('auth/pendaftaran'); ?>" class="btn button-warna ">Gabung</a>
+          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna ">Gabung</a>
 
         </div>
       </div>

@@ -1,6 +1,11 @@
 <?php
 class Profil extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Struktur_model');
+    }
 
     public function index()
     {
@@ -23,7 +28,12 @@ class Profil extends CI_Controller
 
     public function struktur()
     {
-        $data['judul'] = 'Struktur - LDK Ishlah ';
+        $get = $this->Struktur_model->get();
+
+        $data = array(
+            'row' => $get,
+            'judul' => 'Struktur - LDK Ishlah'
+        );
         $this->load->view('templates/header', $data);
         $this->load->view('profil/struktur', $data);
         $this->load->view('templates/footer');

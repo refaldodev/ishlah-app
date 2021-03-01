@@ -43,4 +43,14 @@ class Artikel_model extends CI_Model
         $this->db->update('tb_artikel', $data, $kondisi);
         return TRUE;
     }
+
+    public function getArtikel($limit, $start)
+    {
+        return $this->db->get('tb_artikel', $limit, $start)->result_array();
+    }
+
+    public function countAllArtikel()
+    {
+        return $this->db->get('tb_artikel')->num_rows();
+    }
 }

@@ -26,11 +26,13 @@
                  </div>
                  <div class="form-group">
                      <label>Upload Cover Artikel</label>
-                     <input type="file" class="form-control" name="fotopost" required>
+                     <input type="file" class="form-control" name="fotopost">
+                     <!-- file lama -->
+                     <input type="hidden" name="filelama" value="<?= $data->cover_artikel ?>">
                  </div>
                  <div class="form-group">
                      <label>Uploader</label>
-                     <input type="text" class="form-control" name="post_by" value="<?= $user['name'] ?>" readonly>
+                     <input type="text" class="form-control" name="post_by" value="<?= $data->post_by ?>" readonly>
                  </div>
                  <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                  <button type="submit" class="btn btn-primary">Update</button>
