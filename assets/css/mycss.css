@@ -611,6 +611,11 @@ section.artikel .artikell h1 {
 
 }
 
+section.artikelt .artikell figure {
+	margin-bottom: 30px !important;
+
+}
+
 /* akhir artikel */
 
 
@@ -1635,6 +1640,11 @@ section .teks-sejarah p {
 	/* artikel */
 	section.artikel .artikell h1 {
 		margin-bottom: 60px !important;
+
+	}
+
+	section.artikelt .artikell figure {
+		margin-bottom: 40px !important;
 
 	}
 

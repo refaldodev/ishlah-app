@@ -18,8 +18,8 @@
 
                             <figcaption class="figure-caption capt">
                                 <p>Posted : <?= date('d F Y', $data['date_created']); ?></p>
-
                                 <h6><?= $data['judul_artikel'] ?></h6>
+
                             </figcaption>
                         </a>
                     </figure>
