@@ -217,7 +217,7 @@
                 </div>
 
             </div>
-            <div class="item item-testi" id="content">
+            <div class="item " id="content">
                 <div class="item-testi">
                     <p class="text-left ">
                         MasyaAllah banyak belajar banget di Ishlah, temenya asik-asik dan seru banget. recomend buat kalian yang
@@ -260,7 +260,7 @@
                     <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1 content-artikel ">
                         <figure class="">
                             <a href="<?= base_url('artikel/isiartikel/' . $data->id) ?>" class="text-decoration-none">
-                                <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
+                                <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid  gambarartikel" alt="...">
 
                                 <figcaption class="figure-caption capt">
                                     <p>Posted : <?= date('d F Y', $data->date_created); ?></p>

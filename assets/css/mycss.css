@@ -1,5 +1,5 @@
 :root {
-	--background-button-fill: #01C89B;
+	--background-button-fill: #00917c;
 	--background-button-hover: #216656;
 }
 
@@ -376,6 +376,8 @@ a.btn.button-warna:hover {
 	/* padding-top: 10px !important; */
 
 }
+
+
 
 .testimoni p.jabatan {
 	font-size: 12px !important;
@@ -827,6 +829,12 @@ section.programkami .isiprogram p {
 	font-size: 26px;
 }
 
+.pendaftaran .form-group a {
+	position: relative;
+	top: -20px;
+	color: rgb(168, 168, 168);
+}
+
 .pendaftaran .container-form {
 	background: rgb(255, 255, 255) !important;
 	border-radius: 10px;
@@ -871,6 +879,23 @@ section.programkami .isiprogram p {
 .pendaftaran .btn-daftar:hover {
 	background-color: var(--background-button-hover) !important;
 	transition: .35s ease-in-out;
+}
+
+.success {
+	height: 100vh;
+}
+
+.success .card {
+	width: 300px !important;
+	height: auto;
+	margin-top: 70px;
+	box-shadow: 2px 5px 15px grey;
+	;
+}
+
+.success .card a {
+	margin: auto !important;
+
 }
 
 /* end pendaftaran */
@@ -987,6 +1012,10 @@ section .teks-sejarah p {
 		height: 100px;
 	}
 
+	.testimoni .item-testi {
+		box-shadow: 2px 5px 15px rgb(179, 179, 179) !important;
+	}
+
 	/* akhir testimoni */
 
 	/* artikel */
@@ -1000,6 +1029,7 @@ section .teks-sejarah p {
 
 	section.jadwalkegiatan .card {
 		overflow: auto !important;
+
 	}
 
 	section.jadwalkegiatan h5.card-title {
@@ -1069,8 +1099,8 @@ section .teks-sejarah p {
 	}
 
 	.pendaftaran .form-link:focus {
-		border: 1px solid var(--background-button-fill);
-		box-shadow: 0 0 2px var(--background-button-fill);
+		border: 1px solid var(--background-button-fill) !important;
+		box-shadow: 0 0 2px var(--background-button-fill) !important;
 
 	}
 
@@ -1080,6 +1110,12 @@ section .teks-sejarah p {
 
 	.pendaftaran textarea {
 		height: 100px;
+	}
+
+	.pendaftaran .form-group a {
+		position: relative;
+		top: -20px;
+		color: rgb(168, 168, 168);
 	}
 
 	.pendaftaran .btn-daftar {
@@ -1345,13 +1381,13 @@ section .teks-sejarah p {
 	}
 
 	.carousel .carousel-inner {
-		height: 100vh !important;
+		height: 106vh !important;
 	}
 
 
 	.carousel .carousel-inner img {
 		margin-top: 30px;
-		height: 100vh !important;
+		height: 106vh !important;
 
 	}
 

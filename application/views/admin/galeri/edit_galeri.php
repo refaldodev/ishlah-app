@@ -20,15 +20,16 @@
                  </div>
                  <div class="form-group">
                      <label>Upload Foto</label>
-                     <input type="file" class="form-control" name="fotopost" value="<?= $data->image_galeri ?>" required>
+                     <input type="file" class="form-control" name="fotopost" required>
+                     <img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="" width="100">
                  </div>
 
-                 <!-- file lama -->
-                 <input type="hidden" name="filelama" value="<?= $data->image_galeri ?>">
                  <!-- ID -->
                  <input type="hidden" name="id" value="<?= $data->id ?>">
+                 <!-- file lama -->
+                 <input type="hidden" name="filelama" value="<?= $data->image_galeri ?>">
 
-                 <a href="<?= base_url('galeri/index_admin') ?>" class="btn btn-secondary">Kembali</a>
+                 <a href="<?= base_url('galeri_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                  <button type="submit" class="btn btn-primary">Update</button>
 
              </form>

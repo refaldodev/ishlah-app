@@ -79,7 +79,6 @@ $(document).ready(function() {
       }, 800);
     });
 
-
     
   });
 
@@ -96,3 +95,5 @@ $(document).ready(function() {
 //     isiTeks.style.display= 'none';
 
 // });
+
+// tidak berhenti ketika mouse hover 

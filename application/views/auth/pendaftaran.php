@@ -55,7 +55,9 @@
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Kirim" class="form-link  btn-daftar">
+                            <a href="<?= base_url() ?>">&#8592; Kembali ke Beranda</a>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -80,12 +82,10 @@
                 async: true,
                 dataType: 'json',
                 success: function(data) {
-
                     var html = '';
-                    var i;
-                    for (i = 0; i < data.length; i++) {
-                        html += '<option value=' + data[i].id + '>' + data[i].nama_prodi + '</option>';
-                    }
+                    data.forEach(d => {
+                        html += `<option value= + ${d.id}  > ${d.nama_prodi}  </option>`;
+                    })
                     $('#prodi').html(html);
 
                 }

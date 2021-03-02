@@ -58,7 +58,7 @@ class Pendaftaran extends CI_Controller
         );
 
         $this->Pendaftaran_model->tambah_pendaftar($data, 'tb_pendaftar');
-        redirect('pendaftaran');
+        redirect('pendaftaran/success');
     }
 
     // get sub category by category_id
@@ -67,5 +67,14 @@ class Pendaftaran extends CI_Controller
         $id_fakultas = $this->input->post('id', TRUE);
         $data = $this->Pendaftaran_model->get_prodi($id_fakultas)->result();
         echo json_encode($data);
+    }
+
+    function success()
+    {
+        $data["judul"] = "Pendaftaran LDK Ishlah";
+        $this->load->view('templates/auth_header', $data);
+        $this->load->view('auth/success', $data);
+
+        $this->load->view('templates/auth_footer', $data);
     }
 }
