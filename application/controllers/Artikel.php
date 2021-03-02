@@ -27,7 +27,7 @@ class Artikel extends CI_Controller
         // config
         $config['base_url'] = 'http://localhost/ishlah-app/artikel/index';
         $config['total_rows'] = $this->Artikel_model->countAllArtikel();
-        $config['per_page'] = 6;
+        $config['per_page'] = 12;
 
         // styling
         $config['full_tag_open'] = '<ul class="pagination">';

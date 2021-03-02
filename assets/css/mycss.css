@@ -323,19 +323,13 @@ a.btn.button-warna:hover {
 }
 
 .proker ul li a {
-	color: black;
+	color: rgb(82, 76, 76);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 8px;
 }
 
-.proker .container .card.program-kerja {
-	border-radius: 15px !important;
-
-
-}
 
 .proker .container .card.program-kerja img {
-	border-radius: 15px 15px 0 0;
 	min-width: 100%;
 	max-width: 100%;
 	min-height: 180px;
@@ -1417,7 +1411,6 @@ section .teks-sejarah p {
 	}
 
 	.proker .container .card.program-kerja img {
-		border-radius: 15px 15px 0 0;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 300px;
