@@ -1,7 +1,7 @@
 <section class="pendaftaran ">
     <div class="container">
 
-        <div class="row">
+        <div class="row ">
             <div class="col-lg-7 gambar d-none d-xl-block d-lg-block">
                 <img src="<?= base_url('assets/img/logotulisan.png') ?>" alt="">
             </div>
