@@ -19,102 +19,32 @@
 
         </div>
 
-        <div class="row komentar">
-            <div class="col-lg-8 col-md-8 col-sm-12 m-auto">
-                <h1 class="section-komentar">Komentar</h1>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 m-auto">
-                <div class="row isi-komentar  inikomentar">
-                    <div class="col-12 d-flex ">
-                        <img src="<?= base_url('assets/img/komen.png') ?>" alt="" class="rounded-circle">
-
-                        <p class="nama-user">Refaldo</p>
-                        <p class="isi-komentar ">Sangat bermanfaaat sekali, Terimakasih lorem100</p>
-
-
-                    </div>
-
-                    <div class="col-12 d-flex balasan">
-                        <img src="<?= base_url('assets/img/koment2.png') ?>" alt="" class="rounded-circle">
-
-                        <p class="nama-user">Admin</p>
-                        <p class="isi-komentar ">Terimakasih kak Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis error sed incidunt esse eius optio, provident quibusdam, enim repudiandae ullam consectetur inventore aspernatur nihil voluptates dignissimos commodi </p>
-
-
-                    </div>
-                    <div class="col-12 d-flex balasan">
-                        <img src="<?= base_url('assets/img/koment2.png') ?>" alt="" class="rounded-circle">
-
-                        <p class="nama-user">Admin</p>
-                        <p class="isi-komentar ">Terimakasih kak Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis error sed incidunt esse eius optio, provident quibusdam, enim repudiandae ullam consectetur inventore aspernatur nihil voluptates dignissimos commodi </p>
-
-
-                    </div>
-
-                </div>
-                <div class="row isi-komentar  inikomentar">
-                    <div class="col-12 d-flex ">
-                        <img src="<?= base_url('assets/img/koment2.png') ?>" alt="">
-
-                        <p class="nama-user">Fani</p>
-                        <p class="isi-komentar ">Sangat bermanfaaat sekali, Terimakasih lorem1</p>
-
-
-                    </div>
-
-
-                </div>
-                <div class="row isi-komentar  inikomentar">
-                    <div class="col-12 d-flex ">
-                        <img src="<?= base_url('assets/img/gambar4.png') ?>" alt="" class="rounded-circle">
-
-                        <p class="nama-user">Akhi</p>
-                        <p class="isi-komentar ">Sangat bermanfaaat sekali, Terimakasih lorem110</p>
-
-
-                    </div>
-
-
-                </div>
-
+        <div class="row komentar mt-2">
+            <div class="col-lg-8 m-auto col-sm-12">
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://ishlah-app.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
 
         </div>
-        <div class="row ">
-            <div class="col-lg-8 m-auto col-sm-12  mt-3">
-                <div class="alert alert-success alert-dismissible fade show alertt" role="alert">
-                    <strong>Terimakasih,</strong> tanggapan anda telah kami terima, tanggapan anda akan melalui proses validasi terlebih dahulu !
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form action="" class="inputkomentar">
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Komentar *</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Nama *</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email *</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Website *</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
 
-                    </div>
-                    </textarea>
-                    <p>Alamat email Anda tidak akan dipublikasikan. Ruas yang wajib ditandai *</p>
-                    <button type="submit" class="btn button-warna pt-3 pb-3 pr-5 pl-5">
-                        Kirim
-
-                    </button>
-                </form>
-            </div>
-        </div>
     </div>
 
     <!-- artikel terbaru -->
