@@ -17,12 +17,23 @@ class Proker_model extends CI_Model
 
         return $query->result();
     }
+    // public function getProker()
+    // {
+    //     $this->db->select('isi_proker.*, divisi_proker.nama_divisi as nama_divisi');
+    //     $this->db->from('isi_proker');
+    //     $this->db->join('divisi_proker', 'divisi_proker.id = isi_proker.id_divisi_proker');
+
+
+    //     $query = $this->db->get();
+    //     return $query->result();
+    // }
     public function get2()
     {
         $query = $this->db->get($this->table_name);
 
         return $query->result();
     }
+
     public function get_by_id($kondisi)
     {
         $this->db->from('isi_proker');
