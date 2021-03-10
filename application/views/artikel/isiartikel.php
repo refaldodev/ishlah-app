@@ -1,19 +1,32 @@
+<?php
+function convertDateDBtoIndo($string)
+{
+    // contoh : 2019-01-30
+
+    $bulanIndo = ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+    $tanggal = explode("-", $string)[2];
+    $bulan = explode("-", $string)[1];
+    $tahun = explode("-", $string)[0];
+
+    return $tanggal . " " . $bulanIndo[abs($bulan)] . " " . $tahun;
+}
+$b = $data->row_array(); ?>
 <section class="isiartikel">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto col-sm-12">
-
-                <h1 class=" section-judul judul-manfaat ">"<?= $detail->judul_artikel ?>"</h1>
-                <p class="tanggalpost">Posted : <?= date('d F Y', $detail->date_created); ?></p>
-                <p class="namaeditor"><?= $detail->post_by ?> - Ldk Ishlah</p>
+                <h1 class=" section-judul judul-manfaat ">"<?= $b['judul_artikel'] ?>"</h1>
+                <p class="tanggalpost">Posted : <?= date('d F Y', $b['date_created']); ?></p>
+                <p class="namaeditor"><?= $b['post_by'] ?> - Ldk Ishlah</p>
 
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 m-auto col-sm-12">
-                <img src="<?= base_url('assets/cover_artikel/' . $detail->cover_artikel) ?>" alt="">
+                <img src="<?= base_url('assets/cover_artikel/' . $b['cover_artikel']) ?>" alt="">
                 <p class="isitulisan ">
-                    <?= $detail->isi_artikel ?>
+                    <?= $b['isi_artikel'] ?>
                 </p>
             </div>
 
@@ -61,7 +74,7 @@
                 ?>
                     <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
                         <figure class="">
-                            <a href="<?= base_url('artikel/isiartikel/' . $data->id) ?>" class="text-decoration-none">
+                            <a href="<?= base_url('artikel/isiartikel/' . $data->post_slug) ?>" class="text-decoration-none">
                                 <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
 
                                 <figcaption class="figure-caption capt">

@@ -67,7 +67,7 @@
                             ?>
                                 <div class="col-6 col-lg-3 col-md-6 col-sm-6">
                                     <div class="card program-kerja mb-3">
-                                        <a href="" class="text-decoration-none ">
+                                        <a href="<?= base_url('home/programkami/' . $data->id) ?>" class="text-decoration-none ">
                                             <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <p class="card-text section-items"><?= $data->judul_proker ?></p>
@@ -259,7 +259,7 @@
                 ?>
                     <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1 content-artikel ">
                         <figure class="">
-                            <a href="<?= base_url('artikel/isiartikel/' . $data->id) ?>" class="text-decoration-none">
+                            <a href="<?= base_url('artikel/isiartikel/' . $data->post_slug) ?>" class="text-decoration-none">
                                 <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid  gambarartikel" alt="...">
 
                                 <figcaption class="figure-caption capt">

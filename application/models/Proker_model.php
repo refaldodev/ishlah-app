@@ -22,10 +22,8 @@ class Proker_model extends CI_Model
     //     $this->db->select('isi_proker.*, divisi_proker.nama_divisi as nama_divisi');
     //     $this->db->from('isi_proker');
     //     $this->db->join('divisi_proker', 'divisi_proker.id = isi_proker.id_divisi_proker');
-
-
     //     $query = $this->db->get();
-    //     return $query->result();
+    //     return $query;
     // }
     public function get2()
     {
@@ -57,5 +55,19 @@ class Proker_model extends CI_Model
     {
         $this->db->update('isi_proker', $data, $kondisi);
         return TRUE;
+    }
+    public function detail_data($id = NULL)
+    {
+        $this->db->select('isi_proker .*');
+        $this->db->select('div.nama_divisi as nama_divisi');
+        $this->db->from('isi_proker ip');
+        $this->db->join('divisi_proker as div ip.id_divisi_proker=div.id');
+
+        $query = $this->db->get_where($this->table_name, array('id' => $id))->row();
+
+        return $query->result();
+
+        // $query = $this->db->get_where($this->table_name, array('id' => $id))->row();
+        // return $query;
     }
 }

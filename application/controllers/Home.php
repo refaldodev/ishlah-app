@@ -53,9 +53,20 @@ class Home extends CI_Controller
         $this->load->view('home/faq', $data);
         $this->load->view('templates/footer');
     }
-    public function programkami()
+    public function programkami($id_proker)
     {
         $data['judul'] = 'Program Kami - LDK Ishlah';
+        // $data['data'] = $this->db->get_where('isi_proker', ['id' => $id_proker])->row();
+        $detail = $this->Proker_model->detail_data($id_proker);
+
+        $data['detail'] = $detail;
+        // $data['div'] = $this->db->get('divisi_proker')->result();
+        $data['divisi'] = $this->db->query("SELECT nama_divisi FROM divisi_proker");
+        $data['divisi1'] = $this->db->query("SELECT judul_proker, deskripsi_proker, cover_proker,
+                                                    divisi_proker.nama_divisi as nama_divisi
+                                                    FROM isi_proker
+                                                    INNER JOIN divisi_proker ON isi_proker.id_divisi_proker=divisi_proker.id
+                                                    WHERE isi_proker.id_divisi_proker=" . $id_proker . "")->result();
         $this->load->view('templates/header', $data);
         $this->load->view('home/programkami', $data);
         $this->load->view('templates/footer', $data);

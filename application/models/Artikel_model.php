@@ -18,6 +18,11 @@ class Artikel_model extends CI_Model
         $query = $this->db->get_where($this->table_name, array('id' => $id))->row();
         return $query;
     }
+    public function get_post_by_slug($slug)
+    {
+        $query = $this->db->query("SELECT * FROM tb_artikel WHERE post_slug='$slug'");
+        return $query;
+    }
 
     public function get_by_id($kondisi)
     {
@@ -46,7 +51,9 @@ class Artikel_model extends CI_Model
 
     public function getArtikel($limit, $start)
     {
-        return $this->db->get('tb_artikel', $limit, $start)->result_array();
+        $query = $this->db->query("SELECT * FROM tb_artikel ORDER BY date_created DESC")->result_array();
+        $query = $this->db->get('tb_artikel', $limit, $start)->result_array();
+        return $query;
     }
 
     public function countAllArtikel()
