@@ -146,7 +146,7 @@ class Divisi_proker extends CI_Controller
         $string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul_proker); //filter karakter unik dan replace dengan kosong ('')
         $trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
         $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
-        $slug = $pre_slug . '.html'; // tambahkan ektensi .html pada slug
+        $slug = $pre_slug;
 
         // get foto
         $config['upload_path'] = './assets/cover_proker';
