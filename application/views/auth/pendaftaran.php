@@ -16,7 +16,7 @@
                             <input type="email" placeholder="Email" class="form-link" name="email" required>
                         </div>
                         <div class="form-group">
-                            <input type="wa" placeholder="No. Wa" class="form-link" name="no_wa" required>
+                            <input type="number" placeholder="No. Wa" class="form-link" name="no_wa" required>
                         </div>
                         <div class="form-group">
                             <select name="jkel" id="" class="form-link" required>
@@ -36,8 +36,8 @@
                                 foreach ($fakultas as $row_fakultas) :
                                 ?>
                                     <option value=" <?= $row_fakultas->id ?>"><?= $row_fakultas->nama_fakultas ?></option>
+                                    <?= var_dump($row_fakultas->id) ?>
                                 <?php endforeach; ?>
-
                             </select>
                         </div>
                         <div class="form-group">
@@ -47,7 +47,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Angkatan" class="form-link" name="angkatan" required>
+                            <input type="number" placeholder="Angkatan" class="form-link" name="angkatan" required>
                         </div>
                         <div class="form-group">
                             <label for="">Motivasi bergabung dengan Ishlah?</label>
@@ -84,7 +84,7 @@
                 success: function(data) {
                     var html = '';
                     data.forEach(d => {
-                        html += `<option value= + ${d.id}  > ${d.nama_prodi}  </option>`;
+                        html += `<option value="${d.id}"> ${d.nama_prodi}  </option>`;
                     })
                     $('#prodi').html(html);
 

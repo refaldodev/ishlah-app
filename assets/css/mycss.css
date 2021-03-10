@@ -403,6 +403,11 @@ section.artikelt {
 
 }
 
+section.artikelt.pembatas {
+	margin-top: -80px;
+	margin-bottom: -30px;
+}
+
 
 section.artikelt img.gambarartikel {
 	min-width: 100% !important;
@@ -414,8 +419,9 @@ section.artikelt .capt p {
 	font-size: 12px !important;
 	color: #ACACAC;
 	font-family: 'Poppins', sans-serif !important;
-	padding-top: 10px;
 	margin-left: 5px;
+	margin-top: -5px;
+	margin-bottom: 20px;
 }
 
 section.artikelt .capt h6 {
@@ -423,8 +429,9 @@ section.artikelt .capt h6 {
 	font-family: 'Poppins', sans-serif !important;
 	color: #443F3F !important;
 	margin-left: 5px;
-	margin-top: -15px;
+	margin-top: 10px;
 	font-weight: 600;
+
 }
 
 
@@ -1507,8 +1514,9 @@ section .teks-sejarah p {
 		color: #216656 !important;
 	}
 
-	section.artikelt .pembatas {
-		border-top: 1px solid rgb(226, 226, 226) !important;
+	section.artikelt.pembatas {
+		margin-top: -50px;
+		margin-bottom: -50px;
 	}
 
 	section.artikelt .buttonl a.lihat {
@@ -1644,8 +1652,16 @@ section .teks-sejarah p {
 	}
 
 	section.artikelt .artikell figure {
-		margin-bottom: 40px !important;
+		margin-bottom: 10px !important;
 
+	}
+
+	section.artikelt .capt h6 {
+		margin-top: 10px;
+	}
+
+	section.artikelt .capt p {
+		margin-top: -15px;
 	}
 
 	section.artikel .semua-artikel a {
