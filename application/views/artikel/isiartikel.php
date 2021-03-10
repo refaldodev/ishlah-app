@@ -65,9 +65,9 @@
                                 <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
 
                                 <figcaption class="figure-caption capt">
+                                    <h6><?= $data->judul_artikel ?></h6>
                                     <p>Posted : <?= date('d F Y', $data->date_created); ?></p>
 
-                                    <h6><?= $data->judul_artikel ?></h6>
                                 </figcaption>
                             </a>
                         </figure>
