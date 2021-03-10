@@ -71,6 +71,11 @@ class Artikel_admin extends CI_Controller
         $judul_artikel            = $this->input->post('judul_artikel');
         $isi_artikel            = $this->input->post('isi_artikel');
         $post_by            = $this->input->post('post_by');
+        $string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul_artikel); //filter karakter unik dan replace dengan kosong ('')
+        $trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+        $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+        $slug = $pre_slug . '.html'; // tambahkan ektensi .html pada slug
+
 
         // get foto
         $config['upload_path'] = './assets/cover_artikel';
@@ -87,6 +92,7 @@ class Artikel_admin extends CI_Controller
                 $foto = $this->upload->data();
                 $data = array(
                     'judul_artikel'       => $judul_artikel,
+                    'post_slug' => $slug,
                     'isi_artikel'       => $isi_artikel,
                     'post_by'       => $post_by,
                     'date_created'      => time(),

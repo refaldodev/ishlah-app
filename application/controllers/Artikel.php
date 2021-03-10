@@ -41,11 +41,11 @@ class Artikel extends CI_Controller
         $config['last_tag_open'] = '<li class="page-item">';
         $config['last_tag_close'] = '</li>';
 
-        $config['next_link'] = '&raquo';
+        $config['next_link'] = 'Next';
         $config['next_tag_open'] = '<li class="page-item">';
         $config['next_tag_close'] = '</li>';
 
-        $config['prev_link'] = '&laquo';
+        $config['prev_link'] = 'Previous';
         $config['prev_tag_open'] = '<li class="page-item">';
         $config['prev_tag_close'] = '</li>';
 
@@ -68,26 +68,29 @@ class Artikel extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function isiArtikel($id)
+    public function isiArtikel($slug)
     {
 
         $data['judul'] = 'Isi Artikel - LDK Ishlah';
-        $detail = $this->Artikel_model->detail_data($id);
+        // $detail = $this->Artikel_model->detail_data($id);
 
-        $data['detail'] = $detail;
+        // $data['detail'] = $detail;
+
         $data['user'] = $this->db->get_where('user', ['username'])->row_array();
-        $data['new_artikel'] = $this->db->query("SELECT art.*,
-                                                    art.judul_artikel as judul,
-                                                    art.isi_artikel as isi,
-                                                    art.post_by as nama,
-                                                    art.cover_artikel as cover,
-                                                    art.date_created as date_created
-                                                    FROM tb_artikel art
-                                                    ORDER BY art.date_created DESC
+        $data['new_artikel'] = $this->db->query("SELECT *
+                                                    FROM tb_artikel
+                                                    ORDER BY date_created DESC
                                                     LIMIT 3")->result();
-
         $this->load->view('templates/header', $data);
-        $this->load->view('artikel/isiartikel', $data);
-        $this->load->view('templates/footer');
+
+        $data = $this->Artikel_model->get_post_by_slug($slug);
+        if ($data->num_rows() > 0) { // validasi jika data ditemukan
+            $x['data'] = $data;
+            $this->load->view('artikel/isiartikel', $x);
+            $this->load->view('templates/footer');
+        } else {
+            //jika data tidak ditemukan, maka kembali ke blog
+            redirect('artikel/index');
+        }
     }
 }

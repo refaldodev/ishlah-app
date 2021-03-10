@@ -1,18 +1,7 @@
  <!-- Begin Page Content -->
  <div class="container-fluid">
 
-
-
-     <?php if ($this->session->flashdata('flash')) : ?>
-         <div class="alert alert-success alert-dismissible fade show" role="alert">
-             Data <strong>berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
-             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-             </button>
-         </div>
-     <?php endif; ?>
-
-
+     <?php $this->view('messages') ?>
 
      <!-- DataTales Example -->
      <div class="card shadow mb-4">

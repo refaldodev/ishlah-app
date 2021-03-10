@@ -13,7 +13,7 @@
             ?>
                 <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
                     <figure class="">
-                        <a href="<?= base_url('artikel/isiartikel/' . $data['id']) ?>" class="text-decoration-none">
+                        <a href="<?= base_url('artikel/isiartikel/' . $data['post_slug']) ?>" class="text-decoration-none">
                             <img src="<?= base_url('assets/cover_artikel/' . $data['cover_artikel']) ?>" class="img-fluid  gambarartikel" alt="...">
 
                             <figcaption class="figure-caption capt">

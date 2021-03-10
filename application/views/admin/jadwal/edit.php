@@ -42,7 +42,7 @@
                      <!-- ID -->
                      <input type="hidden" name="id" value="<?= $data->id ?>">
 
-                     <a href="<?= base_url('jadwal/index') ?>" class="btn btn-secondary">Kembali</a>
+                     <a href="<?= base_url('jadwalkegiatan_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                      <button type="submit" class="btn btn-primary">Update</button>
 
                  </form>

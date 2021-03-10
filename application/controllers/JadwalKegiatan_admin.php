@@ -62,7 +62,7 @@ class JadwalKegiatan_admin extends CI_Controller
         $data['is_jadwal'] = true;
         $data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
 
-        $this->load->view('admin/templates/header');
+        $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/topbar', $data);
         $this->load->view('admin/jadwal/edit', $data);
         $this->load->view('admin/templates/footer');
