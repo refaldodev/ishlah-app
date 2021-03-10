@@ -143,6 +143,10 @@ class Divisi_proker extends CI_Controller
         $id_divisi_proker            = $this->input->post('id_divisi_proker');
         $judul_proker            = $this->input->post('judul_proker');
         $deskripsi_proker            = $this->input->post('deskripsi_proker');
+        $string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul_proker); //filter karakter unik dan replace dengan kosong ('')
+        $trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+        $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+        $slug = $pre_slug . '.html'; // tambahkan ektensi .html pada slug
 
         // get foto
         $config['upload_path'] = './assets/cover_proker';
@@ -160,6 +164,7 @@ class Divisi_proker extends CI_Controller
                 $data = array(
                     'id_divisi_proker'       => $id_divisi_proker,
                     'judul_proker'       => $judul_proker,
+                    'post_slug'       => $slug,
                     'deskripsi_proker'       => $deskripsi_proker,
                     'cover_proker'       => $foto['file_name']
                 );
