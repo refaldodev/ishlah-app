@@ -263,9 +263,8 @@
                                 <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid  gambarartikel" alt="...">
 
                                 <figcaption class="figure-caption capt">
-                                    <p>Posted : <?= date('d F Y', $data->date_created); ?></p>
-
                                     <h6><?= $data->judul_artikel ?></h6>
+                                    <p>Posted : <?= date('d F Y', $data->date_created); ?></p>
                                 </figcaption>
                             </a>
                         </figure>

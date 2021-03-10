@@ -126,7 +126,7 @@
         <div class="carousel-caption mb-5">
           <h5>TOGETHER BE BETTER</h5>
           <p>Mari bersama-sama menjadi manusia yang lebih baik lagi.</p>
-          <a href="<?= base_url('auth/pendaftaran'); ?>" class="btn button-warna">Gabung</a>
+          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna">Gabung</a>
         </div>
       </div>
       <div class="carousel-item">
