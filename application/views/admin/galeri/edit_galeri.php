@@ -1,3 +1,4 @@
+
  <!-- Begin Page Content -->
  <div class="container-fluid">
 
@@ -13,21 +14,20 @@
          </div>
          <div class="card-body">
              <form method="POST" action="<?= base_url('galeri_admin/updatedata') ?>" enctype="multipart/form-data">
+               <!-- ID -->
+               <input type="hidden" name="id" value="<?= $id ?>">
 
                  <div class="form-group">
                      <label>Judul</label>
-                     <input type="text" class="form-control" name="judul" value="<?= $data->judul ?>" required>
+                     <input type="text" class="form-control" name="judul" value="<?= $result[0]['judul'] ?>" required>
                  </div>
                  <div class="form-group">
                      <label>Upload Foto</label>
-                     <input type="file" class="form-control" name="fotopost" required>
-                     <img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="" width="100">
+                     <input type="file" class="form-control" name="file" >
+                     <img src="<?= base_url('assets/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="100">
                  </div>
 
-                 <!-- ID -->
-                 <input type="hidden" name="id" value="<?= $data->id ?>">
-                 <!-- file lama -->
-                 <input type="hidden" name="filelama" value="<?= $data->image_galeri ?>">
+
 
                  <a href="<?= base_url('galeri_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                  <button type="submit" class="btn btn-primary">Update</button>

@@ -42,12 +42,12 @@ class Galeri_admin extends CI_Controller
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
         // $config['max_height'] = '4480'; // pixel
-        $config['file_name'] = $_FILES['fotopost']['name'];
+        $config['file_name'] = $_FILES['file']['name'];
 
         $this->upload->initialize($config);
 
-        if (!empty($_FILES['fotopost']['name'])) {
-            if ($this->upload->do_upload('fotopost')) {
+        if (!empty($_FILES['file']['name'])) {
+            if ($this->upload->do_upload('file')) {
                 $foto = $this->upload->data();
                 $data = array(
                     'judul'       => $judul,
@@ -79,17 +79,14 @@ class Galeri_admin extends CI_Controller
     // edit
     public function edit($id)
     {
-        $kondisi = array('id' => $id);
+      $query= $this->db->query("SELECT `judul`,`image_galeri` FROM `tb_galeri` WHERE `id` = '$id'");
 
-        $data = array(
-            'is_galeri' => true,
-            'title' => 'Data Galeri',
-            'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
-        );
+      $data['result'] = $query->result_array();
+      $data['id']=$id;
 
-        $data['data'] = $this->Galeri_model->get_by_id($kondisi);
-        $this->load->view('admin/templates/header', $data);
-        $this->load->view('admin/templates/topbar', $data);
+
+        $this->load->view('admin/templates/header');
+        $this->load->view('admin/templates/topbar');
         $this->load->view('admin/galeri/edit_galeri', $data);
         $this->load->view('admin/templates/footer');
     }
@@ -97,25 +94,22 @@ class Galeri_admin extends CI_Controller
     // update
     public function updatedata()
     {
-        $id   = $this->input->post('id');
-        $judul = $this->input->post('judul');
+      //print_r($_POST);
+      //print_r($_FILES);
+      if ($_FILES ['file']['name'] ){
+    //  die("update file");
+      //update the image
+          $config['upload_path']          = './assets/galeri/';
+          $config['allowed_types']        = 'gif|jpg|png';
+          $config['max_size']             = 2048;
+          $config['max_width']            = 4480;
+          $config['max_height']           = 4480;
 
-        $path = './assets/galeri';
+          $this->load->library('upload', $config);
 
-        $kondisi = array('id' => $id);
-
-        // get foto
-        $config['upload_path'] = './assets/galeri';
-        $config['allowed_types'] = 'jpg|png|jpeg|gif';
-        $config['max_size'] = '2048';  //2MB max
-        // $config['max_width'] = '4480'; // pixel
-        // $config['max_height'] = '4480'; // pixel
-        $config['file_name'] = $_FILES['fotopost']['name'];
-
-        $this->upload->initialize($config);
-
-        if (!empty($_FILES['fotopost']['name'])) {
-            if ($this->upload->do_upload('fotopost')) {
+          if (!empty($_FILES['file']['name']))
+          {
+            if ($this->upload->do_upload('file')) {
                 $foto = $this->upload->data();
                 $data = array(
                     'judul'       => $judul,
@@ -130,8 +124,31 @@ class Galeri_admin extends CI_Controller
             } else {
                 die("gagal update");
             }
-        } else {
-            echo "tidak masuk";
         }
+
+
+
+
+
+
+
+      }else{
+        //die("Tanpa file");
+        $judul=$_POST['judul'];
+        $id=$_POST['id'];
+
+        $query=$this->db->query("UPDATE `tb_galeri` SET `judul` = '$judul' WHERE `id` = '$id' ");
+
+        if ($query){
+          $this->session->set_flashdata('diupdate','ya');
+          redirect('galeri_admin/index');
+        }else{
+          $this->session->set_flashdata('diupdate','tidak');
+          redirect('galeri_admin/index');
+        }
+      }
+
+
     }
 }
+//controller
