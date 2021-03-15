@@ -83,10 +83,9 @@ class Galeri_admin extends CI_Controller
 
       $data['result'] = $query->result_array();
       $data['id']=$id;
-
-
-        $this->load->view('admin/templates/header');
-        $this->load->view('admin/templates/topbar');
+     $data['user'] =  $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+    $this->load->view('admin/templates/header', $data);
+    $this->load->view('admin/templates/topbar', $data);
         $this->load->view('admin/galeri/edit_galeri', $data);
         $this->load->view('admin/templates/footer');
     }

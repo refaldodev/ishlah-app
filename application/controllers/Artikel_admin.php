@@ -102,7 +102,7 @@ class Artikel_admin extends CI_Controller
                 $this->session->set_flashdata('flash', 'Ditambahkan');
                 redirect('artikel_admin/index');
             } else {
-                die("gagal upload");
+                confirm('harus gambar');
             }
         } else {
             echo "tidak masuk";
