@@ -34,6 +34,7 @@ class Galeri_admin extends CI_Controller
     // untuk memasukan data ke database
     public function insertdata()
     {
+
         $judul = $this->input->post('judul');
 
         // get foto
@@ -57,10 +58,14 @@ class Galeri_admin extends CI_Controller
                 $this->session->set_flashdata('flash', 'Ditambahkan');
                 redirect('galeri_admin/index');
             } else {
-                die("gagal upload");
+                // echo '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>';
+                $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+                redirect('galeri_admin/index');
             }
         } else {
-            echo "tidak masuk";
+            // echo "tidak masuk";
+            $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+            redirect('galeri_admin/index');
         }
     }
 
@@ -93,43 +98,90 @@ class Galeri_admin extends CI_Controller
     // update
     public function updatedata()
     {
+        // $id   = $this->input->post('id');
+        // // $judul = $this->input->post('judul');
+        // $path = './assets/galeri';
+        // $kondisi = array('id' => $id);
+
+        // //print_r($_POST);
+        // //print_r($_FILES);
+        // if ($_FILES['file']['name']) {
+        //     //  die("update file");
+        //     //update the image
+        //     $config['upload_path']          = './assets/galeri/';
+        //     $config['allowed_types']        = 'gif|jpg|png';
+        //     $config['max_size']             = 2048;
+        //     //   $config['max_width']            = 4480;
+        //     //   $config['max_height']           = 4480;
+
+        //     $this->load->library('upload', $config);
+
+        //     if (!empty($_FILES['file']['name'])) {
+        //         if ($this->upload->do_upload('file')) {
+        //             $foto = $this->upload->data();
+        //             $data = array(
+        //                 // 'judul'       => $judul,
+        //                 'image_galeri'       => $foto['file_name']
+        //             );
+        //             // hapus foto pada direktori
+        //             @unlink($path . $this->input->post('filelama'));
+
+        //             $this->Galeri_model->update($data, $kondisi);
+        //             $this->session->set_flashdata('flash', 'Diedit');
+        //             redirect('galeri_admin/index');
+        //         } else {
+        //             die("gagal update");
+        //         }
+        //     }
+        // } else {
+        //     //die("Tanpa file");
+        //     $judul = $_POST['judul'];
+        //     $id = $_POST['id'];
+
+        //     $query = $this->db->query("UPDATE `tb_galeri` SET `judul` = '$judul' WHERE `id` = '$id' ");
+
+        //     if ($query) {
+        //         $this->session->set_flashdata('flash', 'Diedit');
+        //         redirect('galeri_admin/index');
+        //     } else {
+        //         $this->session->set_flashdata('diupdate', 'tidak');
+        //         redirect('galeri_admin/index');
+        //     }
+        // }
+
+        $judul = $this->input->post('judul');
+        $path = './assets/cover_artikel';
         $id   = $this->input->post('id');
-        // $judul = $this->input->post('judul');
-        $path = './assets/galeri';
+
         $kondisi = array('id' => $id);
 
-        //print_r($_POST);
-        //print_r($_FILES);
-        if ($_FILES['file']['name']) {
-            //  die("update file");
-            //update the image
-            $config['upload_path']          = './assets/galeri/';
-            $config['allowed_types']        = 'gif|jpg|png';
-            $config['max_size']             = 2048;
-            //   $config['max_width']            = 4480;
-            //   $config['max_height']           = 4480;
+        // get foto
+        $config['upload_path'] = './assets/galeri';
+        $config['allowed_types'] = 'jpg|png|jpeg|gif';
+        $config['max_size'] = '2048';  //2MB max
+        // $config['max_width'] = '4480'; // pixel
+        // $config['max_height'] = '4480'; // pixel
+        $config['file_name'] = $_FILES['file']['name'];
 
-            $this->load->library('upload', $config);
+        $this->upload->initialize($config);
 
-            if (!empty($_FILES['file']['name'])) {
-                if ($this->upload->do_upload('file')) {
-                    $foto = $this->upload->data();
-                    $data = array(
-                        // 'judul'       => $judul,
-                        'image_galeri'       => $foto['file_name']
-                    );
-                    // hapus foto pada direktori
-                    @unlink($path . $this->input->post('filelama'));
+        if (!empty($_FILES['file']['name'])) {
+            if ($this->upload->do_upload('file')) {
+                $foto = $this->upload->data();
+                $data = array(
+                    'judul'       => $judul,
+                    'image_galeri'       => $foto['file_name']
+                );
+                @unlink($path . $this->input->post('filelama'));
 
-                    $this->Galeri_model->update($data, $kondisi);
-                    $this->session->set_flashdata('flash', 'Diedit');
-                    redirect('galeri_admin/index');
-                } else {
-                    die("gagal update");
-                }
+                $this->Galeri_model->update($data, $kondisi);
+                $this->session->set_flashdata('flash', 'Diubah');
+                redirect('galeri_admin/index');
+            } else {
+                die("gagal upload");
             }
         } else {
-            //die("Tanpa file");
+            // die("Tanpa file");
             $judul = $_POST['judul'];
             $id = $_POST['id'];
 
