@@ -79,7 +79,7 @@ class Artikel extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['username'])->row_array();
         $data['new_artikel'] = $this->db->query("SELECT *
                                                     FROM tb_artikel
-                                                    ORDER BY date_created DESC
+                                                    ORDER BY rand()
                                                     LIMIT 3")->result();
         $this->load->view('templates/header', $data);
 

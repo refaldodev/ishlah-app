@@ -26,9 +26,10 @@
                  </div>
                  <div class="form-group">
                      <label>Upload Cover Artikel</label>
-                     <input type="file" class="form-control" name="fotopost" required>
+                     <input type="file" class="form-control" name="fotopost">
                      <!-- file lama -->
                      <input type="hidden" name="filelama" value="<?= $data->cover_artikel ?>">
+                     <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" alt="" width="100">
                  </div>
                  <div class="form-group">
                      <label>Uploader</label>

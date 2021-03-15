@@ -102,7 +102,8 @@ class Artikel_admin extends CI_Controller
                 $this->session->set_flashdata('flash', 'Ditambahkan');
                 redirect('artikel_admin/index');
             } else {
-                confirm('harus gambar');
+                $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+                redirect('artikel_admin/index');
             }
         } else {
             echo "tidak masuk";
@@ -186,7 +187,37 @@ class Artikel_admin extends CI_Controller
                 die("gagal update");
             }
         } else {
-            echo "tidak masuk";
+            // die("Tanpa file");
+            $id   = $this->input->post('id');
+            $judul_artikel            = $this->input->post('judul_artikel');
+            $isi_artikel            = $this->input->post('isi_artikel');
+            $post_by            = $this->input->post('post_by');
+            $string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul_artikel); //filter karakter unik dan replace dengan kosong ('')
+            $trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+            $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+            $slug = $pre_slug;
+
+
+
+            $kondisi = array('id' => $id);
+            // $id = $_POST['id'];
+
+            // $query = $this->db->query("UPDATE `tb_artikel` SET `judul_artikel` = '$judul' WHERE `id` = '$id' ");
+            $data = array(
+                'judul_artikel'       => $judul_artikel,
+                'post_slug'       => $slug,
+                'isi_artikel'       => $isi_artikel,
+                'post_by'       => $post_by
+            );
+            $query = $this->Artikel_model->update($data, $kondisi);
+
+            if ($query) {
+                $this->session->set_flashdata('flash', 'Diubah');
+                redirect('artikel_admin/index');
+            } else {
+                $this->session->set_flashdata('diupdate', 'tidak');
+                redirect('galeri_admin/index');
+            }
         }
     }
 }
