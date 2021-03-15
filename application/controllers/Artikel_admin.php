@@ -6,8 +6,8 @@ class Artikel_admin extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Artikel_model');
-        $this->load->library('session');
         $this->load->model('User_model');
+        $this->load->library('session');
         $this->load->library('upload');
         $this->User_model->keamanan();
     }

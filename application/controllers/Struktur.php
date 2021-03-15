@@ -6,7 +6,9 @@ class Struktur extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Struktur_model');
+        $this->load->model('User_model');
         $this->load->library('upload');
+        $this->User_model->keamanan();
     }
 
 
@@ -20,7 +22,8 @@ class Struktur extends CI_Controller
             'row' => $get,
             'is_struktur' => true,
             'title' => 'Data Struktur',
-            'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
+            'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array(),
+
         );
 
         // var_dump($get);
@@ -32,7 +35,36 @@ class Struktur extends CI_Controller
         $this->load->view('admin/templates/footer');
     }
 
+    // public function insertdata()
+    // {
 
+
+    //     // get foto
+    //     $config['upload_path'] = './assets/struktur_organisasi';
+    //     $config['allowed_types'] = 'jpg|png|jpeg|gif';
+    //     $config['max_size'] = '2048';  //2MB max
+    //     // $config['max_width'] = '4480'; // pixel
+    //     // $config['max_height'] = '4480'; // pixel
+    //     $config['file_name'] = $_FILES['fotopost']['name'];
+
+    //     $this->upload->initialize($config);
+
+    //     if (!empty($_FILES['fotopost']['name'])) {
+    //         if ($this->upload->do_upload('fotopost')) {
+    //             $foto = $this->upload->data();
+    //             $data = array(
+    //                 'image_struktur'       => $foto['file_name']
+    //             );
+    //             $this->Struktur_model->insert($data);
+    //             $this->session->set_flashdata('flash', 'Ditambahkan');
+    //             redirect('struktur/index');
+    //         } else {
+    //             die("gagal upload");
+    //         }
+    //     } else {
+    //         echo "tidak masuk";
+    //     }
+    // }
 
     // edit
     public function edit($id)
