@@ -67,7 +67,7 @@
                             ?>
                                 <div class="col-6 col-lg-3 col-md-6 col-sm-6">
                                     <div class="card program-kerja mb-3">
-                                        <a href="<?= base_url('home/programkami/' . $data->id) ?>" class="text-decoration-none ">
+                                        <a href="<?= base_url('home/programkami/' . $data->post_slug) ?>" class="text-decoration-none ">
                                             <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <p class="card-text section-items"><?= $data->judul_proker ?></p>
@@ -81,24 +81,44 @@
 
                     </div>
                     <?php
-                    foreach ($row2 as $data) {
+                    foreach ($row as $data) {
+                        // var_dump($data)
                     ?>
                         <div class="tab-pane fade" id="pills-<?= $data->nama_divisi ?>" role="tabpanel" aria-labelledby="pills-<?= $data->nama_divisi ?>-tab">
-                            <div class="row">
-                                <div class="col-6 col-lg-3 col-md-6 col-sm-6">
-                                    <div class="card program-kerja mb-3">
-                                        <a href="" class="text-decoration-none ">
-
-                                            <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text section-items"><?= $data->judul_proker ?></p>
+                            <div class="row mb-3">
+                                <?php
+                                foreach ($row2 as $data2) {
+                                    if ($data2->id_divisi_proker == $data->id) {
+                                ?>
+                                        <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                                            <div class="card program-kerja mb-3">
+                                                <a href="<?= base_url('home/programkami/' . $data2->post_slug) ?>" class="text-decoration-none ">
+                                                    <img src="<?= base_url('assets/cover_proker/' . $data2->cover_proker) ?>" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text section-items"><?= $data2->judul_proker ?></p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                        </div>
+                                <?php
+                                    }
+                                } ?>
                             </div>
                         </div>
                     <?php } ?>
+
+                    <!-- <div class="tab-pane fade" id="pills-8" role="tabpanel" aria-labelledby="pills-8-tab">
+                        <div class="row">
+                            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                                <div class="card program-kerja mb-3">
+                                    <a href="" class="text-decoration-none ">
+
+                                        test
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
                 </div>
             </div>

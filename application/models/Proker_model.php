@@ -70,4 +70,14 @@ class Proker_model extends CI_Model
         // $query = $this->db->get_where($this->table_name, array('id' => $id))->row();
         // return $query;
     }
+
+    public function get_post_by_slug($slug)
+    {
+        // $query = $this->db->select($this->table_name . '.*');
+        // $query = $this->db->select('div.nama_divisi as nama_divisi');
+        // $query = $this->db->from($this->table_name);
+        // $query = $this->db->join('divisi_proker as div', $this->table_name . '.id_divisi_proker=div.id', 'INNER');
+        $query = $this->db->query("SELECT * FROM isi_proker WHERE post_slug='$slug'");
+        return $query;
+    }
 }
