@@ -84,23 +84,14 @@ class Galeri_admin extends CI_Controller
     // edit
     public function edit($id)
     {
-<<<<<<< HEAD
         $query = $this->db->query("SELECT `judul`,`image_galeri` FROM `tb_galeri` WHERE `id` = '$id'");
 
         $data['result'] = $query->result_array();
         $data['id'] = $id;
+        $data['title'] = "Edit Galeri";
         $data['user'] =  $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/topbar', $data);
-=======
-      $query= $this->db->query("SELECT `judul`,`image_galeri` FROM `tb_galeri` WHERE `id` = '$id'");
-
-      $data['result'] = $query->result_array();
-      $data['id']=$id;
-     $data['user'] =  $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-    $this->load->view('admin/templates/header', $data);
-    $this->load->view('admin/templates/topbar', $data);
->>>>>>> refaldo/master
         $this->load->view('admin/galeri/edit_galeri', $data);
         $this->load->view('admin/templates/footer');
     }
@@ -108,60 +99,8 @@ class Galeri_admin extends CI_Controller
     // update
     public function updatedata()
     {
-<<<<<<< HEAD
-        // $id   = $this->input->post('id');
-        // // $judul = $this->input->post('judul');
-        // $path = './assets/galeri';
-        // $kondisi = array('id' => $id);
-
-        // //print_r($_POST);
-        // //print_r($_FILES);
-        // if ($_FILES['file']['name']) {
-        //     //  die("update file");
-        //     //update the image
-        //     $config['upload_path']          = './assets/galeri/';
-        //     $config['allowed_types']        = 'gif|jpg|png';
-        //     $config['max_size']             = 2048;
-        //     //   $config['max_width']            = 4480;
-        //     //   $config['max_height']           = 4480;
-
-        //     $this->load->library('upload', $config);
-
-        //     if (!empty($_FILES['file']['name'])) {
-        //         if ($this->upload->do_upload('file')) {
-        //             $foto = $this->upload->data();
-        //             $data = array(
-        //                 // 'judul'       => $judul,
-        //                 'image_galeri'       => $foto['file_name']
-        //             );
-        //             // hapus foto pada direktori
-        //             @unlink($path . $this->input->post('filelama'));
-
-        //             $this->Galeri_model->update($data, $kondisi);
-        //             $this->session->set_flashdata('flash', 'Diedit');
-        //             redirect('galeri_admin/index');
-        //         } else {
-        //             die("gagal update");
-        //         }
-        //     }
-        // } else {
-        //     //die("Tanpa file");
-        //     $judul = $_POST['judul'];
-        //     $id = $_POST['id'];
-
-        //     $query = $this->db->query("UPDATE `tb_galeri` SET `judul` = '$judul' WHERE `id` = '$id' ");
-
-        //     if ($query) {
-        //         $this->session->set_flashdata('flash', 'Diedit');
-        //         redirect('galeri_admin/index');
-        //     } else {
-        //         $this->session->set_flashdata('diupdate', 'tidak');
-        //         redirect('galeri_admin/index');
-        //     }
-        // }
-
         $judul = $this->input->post('judul');
-        $path = './assets/cover_artikel';
+        $path = './assets/galeri';
         $id   = $this->input->post('id');
 
         $kondisi = array('id' => $id);
@@ -176,24 +115,9 @@ class Galeri_admin extends CI_Controller
 
         $this->upload->initialize($config);
 
+
+
         if (!empty($_FILES['file']['name'])) {
-=======
-      //print_r($_POST);
-      //print_r($_FILES);
-      if ($_FILES ['file']['name'] ){
-    //  die("update file");
-      //update the image
-          $config['upload_path']          = './assets/galeri/';
-          $config['allowed_types']        = 'gif|jpg|png';
-          $config['max_size']             = 2048;
-          $config['max_width']            = 4480;
-          $config['max_height']           = 4480;
-
-          $this->load->library('upload', $config);
-
-          if (!empty($_FILES['file']['name']))
-          {
->>>>>>> refaldo/master
             if ($this->upload->do_upload('file')) {
                 $foto = $this->upload->data();
                 $data = array(
@@ -206,9 +130,9 @@ class Galeri_admin extends CI_Controller
                 $this->session->set_flashdata('flash', 'Diubah');
                 redirect('galeri_admin/index');
             } else {
-                die("gagal upload");
+                $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+                redirect('galeri_admin/index');
             }
-<<<<<<< HEAD
         } else {
             // die("Tanpa file");
             $judul = $_POST['judul'];
@@ -217,39 +141,13 @@ class Galeri_admin extends CI_Controller
             $query = $this->db->query("UPDATE `tb_galeri` SET `judul` = '$judul' WHERE `id` = '$id' ");
 
             if ($query) {
-                $this->session->set_flashdata('flash', 'Diedit');
+                $this->session->set_flashdata('flash', 'Diubah');
                 redirect('galeri_admin/index');
             } else {
                 $this->session->set_flashdata('diupdate', 'tidak');
                 redirect('galeri_admin/index');
             }
-=======
->>>>>>> refaldo/master
         }
-
-
-
-
-
-
-
-      }else{
-        //die("Tanpa file");
-        $judul=$_POST['judul'];
-        $id=$_POST['id'];
-
-        $query=$this->db->query("UPDATE `tb_galeri` SET `judul` = '$judul' WHERE `id` = '$id' ");
-
-        if ($query){
-          $this->session->set_flashdata('diupdate','ya');
-          redirect('galeri_admin/index');
-        }else{
-          $this->session->set_flashdata('diupdate','tidak');
-          redirect('galeri_admin/index');
-        }
-      }
-
-
     }
 }
 //controller
