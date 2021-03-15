@@ -91,6 +91,7 @@ class User_model extends CI_model
         $data = $this->session->userdata('username');
         if (empty($data)) {
             $this->session->sess_destroy();
+            echo "<script type='text/javascript'>alert('Sesi Habis');</script>";
             redirect('auth');
         }
     }

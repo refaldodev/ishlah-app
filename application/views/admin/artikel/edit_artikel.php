@@ -26,7 +26,7 @@
                  </div>
                  <div class="form-group">
                      <label>Upload Cover Artikel</label>
-                     <input type="file" class="form-control" name="fotopost">
+                     <input type="file" class="form-control" name="fotopost" required>
                      <!-- file lama -->
                      <input type="hidden" name="filelama" value="<?= $data->cover_artikel ?>">
                  </div>
@@ -34,6 +34,7 @@
                      <label>Uploader</label>
                      <input type="text" class="form-control" name="post_by" value="<?= $data->post_by ?>" readonly>
                  </div>
+                 <input type="hidden" name="post_slug" value="<?= $data->post_slug ?>">
                  <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                  <button type="submit" class="btn btn-primary">Update</button>
                  <script>

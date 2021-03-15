@@ -14,6 +14,7 @@ class Dashboard extends CI_Controller
     {
 
         $data['is_dashboard'] = true;
+        $data['title'] = 'Dasboard';
         $data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/topbar');

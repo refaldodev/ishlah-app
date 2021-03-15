@@ -33,6 +33,7 @@ class Pendaftaran_model extends CI_model
         $this->db->from($this->table_name);
         $this->db->join('tb_fakultas as fak', $this->table_name . '.id_fakultas=fak.id', 'INNER');
         $this->db->join('tb_prodi as prd', $this->table_name . '.id_prodi=prd.id', 'INNER');
+        $this->db->order_by('date_created', 'asc');
         $query = $this->db->get();
         return $query->result();
     }
