@@ -17,7 +17,7 @@
                  <!-- <h5>Judul Program : </h5> -->
                  <!-- <h5><?= $b['judul_proker'] ?></h5> -->
                  <br>
-                 <h5 class="deskripsi">Deskripsi Program</h5>
+                 <h5 class="deskripsi">Deskripsi Program :</h5>
                  <p><?= $b['deskripsi_proker'] ?></p>
              </div>
          </div>
