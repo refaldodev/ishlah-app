@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
+-- Generation Time: Mar 10, 2021 at 05:38 AM
+=======
 -- Generation Time: Mar 10, 2021 at 06:40 AM
+>>>>>>> ishlah
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -61,6 +65,21 @@ CREATE TABLE `isi_proker` (
 -- Dumping data for table `isi_proker`
 --
 
+<<<<<<< HEAD
+INSERT INTO `isi_proker` (`id`, `id_divisi_proker`, `judul_proker`, `deskripsi_proker`, `cover_proker`) VALUES
+(1, 1, 'Syiar 1', '<p><strong>Syiar adalah</strong> hal<em> yang baik</em> untuk dilakukan</p>\r\n', 'gambar4.png'),
+(2, 2, 'Humas 1', '<p><strong>Lorem ipsum dolor sit a</strong>met consectetur adipisicing elit. Sit, consequuntur quisquam. Qui ullam asperiores expedita eos! Eveniet pariatur alias vel deserunt velit beatae quis. Dignissimos libero temporibus sit. Alias ab fugit rerum doloremque consectetur temporibus suscipit ducimus tempore. Facilis, adipisci! Vero deleniti unde commodi vel ipsa totam dolorum eligendi ipsam, ducimus, qui, iusto labore odio neque fugit quos eos fuga nisi laboriosam? Maxime ipsa ratione dolore iste in accusamus ullam earum provident, atque ea illo sit eos. Nesciunt saepe adipisci odio deleniti nobis voluptatibus sint provident corrupti accusamus repellat earum cupiditate debitis architecto quisquam dolorem, veniam porro ducimus at sunt .</p>\r\n', 'gambar3.png'),
+(3, 3, 'Danus 1', '<p>Lorem ipsum dolo<em>r sit amet consectetur adipisicing elit. Sit, consequuntur quisquam. Qui ullam asperiores expedita eos! Eveniet pariatur alias vel deserunt velit beatae quis. Dignissimos libero temporibus sit. Alias ab fugit rerum doloremque consectetur temporibus suscipit ducimus tempore. Facilis, adipisci! Vero deleniti unde commodi vel ipsa totam dolorum eligendi ipsam, ducimus, qui, iusto labore odio neque fugit quos eos fuga nisi laboriosam? Maxime ipsa ratione dolore iste in accusamus ullam earum provident, atque ea illo sit eos. Nesciunt saepe adipisci odio deleniti nobis voluptatibus sint provident corrupti accusamus repellat earum cupiditate debitis architecto quisquam dolorem, veniam porro ducimus at sunt .</em></p>\r\n', 'gambar2.png'),
+(4, 2, 'Humas 2', '<p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, consequuntur quisquam. Qui ullam asperiores expedita eos! Eveniet pariatur alias vel deserunt velit beatae quis. Dignissimos libero temporibus sit. Alias ab fugit rerum doloremque </strong>consectetur temporibus suscipit ducimus tempore. Facilis, adipisci! Vero deleniti unde commodi vel ipsa totam dolorum eligendi ipsam, ducimus, qui, iusto labore odio neque fugit quos eos fuga nisi laboriosam? Maxime ipsa ratione dolore iste in accusamus ullam earum provident, atque ea illo sit eos. Nesciunt saepe adipisci odio deleniti nobis voluptatibus sint provident corrupti accusamus repellat earum cupiditate debitis architecto quisquam dolorem, veniam porro ducimus at sunt .</p>\r\n', 'gambar41.png'),
+(5, 1, 'Syiar 2', '<p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, consequuntur quisquam. Qui ullam asperiores expedita eos! Eveniet pariatur alias vel deserunt velit beatae quis. Dignissimos libero temporibus sit. Alias ab fugit rerum doloremque consectetur temporibus suscipit ducimus tempore. Facilis, adipisci! Vero deleniti unde commodi vel ipsa totam dolorum eligendi ipsam, ducimus, qui, iusto labore odio neque fugit quos eos fuga nisi la</em>boriosam? Maxime ipsa ratione dolore iste in accusamus ullam earum provident, atque ea illo sit eos. Nesciunt saepe adipisci odio deleniti nobis voluptatibus sint provident corrupti accusamus repellat earum cupiditate debitis architecto quisquam dolorem, veniam porro ducimus at sunt .</p>\r\n', 'gambar1.png'),
+(7, 4, 'Penyiar 1', '<p>isi dari penyiar 1</p>\r\n', 'gambar33.png'),
+(11, 10, 'Siaran Radio 1', '<p>isi penyiar 1</p>\r\n', '121.png'),
+(12, 7, 'Syiar 2', '<p>isi syiar 2</p>\r\n', '12.png'),
+(13, 10, 'Penyiar 2', '<p>isi penyiar 2</p>\r\n', 'gambar43.png'),
+(14, 8, 'Humas 2', '<p>isi humas 2</p>\r\n', 'gambar13.png'),
+(15, 8, 'Humas 3', '<p>isi humas 3</p>\r\n', 'gambar35.png'),
+(16, 9, 'Danus 2', '<p>isi danus 2</p>\r\n', 'gambar25.png');
+=======
 INSERT INTO `isi_proker` (`id`, `id_divisi_proker`, `judul_proker`, `post_slug`, `deskripsi_proker`, `cover_proker`) VALUES
 (1, 1, 'Syiar 1', '', '<p><strong>Syiar adalah</strong> hal<em> yang baik</em> untuk dilakukan</p>\r\n', 'gambar4.png'),
 (2, 2, 'Humas 1', '', '<p><strong>Lorem ipsum dolor sit a</strong>met consectetur adipisicing elit. Sit, consequuntur quisquam. Qui ullam asperiores expedita eos! Eveniet pariatur alias vel deserunt velit beatae quis. Dignissimos libero temporibus sit. Alias ab fugit rerum doloremque consectetur temporibus suscipit ducimus tempore. Facilis, adipisci! Vero deleniti unde commodi vel ipsa totam dolorum eligendi ipsam, ducimus, qui, iusto labore odio neque fugit quos eos fuga nisi laboriosam? Maxime ipsa ratione dolore iste in accusamus ullam earum provident, atque ea illo sit eos. Nesciunt saepe adipisci odio deleniti nobis voluptatibus sint provident corrupti accusamus repellat earum cupiditate debitis architecto quisquam dolorem, veniam porro ducimus at sunt .</p>\r\n', 'gambar3.png'),
@@ -74,6 +93,7 @@ INSERT INTO `isi_proker` (`id`, `id_divisi_proker`, `judul_proker`, `post_slug`,
 (14, 8, 'Humas 2', '', '<p>isi humas 2</p>\r\n', 'gambar13.png'),
 (15, 8, 'Humas 3', '', '<p>isi humas 3</p>\r\n', 'gambar35.png'),
 (16, 9, 'Danus 2', '', '<p>isi danus 2</p>\r\n', 'gambar25.png');
+>>>>>>> ishlah
 
 -- --------------------------------------------------------
 
@@ -109,8 +129,12 @@ INSERT INTO `tb_artikel` (`id`, `judul_artikel`, `post_slug`, `isi_artikel`, `po
 (12, 'Artikel 11', 'artikel-11', '<p>Lorem ipsu dasokjdas Aritkle 11</p>\r\n', 'admin', 'gambar18.png', 1614084855),
 (15, 'Artikel 12', 'artikel-12', '<p>Isi artikel 12 lorem ipsi m1bkasboda&nbsp;</p>\r\n', 'admin', 'gambar19.png', 1614161290),
 (17, 'Artikel 13', 'artikel-13.html', '<p><em><strong>Isi Artikel 13</strong></em></p>\r\n', 'admin', 'gambar33.png', 1614161341),
+<<<<<<< HEAD
+(20, 'Artikel 14', 'artikel-14.html', '<p>isi artikel 14 coba slug</p>\r\n', 'admin', 'logo_masjid_3.jpg', 1615303291);
+=======
 (20, 'Artikel 14', 'artikel-14.html', '<p>isi artikel 14 coba slug</p>\r\n', 'admin', 'logo_masjid_3.jpg', 1615303291),
 (21, 'Artikel 15', 'artikel-15.html', '<p>asd</p>\r\n', 'admin', 'logo_masjid_4.png', 1615353058);
+>>>>>>> ishlah
 
 -- --------------------------------------------------------
 
@@ -212,8 +236,12 @@ INSERT INTO `tb_pendaftar` (`id`, `nama`, `email`, `no_wa`, `jkel`, `id_fakultas
 (1, 'Ilham Fikri Yanuarto', 'ilhmfikri77@gmail.com', '081315014043', 'Laki-laki', 4, 7, '2017', 'Ilham Fikri Yanuarto', '1614488090'),
 (2, 'Winanda Marasoli Maksum', 'winanda@gmail.com', '08571231932', 'Laki-laki', 3, 5, '2017', 'ingin menjadi lebih baik lagi', '1614488090'),
 (3, 'M Refaldo', 'refaldo@gmail.com', '085713238990', 'Laki-laki', 4, 5, '2017', 'Ingin menambah relasi dan ilmu', '1615301035'),
+<<<<<<< HEAD
+(4, 'Coba 1', 'admin@test.com', '08571231932', 'Perempuan', 1, 0, '2017', 'lopk', '1615301450');
+=======
 (4, 'Coba 1', 'admin@test.com', '08571231932', 'Perempuan', 1, 1, '2017', 'lopk', '1615301450'),
 (5, 'tes', 'admin@test.com', '08571231932', 'Laki-laki', 2, 3, '2017', 'tes', '1615352199');
+>>>>>>> ishlah
 
 -- --------------------------------------------------------
 
@@ -372,7 +400,11 @@ ALTER TABLE `isi_proker`
 -- AUTO_INCREMENT for table `tb_artikel`
 --
 ALTER TABLE `tb_artikel`
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+>>>>>>> ishlah
 
 --
 -- AUTO_INCREMENT for table `tb_fakultas`
@@ -396,7 +428,11 @@ ALTER TABLE `tb_jadwal`
 -- AUTO_INCREMENT for table `tb_pendaftar`
 --
 ALTER TABLE `tb_pendaftar`
+<<<<<<< HEAD
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+=======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+>>>>>>> ishlah
 
 --
 -- AUTO_INCREMENT for table `tb_prodi`
