@@ -24,7 +24,11 @@
                     <label>Upload Foto</label>
                     <input type="file" class="form-control" name="file">
                     <input type="hidden" name="filelama" value="">
-                    <img src="<?= base_url('assets/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="100">
+                    <img src="<?= base_url('assets/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="100"><br>
+                    <span class="text-danger"><small class="text-danger">
+                            Format yang diizinkan : jpg | png | jpeg | gif <p>
+                                Max Size : 2MB</p>
+                        </small></span>
                 </div>
 
 

@@ -6,6 +6,7 @@
          <h1 class="h3 mb-2 text-gray-800">Kelola Isi Proker</h1>
      </div>
 
+     <?php echo $this->session->flashdata('message') ?>
      <?php $this->view('messages') ?>
 
      <!-- DataTales Example -->
