@@ -72,7 +72,7 @@ class Galeri_admin extends CI_Controller
     // delete
     public function deletedata($id, $image_galeri)
     {
-        $path = './assets/galeri';
+        $path = './assets/galeri/';
         @unlink($path . $image_galeri);
 
         $where = array('id' => $id);
@@ -100,7 +100,7 @@ class Galeri_admin extends CI_Controller
     public function updatedata()
     {
         $judul = $this->input->post('judul');
-        $path = './assets/galeri';
+        $path = './assets/galeri/';
         $id   = $this->input->post('id');
 
         $kondisi = array('id' => $id);

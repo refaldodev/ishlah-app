@@ -89,7 +89,7 @@ class Struktur extends CI_Controller
     {
         $id   = $this->input->post('id');
 
-        $path = './assets/struktur_organisai';
+        $path = './assets/struktur_organisai/';
 
         $kondisi = array('id' => $id);
 
@@ -116,10 +116,12 @@ class Struktur extends CI_Controller
                 $this->session->set_flashdata('flash', 'Diubah');
                 redirect('struktur/index');
             } else {
-                die("gagal update");
+                $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+                redirect('struktur/index');
             }
         } else {
-            echo "tidak masuk";
+            $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+            redirect('struktur/index');
         }
     }
 }

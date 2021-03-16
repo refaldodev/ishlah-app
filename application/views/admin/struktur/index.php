@@ -1,6 +1,7 @@
  <!-- Begin Page Content -->
  <div class="container-fluid">
 
+     <?php echo $this->session->flashdata('message') ?>
      <?php $this->view('messages') ?>
 
      <!-- DataTales Example -->

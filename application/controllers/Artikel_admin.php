@@ -113,8 +113,9 @@ class Artikel_admin extends CI_Controller
     // delete
     public function deletedata($id, $cover_artikel)
     {
-        $path = './assets/cover_artikel';
-        @unlink($path . $cover_artikel);
+        $path = './assets/cover_artikel/';
+        unlink($path . $cover_artikel);
+
 
         $where = array('id' => $id);
         $this->Artikel_model->delete($where);
@@ -153,7 +154,7 @@ class Artikel_admin extends CI_Controller
         $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
         $slug = $pre_slug;
 
-        $path = './assets/cover_artikel';
+        $path = './assets/cover_artikel/';
 
         $kondisi = array('id' => $id);
 
@@ -181,10 +182,11 @@ class Artikel_admin extends CI_Controller
                 @unlink($path . $this->input->post('filelama'));
 
                 $this->Artikel_model->update($data, $kondisi);
-                $this->session->set_flashdata('flash', 'Diedit');
+                $this->session->set_flashdata('flash', 'Diubah');
                 redirect('artikel_admin/index');
             } else {
-                die("gagal update");
+                $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+                redirect('artikel_admin/index');
             }
         } else {
             // die("Tanpa file");

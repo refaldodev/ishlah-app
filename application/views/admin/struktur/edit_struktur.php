@@ -15,6 +15,10 @@
                  <div class="form-group">
                      <label>Upload Foto</label>
                      <input type="file" class="form-control" name="fotopost" value="<?= $data->image_struktur ?>" required>
+                     <span class="text-danger"><small class="text-danger">
+                             Format yang diizinkan : jpg | png | jpeg | gif <p>
+                                 Max Size : 2MB</p>
+                         </small></span>
                  </div>
 
                  <!-- file lama -->

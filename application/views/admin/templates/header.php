@@ -82,7 +82,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Pages</span>
@@ -99,7 +99,7 @@
                         <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Charts -->
             <li class="nav-item <?= isset($is_artikel) ? "active" : "" ?>">

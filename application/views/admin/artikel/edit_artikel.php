@@ -29,7 +29,11 @@
                      <input type="file" class="form-control" name="fotopost">
                      <!-- file lama -->
                      <input type="hidden" name="filelama" value="<?= $data->cover_artikel ?>">
-                     <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" alt="" width="100">
+                     <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" alt="" width="100"><br>
+                     <span class="text-danger"><small class="text-danger">
+                             Format yang diizinkan : jpg | png | jpeg | gif <p>
+                                 Max Size : 2MB</p>
+                         </small></span>
                  </div>
                  <div class="form-group">
                      <label>Uploader</label>

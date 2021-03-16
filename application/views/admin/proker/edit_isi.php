@@ -35,7 +35,12 @@
                  </div>
                  <div class="form-group">
                      <label>Upload Foto</label>
-                     <input type="file" class="form-control" name="fotopost" required>
+                     <input type="file" class="form-control" name="fotopost">
+                     <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" alt="" width="90" height="110"><br>
+                     <span class="text-danger"><small class="text-danger">
+                             Format yang diizinkan : jpg | png | jpeg | gif <p>
+                                 Max Size : 2MB</p>
+                         </small></span>
                  </div>
 
                  <!-- file lama -->

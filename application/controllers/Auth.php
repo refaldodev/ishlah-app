@@ -52,7 +52,7 @@ class Auth extends CI_Controller
                     redirect('auth');
                 }
             } else {
-                $this->session->set_flashdata('message', '<script>alert("Email is not registered !")</script>');
+                $this->session->set_flashdata('message', '<script>alert("Username is not registered !")</script>');
                 redirect('auth');
             }
         }

@@ -182,7 +182,7 @@ class Divisi_proker extends CI_Controller
     // delete
     public function hapus_isi($id, $cover_proker)
     {
-        $path = './assets/cover_proker';
+        $path = './assets/cover_proker/';
         @unlink($path . $cover_proker);
 
         $where = array('id' => $id);
@@ -219,8 +219,12 @@ class Divisi_proker extends CI_Controller
         $id_divisi_proker            = $this->input->post('id_divisi_proker');
         $judul_proker            = $this->input->post('judul_proker');
         $deskripsi_proker            = $this->input->post('deskripsi_proker');
+        $string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul_proker); //filter karakter unik dan replace dengan kosong ('')
+        $trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+        $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+        $slug = $pre_slug;
 
-        $path = './assets/cover_proker';
+        $path = './assets/cover_proker/';
 
         $kondisi = array('id' => $id);
 
@@ -250,10 +254,41 @@ class Divisi_proker extends CI_Controller
                 $this->session->set_flashdata('flash', 'Diedit');
                 redirect('divisi_proker/index_proker');
             } else {
-                die("gagal update");
+                $this->session->set_flashdata('message', '<script>alert("Terjadi Kesalahan Mohon Periksa Kembali Size dan Format Image")</script>');
+                redirect('divisi_proker/index_proker');
             }
         } else {
-            echo "tidak masuk";
+            // die("Tanpa file");
+            $id   = $this->input->post('id');
+            $id_divisi_proker            = $this->input->post('id_divisi_proker');
+            $judul_proker            = $this->input->post('judul_proker');
+            $deskripsi_proker            = $this->input->post('deskripsi_proker');
+            $string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul_proker); //filter karakter unik dan replace dengan kosong ('')
+            $trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+            $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+            $slug = $pre_slug;
+
+
+
+            $kondisi = array('id' => $id);
+            // $id = $_POST['id'];
+
+            // $query = $this->db->query("UPDATE `tb_artikel` SET `judul_artikel` = '$judul' WHERE `id` = '$id' ");
+            $data = array(
+                'id_divisi_proker'       => $id_divisi_proker,
+                'judul_proker'       => $judul_proker,
+                'deskripsi_proker'       => $deskripsi_proker,
+                'post_slug'       => $slug
+            );
+            $query = $this->Proker_model->update($data, $kondisi);
+
+            if ($query) {
+                $this->session->set_flashdata('flash', 'Diubah');
+                redirect('divisi_proker/index_proker');
+            } else {
+                $this->session->set_flashdata('diupdate', 'tidak');
+                redirect('divisi_proker/index_proker');
+            }
         }
     }
 }

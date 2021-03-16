@@ -36,6 +36,10 @@
                  <div class="form-group">
                      <label>Upload Foto</label>
                      <input type="file" class="form-control" name="fotopost" required>
+                     <span class="text-danger"><small class="text-danger">
+                             Format yang diizinkan : jpg | png | jpeg | gif <p>
+                                 Max Size : 2MB</p>
+                         </small></span>
                  </div>
 
                  <a href="<?= base_url('divisi_proker/index_proker') ?>" class="btn btn-secondary">Kembali</a>
