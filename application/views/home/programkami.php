@@ -14,8 +14,8 @@
                  <img src="<?= base_url('assets/cover_proker/' . $b['cover_proker']) ?>" alt="">
              </div>
              <div class="col-12 col-lg-12 col-sm-12 col-md-12 isi ">
-                 <h5><?= $b['id_divisi_proker'] ?></h5>
-                 <h5><?= $b['judul_proker'] ?></h5>
+                 <!-- <h5>Judul Program : </h5> -->
+                 <!-- <h5><?= $b['judul_proker'] ?></h5> -->
                  <br>
                  <h5 class="deskripsi">Deskripsi Program</h5>
                  <p><?= $b['deskripsi_proker'] ?></p>

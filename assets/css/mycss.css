@@ -1368,7 +1368,7 @@ section .teks-sejarah p {
 	}
 
 	.carousel .carousel-inner .carousel-item .carousel-caption {
-		margin-bottom: 320px !important;
+		margin-bottom: 220px !important;
 	}
 
 	.carousel .carousel-inner .carousel-item .carousel-caption h5 {
@@ -1376,8 +1376,6 @@ section .teks-sejarah p {
 		font-weight: 700;
 		font-family: 'Montserrat', sans-serif;
 		text-shadow: 2px 2px grey;
-
-
 	}
 
 	.carousel .carousel-inner .carousel-item .carousel-caption p {
@@ -2016,7 +2014,7 @@ section .teks-sejarah p {
 	}
 
 	.pendaftaran .form-link:focus {
-		-webkit-focus border: 1px solid var(--background-button-fill);
+
 		box-shadow: 0 0 2px var(--background-button-fill);
 
 	}
