@@ -54,7 +54,7 @@ class Pendaftaran extends CI_Controller
             'id_prodi'        => $id_prodi,
             'angkatan'        => $angkatan,
             'motivasi'        => $motivasi,
-            'date_created'        => time()
+            'date_created'        => date('d M Y')
         );
 
         $this->Pendaftaran_model->tambah_pendaftar($data, 'tb_pendaftar');
