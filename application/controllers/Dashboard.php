@@ -7,6 +7,7 @@ class Dashboard extends CI_Controller
         parent::__construct();
         $this->load->model('User_model');
         $this->User_model->keamanan();
+        $this->load->model('Pendaftaran_model');
     }
 
     public function index()
@@ -33,7 +34,19 @@ class Dashboard extends CI_Controller
 
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/topbar', $data);
-        $this->load->view('admin/dashboard/index');
+        $this->load->view('admin/dashboard/index', $data);
         $this->load->view('admin/templates/footer');
+    }
+    public function chartJS()
+    {
+        $get = $this->Pendaftaran_model->getData();
+        $data['jml_pendaftar'] = $get;
+        echo json_encode($data);
+    }
+    public function pieJS()
+    {
+        $get = $this->Pendaftaran_model->getDataPie();
+        $data['jeniskelamin'] = $get;
+        echo json_encode($data);
     }
 }

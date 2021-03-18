@@ -37,14 +37,25 @@ class Pendaftaran_model extends CI_model
         $query = $this->db->get();
         return $query->result();
     }
-
+    public function getData()
+    {
+        $this->db->select('date_created, COUNT(id) as total');
+        $this->db->group_by('date_created');
+        $this->db->order_by('total', 'asc');
+        return $this->db->get('tb_pendaftar')->result();
+    }
+    public function getDataPie()
+    {
+        $this->db->select('jkel, COUNT(jkel) as total');
+        $this->db->group_by('jkel');
+        $this->db->order_by('total', 'asc');
+        return $this->db->get('tb_pendaftar')->result();
+    }
     public function hapus_data($id)
     {
-
         $this->db->where('id', $id);
         $this->db->delete('tb_pendaftar');
     }
-
 
     function get_prodi($id)
     {
