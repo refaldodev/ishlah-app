@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/mycss.css">
     <title> <?= $judul; ?></title>
     <link rel="icon" href="<?= base_url('assets/img/logo.png') ?>">
+   <link rel="stylesheet" href="/assets/lib/font-awesome/css/font-awesome.css" type="text/css">
 
 
     <!-- Custom styles for this template-->

@@ -22,12 +22,16 @@
       </div>
       <div class="col-12 col-lg-4 col-md-6 col-sm-4  bio  mt-4">
         <h3 class="font-weight-bold">Bantuan</h3>
+        <a href="<?= base_url('home/bantuan') ?>" class="text-decoration-none text-white">
+          <h6>Bantuan</h6>
+        </a>
         <a href="<?= base_url('home/tentangkami') ?>" class="text-decoration-none text-white">
           <h6>Tentang Kami</h6>
         </a>
         <a href="<?= base_url('home/faq') ?>" class="text-decoration-none text-white">
           <h6>Faq</h6>
         </a>
+
 
 
       </div>
