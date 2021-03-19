@@ -35,13 +35,13 @@ class Pendaftaran_model extends CI_model
         $this->db->join('tb_prodi as prd', $this->table_name . '.id_prodi=prd.id', 'INNER');
         $this->db->order_by('date_created', 'asc');
         $query = $this->db->get();
-        return $query->result();
+        return $query;
     }
     public function getData()
     {
         $this->db->select('date_created, COUNT(id) as total');
         $this->db->group_by('date_created');
-        $this->db->order_by('total', 'asc');
+        $this->db->order_by('date_created', 'asc');
         return $this->db->get('tb_pendaftar')->result();
     }
     public function getDataPie()
@@ -51,10 +51,19 @@ class Pendaftaran_model extends CI_model
         $this->db->order_by('total', 'asc');
         return $this->db->get('tb_pendaftar')->result();
     }
-    public function hapus_data($id)
+    public function getDataTanggal($awal, $akhir)
     {
-        $this->db->where('id', $id);
-        $this->db->delete('tb_pendaftar');
+        $this->db->select('tb_pendaftar.*');
+        $this->db->select('tb_fakultas.nama_fakultas, tb_prodi.nama_prodi');
+        $this->db->from('tb_pendaftar');
+        $this->db->join('tb_fakultas', 'tb_pendaftar.id_fakultas=tb_fakultas.id', 'INNER');
+        $this->db->join('tb_prodi', 'tb_pendaftar.id_prodi=tb_prodi.id', 'INNER');
+        $this->db->order_by('date_created', 'asc');
+        $this->db->where('tb_pendaftar.date_created >=', $awal);
+        $this->db->where('tb_pendaftar.date_created <=', $akhir);
+
+        $query = $this->db->get();
+        return $query;
     }
 
     function get_prodi($id)
@@ -65,5 +74,11 @@ class Pendaftaran_model extends CI_model
     function tambah_pendaftar($data)
     {
         $this->db->insert('tb_pendaftar', $data);
+    }
+
+    public function hapus_data($where, $table)
+    {
+        $this->db->where($where);
+        $this->db->delete($table);
     }
 }

@@ -44,9 +44,10 @@
                                 <td><img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="" width="90" height="110"></td>
                                 <td>
 
-                                    <?= anchor('galeri_admin/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
-                                    <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->judul ?> ?')"><?= anchor('galeri_admin/deletedata/' . $data->id . '/' . $data->image_galeri, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
+                                    <a href="<?= base_url('galeri_admin/edit/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                                    <a href="<?= base_url('galeri_admin/deletedata/' . $data->id . '/' . $data->image_galeri) ?>" onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->judul ?> ?')" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a>
+
 
 
                                 </td>
