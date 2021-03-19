@@ -55,6 +55,15 @@ class Home extends CI_Controller
         $this->load->view('home/faq', $data);
         $this->load->view('templates/footer');
     }
+    public function bantuan()
+    {
+        $data['judul'] = 'Bantuan - LDK Ishlah';
+        $this->load->view('templates/header', $data);
+        $this->load->view('home/bantuan', $data);
+        $this->load->view('templates/footer');
+    }
+
+
     public function programkami($slug)
     {
         $data['judul'] = 'Program Kami - LDK Ishlah';

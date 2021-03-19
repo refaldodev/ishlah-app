@@ -65,14 +65,14 @@
               Profile
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item 
+              <a class="dropdown-item
               <?php if ($this->uri->segment('2') == 'index') {
                 echo "aktif";
               } ?>" href="<?= base_url('profil/index') ?>">Sejarah</a>
               <a class="dropdown-item <?php if ($this->uri->segment('2') == 'visi') {
                                         echo "aktif";
                                       } ?>" href="<?= base_url('profil/visi') ?>">Visi & Misi</a>
-              <a class="dropdown-item 
+              <a class="dropdown-item
               <?php if ($this->uri->segment('2') == 'struktur') {
                 echo "aktif";
               } ?>" href="<?= base_url('profil/struktur') ?>">Struktur Pengurus</a>
@@ -80,13 +80,13 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-hover mr-3 
+            <a class="nav-link nav-hover mr-3
             <?php if ($this->uri->segment('1') == 'artikel') {
               echo "aktif";
             } ?>" href="<?= base_url('artikel') ?>">Artikel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-hover mr-3 
+            <a class="nav-link nav-hover mr-3
             <?php if ($this->uri->segment('1') == 'galeri') {
               echo "aktif";
             } ?>" href="<?= base_url('galeri'); ?>">Galeri</a>
@@ -98,6 +98,10 @@
                 echo "aktif";
               } ?>" href="<?= base_url('jadwalkegiatan'); ?>">Jadwal Kegiatan</a>
           </li>
+
+      
+
+
 
         </ul>
       </div>
