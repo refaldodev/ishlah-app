@@ -41,9 +41,10 @@
                                  <td><?= $no++ ?></td>
                                  <td><?= $data->nama_divisi ?></td>
                                  <td>
-                                     <?= anchor('divisi_proker/edit_divisi/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
-                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->nama_divisi ?> ?')"><?= anchor('divisi_proker/hapus_divisi/' . $data->id, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
+                                     <a href="<?= base_url('divisi_proker/edit_divisi/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                                     <a href="<?= base_url('divisi_proker/hapus_divisi/' . $data->id) ?>" onclick="javascript: return confirm('Anda Yakin ingin menghapus <?= $data->nama_divisi ?> ?')" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a>
+
 
 
                                  </td>

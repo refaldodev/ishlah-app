@@ -49,9 +49,10 @@
                                  <td><?= $data->tempat ?></td>
                                  <td><?= $data->pic ?></td>
                                  <td>
-                                     <?= anchor('jadwalkegiatan_admin/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
-                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->judul_kegiatan ?> ?')"><?= anchor('jadwalkegiatan_admin/hapus/' . $data->id, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
+                                     <a href="<?= base_url('jadwalkegiatan_admin/edit/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                                     <a href="<?= base_url('jadwalkegiatan_admin/hapus/' . $data->id) ?>" onclick="javascript: return confirm('Anda Yakin ingin menghapus <?= $data->judul_kegiatan ?> ?')" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a>
+
 
 
                                  </td>

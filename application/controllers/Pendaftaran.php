@@ -36,6 +36,7 @@ class Pendaftaran extends CI_Controller
 
     public function tambah_pendaftar()
     {
+        date_default_timezone_set("Asia/Bangkok");
         $nama            = $this->input->post('nama');
         $email            = $this->input->post('email');
         $no_wa            = $this->input->post('no_wa');
@@ -54,7 +55,7 @@ class Pendaftaran extends CI_Controller
             'id_prodi'        => $id_prodi,
             'angkatan'        => $angkatan,
             'motivasi'        => $motivasi,
-            'date_created'        => date('d M Y')
+            'date_created'        => date('Y-m-d')
         );
 
         $this->Pendaftaran_model->tambah_pendaftar($data, 'tb_pendaftar');

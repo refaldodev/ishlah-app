@@ -27,10 +27,12 @@ class Dashboard extends CI_Controller
         $data['jml_user'] = $this->db->query('SELECT
                                             COUNT(id) as jumlah_user
                                             FROM user')->row();
-
+        // $date = date('Y-m-d');
         $data['jml_pendaftar'] = $this->db->query('SELECT
                                             COUNT(id) as jumlah
-                                            FROM tb_pendaftar WHERE date_created = day(now())')->row();
+                                            FROM tb_pendaftar WHERE date_created = date(now())')->row();
+        // FROM tb_pendaftar WHERE date_created = day(now())')->row();
+
 
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/topbar', $data);

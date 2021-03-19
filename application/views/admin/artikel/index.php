@@ -41,10 +41,13 @@
                                  <td><?= $no++ ?></td>
                                  <td><?= $data->judul_artikel ?></td>
                                  <td>
-                                     <?= anchor('artikel_admin/detail/' . $data->id, '<div class="btn btn-outline-primary"><i class="fa fa-search-plus"></i></div>') ?>
-                                     <?= anchor('artikel_admin/edit/' . $data->id, '<div class="btn btn-outline-primary"><i class="far fa-edit"></i></div>') ?>
 
-                                     <span onclick="javascript: return confirm('Anda Yakin ingin menghapus <?php echo $data->judul_artikel ?> ?')"><?= anchor('artikel_admin/deletedata/' . $data->id . '/' . $data->cover_artikel, '<div class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></div>') ?></span>
+
+                                     <a href="<?= base_url('artikel_admin/detail/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Detail" class="btn btn-outline-info"><i class="fa fa-search-plus"></i></a>
+                                     <a href="<?= base_url('artikel_admin/edit/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                                     <a href="<?= base_url('artikel_admin/deletedata/' . $data->id . '/' . $data->cover_artikel) ?>" onclick="javascript: return confirm('Anda Yakin ingin menghapus <?= $data->judul_artikel ?> ?')" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a>
+
+
 
 
                                  </td>
