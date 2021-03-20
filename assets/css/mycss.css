@@ -1482,7 +1482,8 @@ section .teks-sejarah p {
 
 	section.artikelt img.gambarartikel {
 		min-width: 100% !important;
-		max-height: 200px !important;
+		min-height: 420px !important;
+		max-height: 420px !important;
 	}
 
 	section.artikelt .capt p {
