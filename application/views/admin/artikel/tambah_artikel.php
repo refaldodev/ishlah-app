@@ -14,17 +14,17 @@
          <div class="card-body">
              <form method="POST" action="<?= base_url('artikel_admin/insertdata') ?>" enctype="multipart/form-data">
                  <div class="form-group">
-                     <label>Judul Artikel</label>
+                     <label>Judul Artikel<span class="text-danger"> *</span></label>
                      <input type="text" class="form-control" placeholder="Isi Judul Artikel" name="judul_artikel" required>
                  </div>
 
 
                  <div class="form-group">
-                     <label>Deskripsi Artikel</label>
+                     <label>Deskripsi Artikel<span class="text-danger"> *</span></label>
                      <textarea id="editor1" name="isi_artikel" required></textarea>
                  </div>
                  <div class="form-group">
-                     <label>Upload Cover Artikel</label>
+                     <label>Upload Cover Artikel<span class="text-danger"> *</span></label>
                      <input type="file" class="form-control" name="fotopost" required>
                      <span class="text-danger"><small class="text-danger">
                              Format yang diizinkan : jpg | png | jpeg | gif <p>

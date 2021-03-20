@@ -18,7 +18,7 @@
                  <form method="POST" action="<?= base_url('divisi_proker/update_divisi') ?>">
 
                      <div class="form-group">
-                         <label>Nama Divisi</label>
+                         <label>Nama Divisi<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Nama Divisi" name="nama_divisi" value="<?= $data->nama_divisi ?>" required>
                      </div>
 

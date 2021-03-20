@@ -75,7 +75,7 @@
              <div class="modal-body">
                  <form action="<?= base_url('divisi_proker/tambah_divisi') ?>" method="post">
                      <div class="form-group">
-                         <label>Nama Divisi Proker</label>
+                         <label>Nama Divisi Proker<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Isi nama Divisi" name="nama_divisi">
                      </div>
 

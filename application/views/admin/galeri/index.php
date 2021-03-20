@@ -78,11 +78,11 @@
             <div class="modal-body">
                 <form method="POST" action="<?= base_url('galeri_admin/insertdata') ?>" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label>Judul</label>
+                        <label>Judul<span class="text-danger"> *</span></label>
                         <input type="text" class="form-control" placeholder="Isi Judul Galeri" name="judul" required>
                     </div>
                     <div class="form-group">
-                        <label>Upload Galeri</label>
+                        <label>Upload Galeri<span class="text-danger"> *</span></label>
                         <input type="file" class="form-control" name="file" required>
                         <span class="text-danger"><small class="text-danger">
                                 Format yang diizinkan : jpg | png | jpeg | gif <p>

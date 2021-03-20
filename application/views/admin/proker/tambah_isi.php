@@ -14,7 +14,7 @@
          <div class="card-body">
              <form method="POST" action="<?= base_url('divisi_proker/insertdata') ?>" enctype="multipart/form-data">
                  <div class="form-group">
-                     <label>Pilih Divisi Proker</label>
+                     <label>Pilih Divisi Proker<span class="text-danger"> *</span></label>
                      <select name="id_divisi_proker" class="form-control">
                          <option>--- Pilih Divisi Proker ---</option>
                          <?php
@@ -26,15 +26,15 @@
                  </div>
 
                  <div class="form-group">
-                     <label>Judul Proker</label>
+                     <label>Judul Proker<span class="text-danger"> *</span></label>
                      <input type="text" class="form-control" placeholder="Isi Judul Proker" name="judul_proker" required>
                  </div>
                  <div class="form-group">
-                     <label>Deskripsi Proker</label>
+                     <label>Deskripsi Proker<span class="text-danger"> *</span></label>
                      <textarea id="editor1" name="deskripsi_proker" required></textarea>
                  </div>
                  <div class="form-group">
-                     <label>Upload Foto</label>
+                     <label>Upload Foto<span class="text-danger"> *</span></label>
                      <input type="file" class="form-control" name="fotopost" required>
                      <span class="text-danger"><small class="text-danger">
                              Format yang diizinkan : jpg | png | jpeg | gif <p>
