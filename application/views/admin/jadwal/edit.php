@@ -18,23 +18,23 @@
                  <form method="POST" action="<?= base_url('jadwalkegiatan_admin/update') ?>">
 
                      <div class="form-group">
-                         <label>Judul Kegiatan</label>
+                         <label>Judul Kegiatan<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Judul Kegiatan" name="judul_kegiatan" value="<?= $data->judul_kegiatan ?>" required>
                      </div>
                      <div class="form-group">
-                         <label>Hari</label>
+                         <label>Hari<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Ex : Setiap Hari Senin" name="hari" value="<?= $data->hari ?>" required>
                      </div>
                      <div class="form-group">
-                         <label>Waktu</label>
+                         <label>Waktu<span class="text-danger"> *</span></label>
                          <input type="time" class="form-control" placeholder="Waktu" name="waktu" value="<?= $data->waktu ?>" required> s/d <input type="time" class="form-control" placeholder="Waktu" name="waktu2" value="<?= $data->waktu2 ?>" required>
                      </div>
                      <div class="form-group">
-                         <label>Tempat</label>
+                         <label>Tempat<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Ex : Via Zoom" name="tempat" value="<?= $data->tempat ?>" required>
                      </div>
                      <div class="form-group">
-                         <label>PIC / No. Whatsapp</label>
+                         <label>PIC / No. Whatsapp<span class="text-danger"> *</span></label>
                          <input type="number" class="form-control" placeholder="No. WA" name="pic" value="<?= $data->pic ?>" required>
                      </div>
 

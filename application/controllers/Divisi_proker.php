@@ -200,7 +200,7 @@ class Divisi_proker extends CI_Controller
         $data = array(
             'is_proker' => true,
             'is_isi' => true,
-            'title' => 'Data Master - Proker',
+            'title' => 'Edit Proker',
             'divisi_proker' => $this->db->get('divisi_proker')->result(),
             'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
         );

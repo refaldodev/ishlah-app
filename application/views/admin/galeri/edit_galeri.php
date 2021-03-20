@@ -17,18 +17,19 @@
                 <input type="hidden" name="id" value="<?= $id ?>">
 
                 <div class="form-group">
-                    <label>Judul</label>
+                    <label>Judul<span class="text-danger"> *</span></label>
                     <input type="text" class="form-control" name="judul" value="<?= $result[0]['judul'] ?>" required>
                 </div>
                 <div class="form-group">
-                    <label>Upload Foto</label>
+                    <label>Upload Foto <small>(Biarkan kosong jika tidak diganti) </small></label>
                     <input type="file" class="form-control" name="file">
-                    <input type="hidden" name="filelama" value="">
-                    <img src="<?= base_url('assets/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="100"><br>
                     <span class="text-danger"><small class="text-danger">
                             Format yang diizinkan : jpg | png | jpeg | gif <p>
                                 Max Size : 2MB</p>
                         </small></span>
+                    <input type="hidden" name="filelama" value="">
+                    <p>Foto saat ini </p>
+                    <img src="<?= base_url('assets/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="200"><br>
                 </div>
 
 

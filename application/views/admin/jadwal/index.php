@@ -81,23 +81,23 @@
              <div class="modal-body">
                  <form action="<?= base_url('jadwalkegiatan_admin/tambah') ?>" method="post">
                      <div class="form-group">
-                         <label>Judul Kegiatan</label>
+                         <label>Judul Kegiatan<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Judul Kegiatan" name="judul_kegiatan" required>
                      </div>
                      <div class="form-group">
-                         <label>Hari</label>
+                         <label>Hari<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Ex : Setiap Hari Senin" name="hari" required>
                      </div>
                      <div class="form-group">
-                         <label>Waktu</label>
+                         <label>Waktu<span class="text-danger"> *</span></label>
                          <input type="time" class="form-control" placeholder="Waktu" name="waktu"> s/d <input type="time" class="form-control" placeholder="Waktu" name="waktu2" required>
                      </div>
                      <div class="form-group">
-                         <label>Tempat</label>
+                         <label>Tempat<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Ex : Via Zoom" name="tempat" required>
                      </div>
                      <div class="form-group">
-                         <label>PIC / No. Whatsapp</label>
+                         <label>PIC / No. Whatsapp<span class="text-danger"> *</span></label>
                          <input type="number" class="form-control" placeholder="No. WA" name="pic" required>
                      </div>
 
