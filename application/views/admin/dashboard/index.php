@@ -153,10 +153,12 @@
 
                              <div class="mt-4 text-center small">
                                  <span class="mr-2">
-                                     <i class="fas fa-circle text-success"></i> Laki-laki
+                                     <i class="fas fa-circle text-success"></i>
+                                     Perempuan
                                  </span>
                                  <span class="mr-2">
-                                     <i class="fas fa-circle text-primary"></i> Perempuan
+                                     <i class="fas fa-circle text-primary"></i>
+                                     Laki-laki
                                  </span>
                              </div>
                          </div>
