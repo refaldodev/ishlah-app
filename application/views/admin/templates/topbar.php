@@ -35,6 +35,10 @@
                     Activity Log
                 </a> -->
                 <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="<?= base_url('auth/logout') ?>" data-toggle="modal" data-target="#bantuanModal">
+                    <i class="fas fa-question fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Bantuan
+                </a>
                 <a class="dropdown-item" href="<?= base_url('auth/logout') ?>" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout
