@@ -159,4 +159,43 @@ class User extends CI_Controller
         }
         redirect('user');
     }
+
+    public function edit_profile($id)
+    {
+        $this->form_validation->set_rules('name', 'Name', 'required|trim');
+        $this->form_validation->set_rules('username', 'Username', 'required|trim|is_unique[user.username]');
+        if ($this->input->post('password')) {
+
+            $this->form_validation->set_rules('password', 'Password', 'trim|min_length[5]');
+            $this->form_validation->set_rules('password2', 'Password', 'trim|min_length[5]|matches[password]');
+        }
+
+        $this->form_validation->set_message('required', '%s Masih kosong silahkan diisi');
+        $this->form_validation->set_message('matches', '{field} Tidak sesuai');
+        $this->form_validation->set_message('min_length', '{field} Minimal 5 karakter');
+        $this->form_validation->set_message('is_unique', '{field} sudah dipakai, silahkan ganti yang lain');
+        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
+
+        if ($this->form_validation->run() == FALSE) {
+            $data = array(
+                'row' => $this->User_model->getUserId($id),
+                'title' => 'Edit Profile',
+                'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
+            );
+            $this->load->view('admin/templates/header', $data);
+            $this->load->view('admin/templates/topbar', $data);
+            $this->load->view('admin/user/edit_profile', $data);
+            $this->load->view('admin/templates/footer');
+        } else {
+            $data = $this->input->post(NULL, TRUE);
+            $this->User_model->edit_profile($data);
+            if ($this->db->affected_rows() > 0) {
+                // echo "<script>alert('data berhasil di simpan');</script>";
+                // echo "<script>alert('data berhasil ditambah') </script>";
+                $this->session->set_flashdata('success', 'Data berhasil ditambah');
+            }
+
+            redirect('dashboard');
+        }
+    }
 }

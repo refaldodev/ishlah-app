@@ -79,7 +79,19 @@ class User_model extends CI_model
     }
 
 
+    public function edit_profile()
+    {
+        $data = [
+            "name" =>  $this->input->post('name', true),
+            "username" =>  $this->input->post('username', true),
+            "image" =>  'default.jpg',
+            "password" =>  password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
+            'date_created' => time()
 
+        ];
+        $this->db->where('id', $this->input->post('id'));
+        $this->db->update('user', $data);
+    }
 
     public function update_data($where, $data, $table)
     {
