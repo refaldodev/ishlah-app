@@ -27,7 +27,7 @@ class Galeri_admin extends CI_Controller
 
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/topbar', $data);
-        $this->load->view('admin/galeri/index');
+        $this->load->view('admin/galeri/index', $data);
         $this->load->view('admin/templates/footer');
     }
 

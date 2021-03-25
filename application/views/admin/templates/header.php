@@ -42,7 +42,7 @@
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                     <img src="<?= base_url('assets/img/logo.png') ?>" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">adm Ishlah</div>
+                <div class="sidebar-brand-text mx-3">Ishlah admin</div>
             </a>
 
             <!-- Divider -->
@@ -80,7 +80,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Member
+                Menu
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -152,7 +152,30 @@
                 </div>
             </li>
 
-          
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Profle
+            </div>
+            <li class="nav-item <?= isset($is_myprofile) ? "active" : "" ?>">
+                <a class="nav-link" href="<?= base_url('profile') ?>">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>My Profile</span></a>
+            </li>
+            <li class="nav-item <?= isset($is_profile) ? "active" : "" ?>">
+                <a class="nav-link" href="<?= base_url('profile/edit') ?>">
+                    <i class="fas fa-fw fa-user-edit"></i>
+                    <span>Edit Profile</span></a>
+            </li>
+            <li class="nav-item <?= isset($is_changepassword) ? "active" : "" ?>">
+                <a class="nav-link" href="<?= base_url('profile/changepassword') ?>">
+                    <i class="fas fa-fw fa-key"></i>
+                    <span>Change Password</span></a>
+            </li>
+
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

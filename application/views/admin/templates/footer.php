@@ -5,7 +5,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>Copyright &copy; 2020 Sistem Informasi’17 - Made With Love &hearts;</span>
         </div>
     </div>
 </footer>
@@ -32,7 +32,7 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Hubungi nomor berikut untuk mendapatkan bantuan : 08121918290</div>
+            <div class="modal-body">Hubungi nomor berikut untuk mendapatkan bantuan : 085839797013</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Kembali</button>
 

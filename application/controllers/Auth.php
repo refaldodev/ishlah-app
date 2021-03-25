@@ -65,13 +65,4 @@ class Auth extends CI_Controller
         $this->session->set_flashdata('message', '<script>alert("You have been Logout")</script>');
         redirect('auth');
     }
-
-    public function index1()
-    {
-
-        $data["judul"] = "Halaman Login";
-        $this->load->view('templates/auth_header', $data);
-        $this->load->view('auth/login');
-        $this->load->view('templates/auth_footer');
-    }
 }

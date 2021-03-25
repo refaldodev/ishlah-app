@@ -41,7 +41,7 @@
                         <input type="password" name="password" class="input" required>
                     </div>
                 </div>
-                <a href="#">Forgot Password?</a>
+                <a href="https://api.whatsapp.com/send?phone=6285839797013&text=Assalamu%27alaykum%2C%20Saya%20lupa%20password%20admin%20ishlah">Forgot Password?</a>
                 <button type="submit" class="btn">Login</button>
                 <!-- <input type="submit" name="" class="btn" value="Login"> -->
             </form>
