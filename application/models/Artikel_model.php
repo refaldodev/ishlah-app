@@ -51,7 +51,8 @@ class Artikel_model extends CI_Model
 
     public function getArtikel($limit, $start)
     {
-        $query = $this->db->query("SELECT * FROM tb_artikel ORDER BY date_created DESC")->result_array();
+        // $query = $this->db->query("SELECT * FROM tb_artikel ORDER BY date_created DESC", $limit, $start)->result_array();
+        $this->db->order_by('date_created', 'desc');
         $query = $this->db->get('tb_artikel', $limit, $start)->result_array();
         return $query;
     }
