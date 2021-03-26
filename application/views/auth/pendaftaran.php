@@ -10,16 +10,16 @@
                     <form action="pendaftaran/tambah_pendaftar" method="POST" class="mt-4">
                         <h1 class="title font-weight-bold">Daftar</h1>
                         <div class="form-group">
-                            <input type="text" placeholder="Nama" class="form-link" name="nama" autofocus required>
+                            <input type="text" placeholder="Nama" class="form-control" name="nama" autofocus required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" class="form-link" name="email" required>
+                            <input type="email" placeholder="Email" class="form-control" name="email" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" placeholder="No. Wa" class="form-link" name="no_wa" required>
+                            <input type="number" placeholder="No. Wa" class="form-control" name="no_wa" required>
                         </div>
                         <div class="form-group">
-                            <select name="jkel" id="" class="form-link" required>
+                            <select name="jkel" id="" class="form-control" required>
                                 <option value="Jenis Kelamin" disabled selected>
                                     Jenis Kelamin
                                 </option>
@@ -28,7 +28,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <select name="id_fakultas" id="fakultas" class="form-link" required>
+                            <select name="id_fakultas" id="fakultas" class="form-control" required>
                                 <option value="Fakultas" disabled selected>
                                     Fakultas </option>
 
@@ -41,17 +41,17 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <select name="id_prodi" id="prodi" class="form-link" required>
+                            <select name="id_prodi" id="prodi" class="form-control" required>
                                 <option value="Prodi" disabled selected>
                                     Program Studi </option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="number" placeholder="Angkatan" class="form-link" name="angkatan" required>
+                            <input type="number" placeholder="Angkatan" class="form-control" name="angkatan" required>
                         </div>
                         <div class="form-group">
                             <label for="">Motivasi bergabung dengan Ishlah?</label>
-                            <textarea name="motivasi" id="" cols="30" rows="10" class="form-link" required></textarea>
+                            <textarea name="motivasi" id="" cols="30" rows="10" class="form-control" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Kirim" class="form-link  btn-daftar">
