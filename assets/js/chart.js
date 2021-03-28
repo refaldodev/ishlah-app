@@ -91,11 +91,9 @@ fetch('http://localhost/ishlah-app/dashboard/pieJS')
   let jkel = dataPie.map(jkel => {
     return jkel.jkel;
   })    
-  console.log(jkel)
   let total = dataPie.map(pie => {
     return pie.total;
   })    
-  console.log(total)
 
 
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
