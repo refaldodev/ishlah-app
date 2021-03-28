@@ -39,9 +39,9 @@
         <h3 class="font-weight-bold">Ikuti kami di social media :</h3>
         <div class="row">
           <div class="col-lg-4 image-socmed">
-            <img src="<?= base_url('assets/img/facebook.png') ?>" alt="">
-            <img src="<?= base_url('assets/img/youtube.png') ?>" alt="" class="youtube">
-            <img src="<?= base_url('assets/img/instagram.png') ?>" alt="">
+            <a href="https://www.instagram.com/ldk_ishlah_lptyai/" target="_blank"><img src="<?= base_url('assets/img/facebook.png') ?>" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCeZ162Ki_3JM8SugZYkvRdQ" target="_blank"><img src="<?= base_url('assets/img/youtube.png') ?>" alt="" class="youtube"></a>
+            <a href="https://www.instagram.com/ldk_ishlah_lptyai/" target="_blank"> <img src="<?= base_url('assets/img/instagram.png') ?>" alt=""></a>
           </div>
 
         </div>
