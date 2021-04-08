@@ -48,13 +48,13 @@
             <div class="divproker animate__animated ">
                 <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-semua" role="tab" aria-controls="pills-semua" aria-selected="true">SEMUA</a>
+                        <a class="nav-link active font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-semua" role="tab" aria-controls="pills-semua" aria-selected="true">SEMUA</a>
                     </li>
                     <?php
                     foreach ($row as $data) {
                     ?>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-bph-tab" data-toggle="pill" href="#pills-<?= $data->nama_divisi ?>" role="tab" aria-controls="pills-<?= $data->nama_divisi ?>" aria-selected="false"><?= $data->nama_divisi ?></a>
+                            <a class="nav-link font-weight-bold" id="pills-bph-tab" data-toggle="pill" href="#pills-<?= $data->nama_divisi ?>" role="tab" aria-controls="pills-<?= $data->nama_divisi ?>" aria-selected="false"><?= $data->nama_divisi ?></a>
                         </li>
                     <?php } ?>
                 </ul>
@@ -65,7 +65,7 @@
                             <?php
                             foreach ($row2 as $data) {
                             ?>
-                                <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                                <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                                     <div class="card program-kerja mb-3">
                                         <a href="<?= base_url('home/programkami/' . $data->post_slug) ?>" class="text-decoration-none ">
                                             <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
@@ -90,7 +90,7 @@
                                 foreach ($row2 as $data2) {
                                     if ($data2->id_divisi_proker == $data->id) {
                                 ?>
-                                        <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                                        <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                                             <div class="card program-kerja mb-3">
                                                 <a href="<?= base_url('home/programkami/' . $data2->post_slug) ?>" class="text-decoration-none ">
                                                     <img src="<?= base_url('assets/cover_proker/' . $data2->cover_proker) ?>" class="card-img-top" alt="...">
