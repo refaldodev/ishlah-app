@@ -35,7 +35,7 @@ $('.owl-carousel').owlCarousel({
         $('.navbar').fadeIn();
       }
     });
-    $('.navbar').click(function() {
+    $('.navbar-brand').click(function() {
       $('html, body ').animate({
         scrollTop: 0
       }, 100);

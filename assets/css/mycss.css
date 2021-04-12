@@ -111,7 +111,6 @@ section.loader {
 
 nav {
 	background-color: black !important;
-	
 }
 
 
@@ -270,17 +269,20 @@ a.btn.button-warna:hover {
 /* akhir artikel  */
 
 /* carousel */
+
 .carousel .carousel-inner {
 	height: 350px !important;
+	margin-top: 30px;
+
 }
 
 .carousel .carousel-inner img {
 	height: 350px !important;
-	/* margin-top: 60px; */
+
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
-	margin-bottom: 100px !important;
+	margin-bottom: 80px !important;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
@@ -300,7 +302,6 @@ a.btn.button-warna:hover {
 
 /* manfaat */
 .manfaat {
-	border-bottom: 1px solid rgba(0, 0, 3, 0.1);
 	padding-bottom: 30px;
 	background-color: #f1f1f1;
 
@@ -311,11 +312,6 @@ a.btn.button-warna:hover {
 }
 
 /* proker */
-.proker {
-	border-bottom: 1px solid rgba(0, 0, 3, 0.1);
-
-
-}
 
 .proker ul li a {
 	color: rgb(82, 76, 76);
@@ -1391,9 +1387,7 @@ section .teks-sejarah p {
 	}
 
 	/* manfaat */
-	.manfaat {
-		border-bottom: 1px solid rgba(0, 0, 3, 0.1);
-	}
+	
 
 	/* proker */
 
