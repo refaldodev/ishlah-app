@@ -46,7 +46,7 @@
       <div></div>
     </div>
   </section>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
     <div class="container d-flex align-items-center">
 
       <a class="navbar-brand" href="<?= base_url() ?>"><img src="<?= base_url(); ?>assets/img/logoNav.png" alt="" data-toggle="tooltip" data-placement="right" title="Logo"></a>
@@ -99,7 +99,7 @@
               } ?>" href="<?= base_url('jadwalkegiatan'); ?>">Jadwal Kegiatan</a>
           </li>
 
-      
+
 
 
 
@@ -119,26 +119,26 @@
       <div class="carousel-item active">
         <img src="<?= base_url(); ?>assets/img/carousel/carousel1.jpg" class="d-block w-100" alt="First slide">
         <div class="carousel-caption mb-5">
-          <h5>SELAMAT DATANG</h5>
-          <p>Di Website LDK ISHLAH Y.A.I</p>
-          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna ">Gabung</a>
+          <h5 class="animate__animated animate__bounceInRight" style=" animation-duration: 1s">SELAMAT DATANG</h5>
+          <p class="animate__animated animate__bounceInRight" style=" animation-duration: 1s">Di Website LDK ISHLAH Y.A.I</p>
+          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna  animate__animated animate__bounceIn" style=" animation-duration: 1.5s">Gabung</a>
 
         </div>
       </div>
       <div class="carousel-item">
         <img src="<?= base_url(); ?>assets/img/carousel/carousel5.jpg" class="d-block w-100" alt="Second slide">
         <div class="carousel-caption mb-5">
-          <h5>TOGETHER BE BETTER</h5>
-          <p>Mari bersama-sama menjadi manusia yang lebih baik lagi.</p>
-          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna">Gabung</a>
+          <h5 class="animate__animated animate__bounceInRight" style=" animation-duration: 1s">TOGETHER BE BETTER</h5>
+          <p class="animate__animated animate__bounceInRight" style=" animation-duration: 1s">Mari bersama-sama menjadi manusia yang lebih baik lagi.</p>
+          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna animate__animated animate__bounceIn" style=" animation-duration: 1.5s">Gabung</a>
         </div>
       </div>
       <div class="carousel-item">
         <img src="<?= base_url(); ?>assets/img/carousel/carousel6.jpg" class="d-block w-100" alt="Third slide">
         <div class="carousel-caption mb-5">
-          <h5>MARI SEBARKAN KEBAIKAN</h5>
-          <p>Karena kebaikan tidak cukup hanya sampai dikamu, mari sebarkan.</p>
-          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna">Gabung</a>
+          <h5 class="animate__animated animate__bounceInRight" style=" animation-duration: 1s">MARI SEBARKAN KEBAIKAN</h5>
+          <p class="animate__animated animate__bounceInRight" style=" animation-duration: 1s">Karena kebaikan tidak cukup hanya sampai dikamu, mari sebarkan.</p>
+          <a href="<?= base_url('pendaftaran'); ?>" class="btn button-warna animate__animated animate__bounceIn" style=" animation-duration: 1.5s">Gabung</a>
         </div>
       </div>
     </div>

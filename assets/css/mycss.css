@@ -111,11 +111,7 @@ section.loader {
 
 nav {
 	background-color: black !important;
-	position: static !important;
-}
-
-.navbar .yai {
-	display: none;
+	
 }
 
 
@@ -148,18 +144,17 @@ a.btn.button-warna:hover {
 	color: #d1d1d1 !important;
 }
 
-
 .navbar .dropdown-item {
 	font-size: 12px;
 }
 
 .navbar .dropdown-item.aktif {
 	font-size: 12px;
-	color: #8d8c8c !important;
+	color: #00917c !important;
 }
 
 .navbar .nav-link.aktif {
-	color: #8d8c8c !important;
+	color: #00917c !important;
 	font-size: 14px;
 
 }
@@ -1334,7 +1329,7 @@ section .teks-sejarah p {
 
 
 	.navbar .aktif {
-		color: #8d8c8c !important;
+		color: #00917c !important;
 		font-size: 16px;
 
 	}
