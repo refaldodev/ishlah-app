@@ -272,8 +272,7 @@ a.btn.button-warna:hover {
 
 .carousel .carousel-inner {
 	height: 350px !important;
-	margin-top: 30px;
-
+	padding-top: 30px;
 }
 
 .carousel .carousel-inner img {
@@ -323,8 +322,8 @@ a.btn.button-warna:hover {
 .proker .container .card.program-kerja img {
 	min-width: 100%;
 	max-width: 100%;
-	min-height: 180px;
-	max-height: 180px;
+	min-height: 250px;
+	max-height: 250px;
 }
 
 .proker .container .card.program-kerja p {

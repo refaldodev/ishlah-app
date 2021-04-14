@@ -22,9 +22,7 @@
       </div>
       <div class="col-12 col-lg-4 col-md-6 col-sm-4  bio  mt-4">
         <h3 class="font-weight-bold">Bantuan</h3>
-        <a href="<?= base_url('home/bantuan') ?>" class="text-decoration-none text-white">
-          <h6>Bantuan</h6>
-        </a>
+
         <a href="<?= base_url('home/tentangkami') ?>" class="text-decoration-none text-white">
           <h6>Tentang Kami</h6>
         </a>
@@ -39,7 +37,6 @@
         <h3 class="font-weight-bold">Ikuti kami di social media :</h3>
         <div class="row">
           <div class="col-lg-4 image-socmed">
-            <a href="https://www.instagram.com/ldk_ishlah_lptyai/" target="_blank"><img src="<?= base_url('assets/img/facebook.png') ?>" alt=""></a>
             <a href="https://www.youtube.com/channel/UCeZ162Ki_3JM8SugZYkvRdQ" target="_blank"><img src="<?= base_url('assets/img/youtube.png') ?>" alt="" class="youtube"></a>
             <a href="https://www.instagram.com/ldk_ishlah_lptyai/" target="_blank"> <img src="<?= base_url('assets/img/instagram.png') ?>" alt=""></a>
           </div>
