@@ -5,7 +5,7 @@
 
 body {
 	/* background-color: #f2f2f2; */
-	font-family: 'Merriweather', serif;
+	font-family: "Merriweather", serif;
 }
 
 /* bouncing balls*/
@@ -31,9 +31,9 @@ section.loader {
 .bouncer div {
 	width: 20px;
 	height: 20px;
-	background-color: #01C89B;
+	background-color: #01c89b;
 	border-radius: 50%;
-	animation: bouncer 0.5s cubic-bezier(0, .91, .66, 1.03) infinite alternate;
+	animation: bouncer 0.5s cubic-bezier(0, 0.91, 0.66, 1.03) infinite alternate;
 }
 
 .bouncer div:nth-child(2) {
@@ -58,35 +58,30 @@ section.loader {
 	}
 }
 
-
 /* section judul */
 .section-judul {
 	font-size: 24px;
 	font-weight: 700;
 	color: #1c1d1d !important;
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	padding: 60px 0 25px 0;
-
 }
 
 .tentang .isi-kanan .section-judul {
 	font-size: 24px;
 	font-weight: 700;
 	color: #1c1d1d !important;
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	padding: 30px 0 10px 0;
-
 }
 
 .sub-judul {
 	font-size: 14px;
-	font-family: 'Poppins', sans-serif !important;
-
+	font-family: "Poppins", sans-serif !important;
 }
 
 .manfaat p {
 	font-size: 12px !important;
-
 }
 
 /* toTopButton */
@@ -113,7 +108,6 @@ nav {
 	background-color: black !important;
 }
 
-
 .navbar img {
 	height: 50px;
 	width: 50px;
@@ -138,7 +132,6 @@ a.btn.button-warna:hover {
 	color: #fff;
 }
 
-
 .navbar .container .navbar-nav .nav-item .nav-link:hover {
 	color: #d1d1d1 !important;
 }
@@ -155,9 +148,7 @@ a.btn.button-warna:hover {
 .navbar .nav-link.aktif {
 	color: var(--background-button-fill) !important;
 	font-size: 14px;
-
 }
-
 
 .button-warna.gabung {
 	font-size: 12px;
@@ -171,29 +162,24 @@ a.btn.button-warna:hover {
 }
 
 .isiartikel .komentar {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	margin-bottom: 60px;
-
 }
 
 .isiartikel .komentar .section-komentar {
 	margin-top: 60px;
 	font-size: 20px;
-	border-bottom: 1px solid #E8E8E8;
+	border-bottom: 1px solid #e8e8e8;
 	padding-bottom: 10px;
-
 }
 
 .inikomentar {
-	border-bottom: 1px solid #E8E8E8;
+	border-bottom: 1px solid #e8e8e8;
 	padding-bottom: 15px;
 }
 
-
 .isiartikel .komentar .isi-komentar {
 	padding-top: 25px;
-
-
 }
 
 .isiartikel .komentar .isi-komentar img {
@@ -229,7 +215,6 @@ a.btn.button-warna:hover {
 	max-width: 35px;
 	min-height: 35px;
 	max-height: 35px;
-
 
 	margin-right: 10px;
 }
@@ -277,7 +262,6 @@ a.btn.button-warna:hover {
 
 .carousel .carousel-inner img {
 	height: 350px !important;
-
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
@@ -287,15 +271,13 @@ a.btn.button-warna:hover {
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
 	font-size: 20px;
 	font-weight: 700;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-shadow: 2px 2px grey;
-
-
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption p {
 	font-size: 13px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-shadow: 1px 1px grey;
 }
 
@@ -303,7 +285,6 @@ a.btn.button-warna:hover {
 .manfaat {
 	padding-bottom: 30px;
 	background-color: #f1f1f1;
-
 }
 
 .manfaat p {
@@ -314,10 +295,9 @@ a.btn.button-warna:hover {
 
 .proker ul li a {
 	color: rgb(82, 76, 76);
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 8px;
 }
-
 
 .proker .container .card.program-kerja img {
 	min-width: 100%;
@@ -329,8 +309,8 @@ a.btn.button-warna:hover {
 .proker .container .card.program-kerja p {
 	font-size: 9px;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	color: #443F3F !important;
+	font-family: "Montserrat", sans-serif;
+	color: #443f3f !important;
 }
 
 /* testimonial */
@@ -338,7 +318,6 @@ a.btn.button-warna:hover {
 	background-color: #f1f1f1;
 	padding-bottom: 30px;
 }
-
 
 .testimoni .owl-carousel .item .item-testi {
 	background-color: white !important;
@@ -348,20 +327,16 @@ a.btn.button-warna:hover {
 	/* margin: 20px 20px; */
 }
 
-
 .testimoni .owl-carousel .item .item-testi p {
 	padding: 20px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 12px;
 }
 
 .testimoni p.nama {
 	font-size: 14px;
 	/* padding-top: 10px !important; */
-
 }
-
-
 
 .testimoni p.jabatan {
 	font-size: 12px !important;
@@ -375,29 +350,23 @@ a.btn.button-warna:hover {
 	margin: 20px 15px 20px 10px;
 }
 
-
 .testimoni .owl-carousel .item .item-testi div.isi {
 	display: flex;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 }
 
-
-
 /* akhir testimoni */
-
 
 /* artikel terbaru */
 section.artikelt {
 	margin-bottom: 30px;
-
 }
 
 section.artikelt.pembatas {
 	margin-top: -80px;
 	margin-bottom: -30px;
 }
-
 
 section.artikelt img.gambarartikel {
 	min-width: 100% !important;
@@ -407,8 +376,8 @@ section.artikelt img.gambarartikel {
 
 section.artikelt .capt p {
 	font-size: 12px !important;
-	color: #ACACAC;
-	font-family: 'Poppins', sans-serif !important;
+	color: #acacac;
+	font-family: "Poppins", sans-serif !important;
 	margin-left: 5px;
 	margin-top: -5px;
 	margin-bottom: 20px;
@@ -416,14 +385,12 @@ section.artikelt .capt p {
 
 section.artikelt .capt h6 {
 	font-size: 16px !important;
-	font-family: 'Poppins', sans-serif !important;
-	color: #443F3F !important;
+	font-family: "Poppins", sans-serif !important;
+	color: #443f3f !important;
 	margin-left: 5px;
 	margin-top: 10px;
 	font-weight: 600;
-
 }
-
 
 section.artikelt .capt h6:hover {
 	color: #216656 !important;
@@ -431,7 +398,7 @@ section.artikelt .capt h6:hover {
 
 section.artikelt .buttonl a.lihat {
 	font-size: 12px;
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	/* margin-top: 35px; */
 	margin-top: 20px;
 }
@@ -449,29 +416,24 @@ section.artikelt .buttonl a.lihat {
 
 .isiartikel p {
 	font-size: 13px;
-
 }
 
 .isiartikel p.tanggalpost {
 	margin-top: 10px;
 	font-size: 10px;
-	font-family: 'Poppins', sans-serif;
-	color: #ACACAC;
-
+	font-family: "Poppins", sans-serif;
+	color: #acacac;
 }
 
 .isiartikel p.namaeditor {
 	margin-top: -18px;
 	font-size: 10px;
-	font-family: 'Poppins', sans-serif;
-	color: #ACACAC;
-
+	font-family: "Poppins", sans-serif;
+	color: #acacac;
 }
 
 .isiartikel p.isitulisan {
-
 	margin-top: 40px;
-
 }
 
 .isiartikel img {
@@ -485,10 +447,9 @@ section.artikelt .buttonl a.lihat {
 /* akhir isi artikel */
 /* tentang */
 section#tentang {
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	padding-bottom: 40px;
 	background-color: #f1f1f1;
-
 }
 
 section.tentang p {
@@ -497,7 +458,6 @@ section.tentang p {
 
 .tentang p {
 	font-size: 16px !important;
-
 }
 
 /* endheadfooter */
@@ -511,15 +471,12 @@ section.sejarah {
 section.sejarah .content-sejarah .image-sejarah img {
 	width: 150px !important;
 	height: 150px !important;
-
 }
 
 section.sejarah .teks-sejarah p {
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 
 	font-size: 16px !important;
-
-
 }
 
 /* akhir sejarah */
@@ -530,7 +487,7 @@ section.sejarah .teks-sejarah p {
 }
 
 section.visi {
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	/* margin-top: 20px; */
 	margin-bottom: 60px;
 	padding: 0 10px 0 10px;
@@ -548,7 +505,6 @@ section .misi {
 	margin-top: 30px;
 	padding-bottom: 10px;
 	font-size: 18px;
-
 }
 
 section.visi p {
@@ -561,7 +517,7 @@ section.visi p {
 
 /* struktur */
 section.struktur {
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	padding-bottom: 100px;
 }
 
@@ -583,7 +539,6 @@ section.artikel {
 section.artikel .semua-artikel img.gambar {
 	width: 100%;
 	height: 100%;
-
 }
 
 section.artikel .semua-artikel a {
@@ -599,22 +554,18 @@ section.artikel .semua-artikel figcaption {
 	font-size: 16px;
 	text-align: left !important;
 	color: black;
-	font-family: 'Poppins', sans-serif !important;
-
+	font-family: "Poppins", sans-serif !important;
 }
 
 section.artikel .artikell h1 {
 	margin-bottom: 30px !important;
-
 }
 
 section.artikelt .artikell figure {
 	margin-bottom: 30px !important;
-
 }
 
 /* akhir artikel */
-
 
 /* pagination */
 .pagi {
@@ -627,27 +578,22 @@ section.artikelt .artikell figure {
 
 /* akhir pagination */
 
-
 /* tentang kami */
 section.tentangkami {
 	padding: 0 10px 50px 10px;
-	font-family: 'Poppins', sans-serif !important;
-
+	font-family: "Poppins", sans-serif !important;
 }
 
 section.tentangkami p {
 	font-size: 16px;
-
 }
 
 /* akhir tentang kami */
 
-
 /* faq */
 section.faq {
 	padding-bottom: 50px;
-	font-family: 'Poppins', sans-serif !important;
-
+	font-family: "Poppins", sans-serif !important;
 }
 
 section.faq h5 button {
@@ -658,13 +604,10 @@ section.faq .card-body {
 	font-size: 10px;
 }
 
-
-
 /* akhir faq */
 /* galeri */
 section.galeri {
 	margin-bottom: 60px !important;
-
 }
 
 section.galeri .galerys {
@@ -677,7 +620,6 @@ section.galeri .galerys img {
 	min-height: 150px;
 	max-height: 150px;
 	border-radius: 0px;
-
 }
 
 /* akhir galeri */
@@ -696,7 +638,6 @@ footer .logofooter img {
 	margin: 20px auto;
 }
 
-
 /* pagination */
 .pagi {
 	display: flex !important;
@@ -705,12 +646,10 @@ footer .logofooter img {
 	margin-bottom: 50px !important;
 }
 
-
 .pagi .pagination .page-item.active .page-link {
 	background-color: #216656 !important;
 	border-color: #2c2c2c;
 }
-
 
 .pagi .pagination .page-item.disabled .page-link {
 	color: #a8a8a8 !important;
@@ -718,7 +657,6 @@ footer .logofooter img {
 
 .pagi .pagination .page-item .page-link {
 	color: #383838;
-
 }
 
 /* akhir pagination */
@@ -727,8 +665,8 @@ footer .logofooter img {
 
 section.jadwalkegiatan {
 	padding-bottom: 30px;
-	font-family: 'Poppins', sans-serif;
-	color: #443F3F;
+	font-family: "Poppins", sans-serif;
+	color: #443f3f;
 }
 
 section.jadwalkegiatan .card {
@@ -741,7 +679,6 @@ section.jadwalkegiatan .card {
 	overflow: auto !important;
 }
 
-
 section.jadwalkegiatan h5.card-title {
 	font-weight: bold;
 	font-size: 16px;
@@ -749,34 +686,29 @@ section.jadwalkegiatan h5.card-title {
 
 section.jadwalkegiatan h6.card-subtitle {
 	font-size: 12px;
-	font-weight: 200;
-
-
+	font-weight: bold;
 }
 
 section.jadwalkegiatan p.card-text {
 	font-size: 10px;
-	font-weight: 200;
+	font-weight: bold;
 	margin-top: 30px;
-
 }
 
 section.jadwalkegiatan a {
 	font-size: 12px;
 	font-weight: 200;
 	text-decoration: none;
-	color: #9E9E9E !important;
+	color: #9e9e9e !important;
 	margin-top: 100px;
-
 }
 
 /* akhir jadwal kegiatan */
 /* program kami */
 section.programkami {
 	margin-bottom: 60px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	padding: 0 10px 0 10px;
-
 }
 
 section.programkami .isiprogram img {
@@ -798,17 +730,13 @@ section.programkami .isiprogram h5 {
 section.programkami .isiprogram h5.deskripsi {
 	font-size: 14px;
 	line-height: 10px;
-
 }
 
 section.programkami .isiprogram p {
 	font-size: 12px;
-
 }
 
-
 /* pendaftaran */
-
 
 .pendaftaran {
 	font-size: 12px;
@@ -821,7 +749,7 @@ section.programkami .isiprogram p {
 	text-align: center;
 	padding: 20px 0 10px 0;
 	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 26px;
 }
 
@@ -837,7 +765,6 @@ section.programkami .isiprogram p {
 	width: 100%;
 
 	box-shadow: 0 2px 15px rgb(143, 143, 143);
-
 }
 
 .pendaftaran .form-link {
@@ -846,13 +773,11 @@ section.programkami .isiprogram p {
 	border-radius: 3px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-
 }
 
 .pendaftaran .form-link:focus {
 	border: 1px solid var(--background-button-fill);
 	box-shadow: 0 0 2px var(--background-button-fill);
-
 }
 
 .pendaftaran .form-group {
@@ -874,7 +799,7 @@ section.programkami .isiprogram p {
 
 .pendaftaran .btn-daftar:hover {
 	background-color: var(--background-button-hover) !important;
-	transition: .35s ease-in-out;
+	transition: 0.35s ease-in-out;
 }
 
 .success {
@@ -886,19 +811,16 @@ section.programkami .isiprogram p {
 	height: auto;
 	margin-top: 70px;
 	box-shadow: 2px 5px 15px grey;
-	;
 }
 
 .success .card a {
 	margin: auto !important;
-
 }
 
 /* end pendaftaran */
 
 footer .logofooter {
 	margin: auto;
-
 }
 
 footer .bio h3 {
@@ -920,8 +842,6 @@ footer .logofooter img {
 	height: 120px;
 	width: 120px;
 	display: none;
-
-
 }
 
 footer .created {
@@ -930,14 +850,11 @@ footer .created {
 	font-size: 12px;
 }
 
-
 /* sejarah */
 section .image-sejarah img {
 	width: 150px !important;
 	height: 150px !important;
-
 }
-
 
 section .teks-sejarah p {
 	padding-top: 60px;
@@ -949,15 +866,13 @@ section .teks-sejarah p {
 /* tablet */
 
 @media (min-width: 768px) {
-
 	/* section judul */
 	.section-judul {
 		font-size: 16px;
 		font-weight: 700;
 		color: #1c1d1d !important;
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		padding: 30px 0 25px 0;
-
 	}
 
 	/* carousel */
@@ -1025,7 +940,6 @@ section .teks-sejarah p {
 
 	section.jadwalkegiatan .card {
 		overflow: auto !important;
-
 	}
 
 	section.jadwalkegiatan h5.card-title {
@@ -1036,7 +950,6 @@ section .teks-sejarah p {
 	section.jadwalkegiatan h6.card-subtitle {
 		font-size: 14px;
 		font-weight: 200;
-
 	}
 
 	section.jadwalkegiatan p.card-text {
@@ -1050,15 +963,13 @@ section .teks-sejarah p {
 		font-size: 12px;
 		font-weight: 200;
 		text-decoration: none;
-		color: #9E9E9E !important;
+		color: #9e9e9e !important;
 		margin-top: 20px;
-
 	}
 
 	/* pendaftaran */
 	section.pendaftaran img {
 		margin-top: 100px;
-
 	}
 
 	.pendaftaran {
@@ -1072,7 +983,7 @@ section .teks-sejarah p {
 		text-align: center;
 		padding: 20px 0 10px 0;
 		font-weight: 300;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 26px;
 	}
 
@@ -1082,7 +993,6 @@ section .teks-sejarah p {
 		width: 100%;
 
 		box-shadow: 0 2px 15px rgb(143, 143, 143);
-
 	}
 
 	.pendaftaran .form-link {
@@ -1091,13 +1001,11 @@ section .teks-sejarah p {
 		border-radius: 3px;
 		padding-top: 3px;
 		padding-bottom: 3px;
-
 	}
 
 	.pendaftaran .form-link:focus {
 		border: 1px solid var(--background-button-fill) !important;
 		box-shadow: 0 0 2px var(--background-button-fill) !important;
-
 	}
 
 	.pendaftaran .form-group {
@@ -1125,7 +1033,7 @@ section .teks-sejarah p {
 
 	.pendaftaran .btn-daftar:hover {
 		background-color: var(--background-button-hover) !important;
-		transition: .35s ease-in-out;
+		transition: 0.35s ease-in-out;
 	}
 
 	/* end pendaftaran */
@@ -1134,7 +1042,6 @@ section .teks-sejarah p {
 	footer {
 		background-color: rgba(0, 0, 0, 0.9);
 		color: white !important;
-
 	}
 
 	footer .bio h3 {
@@ -1151,13 +1058,10 @@ section .teks-sejarah p {
 		display: flex;
 		font-size: 12px;
 		text-align: left !important;
-
 	}
-
 
 	footer .bio .image-socmed {
 		display: flex;
-
 	}
 
 	footer .bio .image-socmed img {
@@ -1165,7 +1069,6 @@ section .teks-sejarah p {
 		width: 40px;
 		height: 40px;
 		cursor: pointer;
-
 	}
 
 	footer .logofooter img {
@@ -1173,7 +1076,6 @@ section .teks-sejarah p {
 		width: 120px;
 
 		display: flex;
-
 	}
 
 	footer .created {
@@ -1204,9 +1106,9 @@ section .teks-sejarah p {
 	.bouncer div {
 		width: 20px;
 		height: 20px;
-		background-color: #01C89B;
+		background-color: #01c89b;
 		border-radius: 50%;
-		animation: bouncer 0.5s cubic-bezier(0, .91, .66, 1.03) infinite alternate;
+		animation: bouncer 0.5s cubic-bezier(0, 0.91, 0.66, 1.03) infinite alternate;
 	}
 
 	.bouncer div:nth-child(2) {
@@ -1230,22 +1132,18 @@ section .teks-sejarah p {
 			transform: translateY(-30px);
 		}
 	}
-
-
 }
 
 /* dekstop */
 
 @media (min-width: 992px) {
-
 	/* section judul */
 	.section-judul {
 		font-size: 32px;
 		font-weight: 700;
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		color: #1c1d1d !important;
 		padding: 65px 0 60px 0 !important;
-
 	}
 
 	.manfaat {
@@ -1255,18 +1153,15 @@ section .teks-sejarah p {
 	.manfaat .sub-judul {
 		font-size: 20px;
 		font-weight: 700;
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 	}
 
 	.manfaat p {
 		font-size: 16px;
-
-
 	}
 
 	.section-items {
 		font-weight: 300;
-
 	}
 
 	/* toTopButton */
@@ -1295,11 +1190,9 @@ section .teks-sejarah p {
 		transition: 0.9s all ease-in-out;
 	}
 
-
 	.color-navbar {
 		background-color: rgba(0, 0, 3, 0.9) !important;
 		height: 70px;
-
 	}
 
 	.navbar img {
@@ -1312,16 +1205,13 @@ section .teks-sejarah p {
 		color: #fff;
 	}
 
-
 	.navbar .container .navbar-nav .nav-item .nav-link:hover {
 		color: #d1d1d1 !important;
 	}
 
-
 	.navbar .aktif {
 		color: var(--background-button-fill) !important;
 		font-size: 16px;
-
 	}
 
 	.button-warna {
@@ -1355,13 +1245,13 @@ section .teks-sejarah p {
 	.carousel .carousel-inner .carousel-item .carousel-caption h5 {
 		font-size: 40px;
 		font-weight: 700;
-		font-family: 'Montserrat', sans-serif;
+		font-family: "Montserrat", sans-serif;
 		text-shadow: 2px 2px grey;
 	}
 
 	.carousel .carousel-inner .carousel-item .carousel-caption p {
 		font-size: 25px;
-		font-family: 'Montserrat', sans-serif;
+		font-family: "Montserrat", sans-serif;
 		text-shadow: 1px 1px grey;
 	}
 
@@ -1369,15 +1259,12 @@ section .teks-sejarah p {
 		height: 106vh !important;
 	}
 
-
 	.carousel .carousel-inner img {
 		margin-top: 30px;
 		height: 106vh !important;
-
 	}
 
 	/* manfaat */
-
 
 	/* proker */
 
@@ -1387,16 +1274,12 @@ section .teks-sejarah p {
 
 	.proker ul li a {
 		color: black;
-		font-family: 'Montserrat', sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 13px;
-
 	}
-
 
 	.proker .container .card.program-kerja {
 		border-radius: 15px !important;
-
-
 	}
 
 	.proker .container .card.program-kerja img {
@@ -1404,14 +1287,13 @@ section .teks-sejarah p {
 		max-width: 100%;
 		min-height: 300px;
 		max-height: 300px;
-
 	}
 
 	.proker .container .card.program-kerja p {
 		font-size: 13px;
 		text-align: center;
-		font-family: 'Montserrat', sans-serif;
-		color: #443F3F !important;
+		font-family: "Montserrat", sans-serif;
+		color: #443f3f !important;
 	}
 
 	/* akhir proker */
@@ -1429,15 +1311,11 @@ section .teks-sejarah p {
 		margin: 20px 20px;
 	}
 
-
-
 	.testimoni .owl-carousel .item .item-testi p {
 		padding: 20px;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 14px !important;
 	}
-
-
 
 	.testimoni .item .item-testi img {
 		width: 80px;
@@ -1447,7 +1325,7 @@ section .teks-sejarah p {
 
 	.testimoni .owl-carousel .item .item-testi div.isi {
 		display: flex;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 16px;
 	}
 
@@ -1456,7 +1334,6 @@ section .teks-sejarah p {
 	/* artikel terbaru */
 	section.artikelt {
 		padding-bottom: 60px !important;
-
 	}
 
 	section.artikelt img.gambarartikel {
@@ -1467,20 +1344,19 @@ section .teks-sejarah p {
 
 	section.artikelt .capt p {
 		font-size: 12px !important;
-		color: #ACACAC;
-		font-family: 'Poppins', sans-serif !important;
+		color: #acacac;
+		font-family: "Poppins", sans-serif !important;
 		padding-top: 10px;
 		margin-left: 5px;
 	}
 
 	section.artikelt .capt h6 {
 		font-size: 16px !important;
-		font-family: 'Poppins', sans-serif !important;
-		color: #443F3F !important;
+		font-family: "Poppins", sans-serif !important;
+		color: #443f3f !important;
 		margin-left: 5px;
 		margin-top: -15px;
 		font-weight: 600;
-
 	}
 
 	section.artikelt img:hover {
@@ -1499,7 +1375,7 @@ section .teks-sejarah p {
 
 	section.artikelt .buttonl a.lihat {
 		font-size: 16px;
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		margin-top: 35px;
 	}
 
@@ -1519,23 +1395,20 @@ section .teks-sejarah p {
 
 	/* tentang */
 	section#tentang {
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		padding-bottom: 60px;
 		background-color: #f1f1f1;
 	}
 
-
-
 	section.tentang .container .isi-kiri .col-md-6 h1 {
 		font-size: 32px !important;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		text-align: left;
 	}
 
 	section.tentang .container p {
 		font-size: 16px !important;
-		font-family: 'Poppins', sans-serif !important;
-
+		font-family: "Poppins", sans-serif !important;
 	}
 
 	/* endtentang */
@@ -1551,23 +1424,16 @@ section .teks-sejarah p {
 
 	/* akhir artikel */
 
-
 	/* sejarah */
-
 
 	section .image-sejarah img {
 		width: 250px !important;
 		height: 250px !important;
-
 	}
 
-
-
 	section .teks-sejarah p {
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		font-size: 16px;
-
-
 	}
 
 	/* akhir sejarah */
@@ -1578,8 +1444,7 @@ section .teks-sejarah p {
 	}
 
 	section.visi {
-		font-family: 'Poppins', sans-serif !important;
-
+		font-family: "Poppins", sans-serif !important;
 	}
 
 	section .visi {
@@ -1599,7 +1464,6 @@ section .teks-sejarah p {
 		margin-top: 30px;
 		padding-bottom: 10px;
 		font-size: 24px;
-
 	}
 
 	section.visi p {
@@ -1610,7 +1474,7 @@ section .teks-sejarah p {
 
 	/* struktur */
 	section.struktur {
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		padding-bottom: 160px;
 	}
 
@@ -1626,12 +1490,10 @@ section .teks-sejarah p {
 	/* artikel */
 	section.artikel .artikell h1 {
 		margin-bottom: 60px !important;
-
 	}
 
 	section.artikelt .artikell figure {
 		margin-bottom: 10px !important;
-
 	}
 
 	section.artikelt .capt h6 {
@@ -1653,7 +1515,7 @@ section .teks-sejarah p {
 	section.artikel .semua-artikel figcaption {
 		font-size: 16px;
 		text-align: left !important;
-		font-family: 'Poppins', sans-serif !important;
+		font-family: "Poppins", sans-serif !important;
 		color: #383838 !important;
 	}
 
@@ -1662,31 +1524,26 @@ section .teks-sejarah p {
 	/* isi artikel */
 	.isiartikel .section-judul {
 		padding-bottom: 0px !important;
-
 	}
 
 	.isiartikel p {
 		font-size: 13px;
-
-
 	}
 
 	.isiartikel p.tanggalpost {
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 11px;
-		color: #ACACAC;
+		color: #acacac;
 	}
 
 	.isiartikel p.namaeditor {
 		margin-top: -15px;
 		font-size: 11px;
-		color: #ACACAC;
+		color: #acacac;
 	}
 
 	.isiartikel p.isitulisan {
-
 		margin-top: 50px;
-
 	}
 
 	.isiartikel img {
@@ -1697,9 +1554,8 @@ section .teks-sejarah p {
 	}
 
 	.isiartikel .komentar {
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		margin-bottom: 60px;
-
 	}
 
 	.isiartikel .alertt {
@@ -1709,20 +1565,17 @@ section .teks-sejarah p {
 	.isiartikel .komentar .section-komentar {
 		margin-top: 100px;
 		font-size: 30px;
-		border-bottom: 1px solid #E8E8E8;
+		border-bottom: 1px solid #e8e8e8;
 		padding-bottom: 10px;
-
 	}
 
 	.inikomentar {
-		border-bottom: 1px solid #E8E8E8;
+		border-bottom: 1px solid #e8e8e8;
 		padding-bottom: 15px;
 	}
 
 	.isiartikel .komentar .isi-komentar {
 		padding-top: 20px;
-
-
 	}
 
 	.isiartikel .komentar .isi-komentar img {
@@ -1807,9 +1660,7 @@ section .teks-sejarah p {
 	.pagi .pagination .page-item.active .page-link {
 		background-color: #216656 !important;
 		border-color: #216656;
-
 	}
-
 
 	.pagi .pagination .page-item.disabled .page-link {
 		color: #a8a8a8 !important;
@@ -1817,7 +1668,6 @@ section .teks-sejarah p {
 
 	.pagi .pagination .page-item .page-link {
 		color: #383838;
-
 	}
 
 	/* akhir pagination */
@@ -1829,7 +1679,6 @@ section .teks-sejarah p {
 
 	section.tentangkami p {
 		font-size: 16px;
-
 	}
 
 	/* akhir tentang kami */
@@ -1837,10 +1686,8 @@ section .teks-sejarah p {
 	/* faq */
 	section.faq {
 		padding-bottom: 60px;
-		font-family: 'Poppins', sans-serif !important;
-
+		font-family: "Poppins", sans-serif !important;
 	}
-
 
 	section.faq h5 button {
 		font-size: 16px;
@@ -1849,8 +1696,6 @@ section .teks-sejarah p {
 	section.faq .card-body {
 		font-size: 12px;
 	}
-
-
 
 	/* akhir faq */
 	/* akhir faq */
@@ -1863,12 +1708,10 @@ section .teks-sejarah p {
 		min-height: 150px;
 		max-height: 150px;
 		border-radius: 0px;
-
 	}
 
 	section.galeri {
 		padding-bottom: 80px !important;
-
 	}
 
 	/* akhir galeri */
@@ -1877,8 +1720,8 @@ section .teks-sejarah p {
 
 	section.jadwalkegiatan {
 		padding-bottom: 60px;
-		font-family: 'Poppins', sans-serif;
-		color: #443F3F;
+		font-family: "Poppins", sans-serif;
+		color: #443f3f;
 	}
 
 	section.jadwalkegiatan .card {
@@ -1891,7 +1734,6 @@ section .teks-sejarah p {
 		overflow: auto !important;
 	}
 
-
 	section.jadwalkegiatan h5.card-title {
 		font-weight: bold;
 		font-size: 20px;
@@ -1900,7 +1742,6 @@ section .teks-sejarah p {
 	section.jadwalkegiatan h6.card-subtitle {
 		font-size: 18px;
 		font-weight: 200;
-
 	}
 
 	section.jadwalkegiatan p.card-text {
@@ -1912,9 +1753,8 @@ section .teks-sejarah p {
 		font-size: 16px;
 		font-weight: 200;
 		text-decoration: none;
-		color: #9E9E9E !important;
+		color: #9e9e9e !important;
 		margin-top: 100px;
-
 	}
 
 	/* akhir jadwal kegiatan */
@@ -1922,7 +1762,7 @@ section .teks-sejarah p {
 	/* program kami */
 	section.programkami {
 		padding-bottom: 60px;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 	}
 
 	section.programkami .isiprogram img {
@@ -1944,19 +1784,15 @@ section .teks-sejarah p {
 	section.programkami .isiprogram h5.deskripsi {
 		font-size: 18px;
 		line-height: 10px;
-
 	}
 
 	section.programkami .isiprogram p {
 		font-size: 16px;
-
 	}
 
 	/* pendaftaran */
 	section.pendaftaran img {
 		margin-top: 100px;
-
-
 	}
 
 	.pendaftaran {
@@ -1970,7 +1806,7 @@ section .teks-sejarah p {
 		text-align: center;
 		padding: 20px 0 10px 0;
 		font-weight: 300;
-		font-family: 'Poppins', sans-serif;
+		font-family: "Poppins", sans-serif;
 		font-size: 32px;
 	}
 
@@ -1980,7 +1816,6 @@ section .teks-sejarah p {
 		width: 100%;
 
 		box-shadow: 0 2px 15px rgb(143, 143, 143);
-
 	}
 
 	.pendaftaran .form-link {
@@ -1990,13 +1825,10 @@ section .teks-sejarah p {
 		padding-top: 5px;
 		padding-bottom: 5px;
 		border: 1px solid black;
-
 	}
 
 	.pendaftaran .form-link:focus {
-
 		box-shadow: 0 0 2px var(--background-button-fill);
-
 	}
 
 	.pendaftaran .form-group {
@@ -2018,7 +1850,7 @@ section .teks-sejarah p {
 
 	.pendaftaran .btn-daftar:hover {
 		background-color: var(--background-button-hover) !important;
-		transition: .35s ease-in-out;
+		transition: 0.35s ease-in-out;
 	}
 
 	/* end pendaftaran */
@@ -2027,9 +1859,7 @@ section .teks-sejarah p {
 	footer {
 		background-color: rgba(0, 0, 0, 0.9);
 		color: white !important;
-		font-family: 'Poppins', sans-serif !important;
-
-
+		font-family: "Poppins", sans-serif !important;
 	}
 
 	footer .bio h3 {
@@ -2044,13 +1874,10 @@ section .teks-sejarah p {
 	footer .bio h6 {
 		display: flex;
 		font-size: 16px;
-
 	}
-
 
 	footer .bio .image-socmed {
 		display: flex;
-
 	}
 
 	footer .bio .image-socmed img {
@@ -2058,7 +1885,6 @@ section .teks-sejarah p {
 		width: 40px;
 		height: 40px;
 		cursor: pointer;
-
 	}
 
 	footer .logofooter img {
@@ -2066,7 +1892,6 @@ section .teks-sejarah p {
 		width: 120px;
 
 		display: flex;
-
 	}
 
 	footer .created p {
@@ -2074,8 +1899,6 @@ section .teks-sejarah p {
 		margin-bottom: 10px;
 		font-size: 16px;
 	}
-
-
 
 	/* bouncing balls*/
 	section.loader {
@@ -2101,9 +1924,9 @@ section .teks-sejarah p {
 	.bouncer div {
 		width: 20px;
 		height: 20px;
-		background-color: #01C89B;
+		background-color: #01c89b;
 		border-radius: 50%;
-		animation: bouncer 0.5s cubic-bezier(0, .91, .66, 1.03) infinite alternate;
+		animation: bouncer 0.5s cubic-bezier(0, 0.91, 0.66, 1.03) infinite alternate;
 	}
 
 	.bouncer div:nth-child(2) {
