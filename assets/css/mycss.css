@@ -173,38 +173,7 @@ a.btn.button-warna:hover {
 	padding-bottom: 10px;
 }
 
-.inikomentar {
-	border-bottom: 1px solid #e8e8e8;
-	padding-bottom: 15px;
-}
 
-.isiartikel .komentar .isi-komentar {
-	padding-top: 25px;
-}
-
-.isiartikel .komentar .isi-komentar img {
-	min-width: 35px;
-	max-width: 35px;
-	min-height: 35px;
-	max-height: 35px;
-
-	margin-right: 10px;
-}
-
-.isiartikel .komentar .isi-komentar p.nama-user {
-	color: black;
-	font-weight: 700;
-	font-size: 14px;
-	padding-right: 10px;
-	margin-top: -10px;
-}
-
-.isiartikel .komentar .isi-komentar p.isi-komentar {
-	color: black;
-	font-weight: 200;
-	font-size: 12px;
-	margin-top: -32px;
-}
 
 .isiartikel .komentar .balasan {
 	padding-left: 55px;
@@ -226,15 +195,6 @@ a.btn.button-warna:hover {
 	padding-right: 10px;
 	padding-top: -5px;
 	align-items: flex-akhir;
-}
-
-.isiartikel .komentar .balasan p.isi-komentar {
-	color: black;
-	font-weight: 200;
-	font-size: 12px;
-	align-items: flex-akhir;
-	margin-top: -32px;
-	font-weight: 200;
 }
 
 a.btn.button-warna:hover {
@@ -1338,8 +1298,8 @@ section .teks-sejarah p {
 
 	section.artikelt img.gambarartikel {
 		min-width: 100% !important;
-		min-height: 420px !important;
-		max-height: 420px !important;
+		min-height: 300px !important;
+		max-height: 300px !important;
 	}
 
 	section.artikelt .capt p {
@@ -1569,38 +1529,7 @@ section .teks-sejarah p {
 		padding-bottom: 10px;
 	}
 
-	.inikomentar {
-		border-bottom: 1px solid #e8e8e8;
-		padding-bottom: 15px;
-	}
 
-	.isiartikel .komentar .isi-komentar {
-		padding-top: 20px;
-	}
-
-	.isiartikel .komentar .isi-komentar img {
-		min-width: 70px;
-		max-width: 70px;
-		min-height: 70px;
-		max-height: 70px;
-
-		margin-right: 20px;
-	}
-
-	.isiartikel .komentar .isi-komentar p.nama-user {
-		color: black;
-		font-weight: 700;
-		font-size: 18px;
-		padding-right: 20px;
-		padding-top: 10px;
-	}
-
-	.isiartikel .komentar .isi-komentar p.isi-komentar {
-		color: black;
-		font-weight: 200;
-		font-size: 16px;
-		padding-top: 33px;
-	}
 
 	.isiartikel .komentar .balasan {
 		padding-left: 100px;
@@ -1624,14 +1553,6 @@ section .teks-sejarah p {
 		align-items: flex-akhir;
 	}
 
-	.isiartikel .komentar .balasan p.isi-komentar {
-		color: black;
-		font-weight: 200;
-		font-size: 16px;
-		align-items: flex-akhir;
-		padding-top: 33px;
-		font-weight: 200;
-	}
 
 	a.btn.button-warna:hover {
 		background-color: #216656 !important;
@@ -1698,8 +1619,7 @@ section .teks-sejarah p {
 	}
 
 	/* akhir faq */
-	/* akhir faq */
-
+	
 	/* galeri */
 
 	section.galeri .galerys img {

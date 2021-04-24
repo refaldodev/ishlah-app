@@ -1,6 +1,5 @@
 <body>
 
-
     <!-- Manfaat gabung Ishlah -->
 
     <section class="manfaat">
