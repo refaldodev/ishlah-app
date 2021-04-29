@@ -36,7 +36,7 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-  <!-- animation aos -->
+  <!-- animation -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title><?= $judul; ?></title>
@@ -70,7 +70,11 @@
                                               } ?>" href="<?= base_url(); ?>">Beranda <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav-hover drop mr-3" href="<?= base_url(); ?>profil" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle nav-hover drop mr-3 
+            <?php if ($this->uri->segment('1') == 'profil') {
+              echo "aktif";
+            } ?>
+            " href="<?= base_url(); ?>profil" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Profile
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">

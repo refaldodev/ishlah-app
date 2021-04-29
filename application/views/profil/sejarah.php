@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 teks-sejarah">
-                <p class="text-justify">UKM ISHLAH adalah Lembaga kerohanian kampus yang di Gerakan oleh mahasiswa/I Islam LPT YAI. UKM ISHLAH memiliki sifat kekeluargaan dan bernaung dibawah biro kerohanian yang termasuk dalam bidang kemahasiswaan LPT YAI. Sebelum Dinamakan IShlah organisasi ini dinamakan Rohani Islam, Pada Hari rabu, tanggal 1 Agustus 2001 barulah bernama ISHLAH yang memiliki arti Memperbaiki dan Mendamaikan. Ishlah juga memiliki slogan Together Be Better yang berarti Bersama-sama menjadi lebih baik, sehingga ishlah dapat menjadi wadah bagi mahasiswa/i LPT YAI untuk saling bergandengan dan Bersama-sama menjadi lebih baik lagi serta mengajak untuk lebih baik
+                <p class="">UKM ISHLAH adalah Lembaga kerohanian kampus yang di Gerakan oleh mahasiswa/I Islam LPT YAI. UKM ISHLAH memiliki sifat kekeluargaan dan bernaung dibawah biro kerohanian yang termasuk dalam bidang kemahasiswaan LPT YAI. Sebelum Dinamakan IShlah organisasi ini dinamakan Rohani Islam, Pada Hari rabu, tanggal 1 Agustus 2001 barulah bernama ISHLAH yang memiliki arti Memperbaiki dan Mendamaikan. Ishlah juga memiliki slogan Together Be Better yang berarti Bersama-sama menjadi lebih baik, sehingga ishlah dapat menjadi wadah bagi mahasiswa/i LPT YAI untuk saling bergandengan dan Bersama-sama menjadi lebih baik lagi serta mengajak untuk lebih baik
                     <br>
                     Dalam UKM ISHLAH tidak hanya kegiatan keagamaan saja namun banyak kegiatan lainnya seperti kegiatan sosial, Kegiatan ekonomi serta Kegiatan Pengembangan diri yang sesuai dengan ajaran ajaran islam Seperti :
                     <br><br>
