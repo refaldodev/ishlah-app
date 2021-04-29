@@ -1,30 +1,39 @@
 <body>
 
     <!-- Manfaat gabung Ishlah -->
-
-    <section class="manfaat">
-        <div class="container  ">
+    <section class="visi">
+        <div class="container">
             <div class="row row-manfaat">
                 <div class="col text-center">
-                    <h1 class=" section-judul judul-manfaat "> Apa yang kamu dapat jika gabung Ishlah? </h1>
+                    <h1 class=" section-judul judul-manfaat ">Visi Ishlah </h1>
+                    <h4>"Terbentuk dan terwujudnya mahasiswa, karyawan dan segenap civitas akademika LPT YAI yang memiliki kenggulan, moralitas islam, intelektualitas, humanitas dan profesionalitas sehingga terwujudnya peradaban islam."</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="manfaat">
+        <div class="container">
+            <div class="row row-manfaat" data-aos="fade-in">
+                <div class="col text-center">
+                    <h1 class=" section-judul judul-manfaat "> Manfaat Bergabung Ishlah? </h1>
 
                 </div>
             </div>
             <div class="row ">
-                <div class="col-md-4  text-center animate__animated submanfaat">
+                <div class="col-md-4  text-center submanfaat" data-aos="fade-in">
                     <img src="<?= base_url('assets/img/atmospherew.png') ?>" alt="">
                     <h6 class="font-weight-bold mt-2 sub-judul ">Ilmu Yang Bermanfaat</h6>
                     <p>Bergabung bersama ishlah akan membuat
                         kamu mendapat banyak ilmu yang
                         bermanfaatbaik ilmu dunia dan ilmu akhirat</p>
                 </div>
-                <div class="col-md-4 text-center animate__animated submanfaat2">
+                <div class="col-md-4 text-center animate__animated submanfaat2" data-aos="fade-in" data-aos-delay="100">
                     <img src="<?= base_url('assets/img/male.png') ?>" alt="">
                     <h6 class="font-weight-bold mt-2 sub-judul">Teman yang Baik</h6>
                     <p>Bergabung bersama ishlah kamu akan
                         mendapat teman yang baik InsyaAllah</p>
                 </div>
-                <div class="col-md-4  text-center animate__animated submanfaat3">
+                <div class="col-md-4  text-center animate__animated submanfaat3" data-aos="fade-in" data-aos-delay="200">
                     <img src="<?= base_url('assets/img/think.png') ?>" alt="">
                     <h6 class="font-weight-bold mt-2 sub-judul">Wawasan yang luas</h6>
                     <p>Bergabung bersama ishlah membuat kamu memiliki pengetahuan yang luas </p>
@@ -38,13 +47,13 @@
     <!-- PROKER -->
     <section class="proker  ">
         <div class="container ">
-            <div class="row">
+            <div class="row" data-aos="fade-in">
                 <div class="col">
                     <h1 class="text-center section-judul animate__animated  judulprogram">Program Kami</h1>
                 </div>
             </div>
 
-            <div class="divproker animate__animated ">
+            <div class="divproker  " data-aos="fade-up">
                 <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-semua" role="tab" aria-controls="pills-semua" aria-selected="true">SEMUA</a>
@@ -129,8 +138,8 @@
 
     <!-- testimoni -->
     <section class="testimoni">
-        <h1 class="text-center judul judultesti section-judul animate__animated">Apa kata mereka?</h1>
-        <div class="owl-carousel animate__animated card-testi owl-theme container">
+        <h1 class="text-center judul judultesti section-judul " data-aos="fade-in">Apa Kata Mereka?</h1>
+        <div class="owl-carousel animate__animated card-testi owl-theme container" data-aos="fade-up">
 
 
             <div class="item " id="content">
@@ -139,8 +148,6 @@
                         MasyaAllah banyak belajar banget di Ishlah, temenya asik-asik dan seru banget. recomend buat kalian yang
                         ingin mendalami ilmu agama dan umum, karena anak2nya Pinter-pinter banget
                         lorem100
-
-
                     </p>
                     <hr>
                     <div class="isi">
@@ -267,12 +274,12 @@
     <!-- artikel terbaru -->
     <section class="artikelt">
         <div class="container">
-            <div class="row ">
+            <div class="row " data-aos="zoom-in">
                 <div class="col-12">
                     <h1 class=" section-judul animate__animated text-center judul-manfaat judul-artikel">Artikel Terbaru </h1>
                 </div>
             </div>
-            <div class="row content-artikel animate__animated">
+            <div class="row content-artikel " data-aos="fade-up">
                 <?php
                 foreach ($new_artikel as $data) {
                 ?>
@@ -293,7 +300,7 @@
             </div>
             <div class="row text-center buttonl ">
                 <div class="col-12 ">
-                    <a href=" <?= base_url('artikel') ?>" class="btn button-warna  lihats text-uppercase text-center pt-2 pb-2 animate__animated justify-content-center lihat pr-3 pl-3 ">Lihat Selengkapnya</a>
+                    <a href=" <?= base_url('artikel') ?>" class="btn button-warna  lihats text-uppercase text-center pt-2 pb-2 animate__animated justify-content-center lihat pr-3 pl-3 " data-aos="fade-up">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -307,7 +314,7 @@
             <div class="row justify-content-center  isi-kiri">
                 <div class="col-lg-6 col-md-6 col-sm-12  text animate__animated kiri">
                     <h1 class="text-center section-judul">Tentang Ishlah Y.A.I</h1>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, consequuntur quisquam. Qui ullam asperiores expedita eos! Eveniet pariatur alias vel deserunt velit beatae quis. Dignissimos libero temporibus sit. Alias ab fugit rerum doloremque consectetur temporibus suscipit ducimus tempore. Facilis, adipisci! Vero deleniti unde commodi vel ipsa totam dolorum eligendi ipsam, ducimus, qui, iusto labore odio neque fugit quos eos fuga nisi laboriosam? Maxime ipsa ratione dolore iste in accusamus ullam earum provident, atque ea illo sit eos. Nesciunt saepe adipisci odio deleniti nobis voluptatibus sint provident corrupti accusamus repellat earum cupiditate debitis architecto quisquam dolorem, veniam porro ducimus at sunt .</p>
+                    <p class="text-justify">UKM Ishlah LPT YAI merupakan lembaga dakwah kampus yang digerakkan para mahasiswa Islam. Dalam perjuangannya mewujudkan masyarakat Islami, khususnya di kampus YAI harus memiliki perencanaan yang SMART (Spesific, Measureable, Acure, Realistic & Time frame) serta mempunyai arah yang jelas dalam melaksanakan program kerja secara nyata.</p>
 
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12   isi-kanan animate__animated ">

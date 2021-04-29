@@ -85,7 +85,10 @@
 
 <!-- end xzoom -->
 <!-- <script type="text/javascript" src="<?= base_url(); ?>assets/js/all.js"> </script> -->
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

@@ -6,6 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- url nanti diganti sesuai dengan domain dan setelah di hosting -->
+  <meta property="og:url" content="http://www.contohwebsite.com" />
+  <meta property="og:title" content="LDK Ishlah YAI" />
+  <meta property="og:Description" content="Together Be Better" />
+  <meta property="og:site_name" content="LDK Ishlah YAI" />
+  <meta property="og:image" content="assets/img/logo.png" />
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
@@ -29,6 +36,8 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <!-- animation aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title><?= $judul; ?></title>
   <link rel="icon" href="<?= base_url('assets/img/logo.png') ?>">

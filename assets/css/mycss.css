@@ -63,7 +63,7 @@ section.loader {
 	font-size: 24px;
 	font-weight: 700;
 	color: #1c1d1d !important;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	padding: 60px 0 25px 0;
 }
 
@@ -71,13 +71,13 @@ section.loader {
 	font-size: 24px;
 	font-weight: 700;
 	color: #1c1d1d !important;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	padding: 30px 0 10px 0;
 }
 
 .sub-judul {
 	font-size: 14px;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 .manfaat p {
@@ -162,7 +162,7 @@ a.btn.button-warna:hover {
 }
 
 .isiartikel .komentar {
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	margin-bottom: 60px;
 }
 
@@ -253,6 +253,14 @@ a.btn.button-warna:hover {
 
 /* proker */
 
+/* visi  */
+
+section.visi h4{
+	font-size: 14px !important;
+	font-weight:400;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: -10px;
+}
 .proker ul li a {
 	color: rgb(82, 76, 76);
 	font-family: "Montserrat", sans-serif;
@@ -289,7 +297,7 @@ a.btn.button-warna:hover {
 
 .testimoni .owl-carousel .item .item-testi p {
 	padding: 20px;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 12px;
 }
 
@@ -312,7 +320,7 @@ a.btn.button-warna:hover {
 
 .testimoni .owl-carousel .item .item-testi div.isi {
 	display: flex;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 }
 
@@ -337,7 +345,7 @@ section.artikelt img.gambarartikel {
 section.artikelt .capt p {
 	font-size: 12px !important;
 	color: #acacac;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	margin-left: 5px;
 	margin-top: -5px;
 	margin-bottom: 20px;
@@ -345,7 +353,7 @@ section.artikelt .capt p {
 
 section.artikelt .capt h6 {
 	font-size: 16px !important;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	color: #443f3f !important;
 	margin-left: 5px;
 	margin-top: 10px;
@@ -358,7 +366,7 @@ section.artikelt .capt h6:hover {
 
 section.artikelt .buttonl a.lihat {
 	font-size: 12px;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	/* margin-top: 35px; */
 	margin-top: 20px;
 }
@@ -381,14 +389,14 @@ section.artikelt .buttonl a.lihat {
 .isiartikel p.tanggalpost {
 	margin-top: 10px;
 	font-size: 10px;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: #acacac;
 }
 
 .isiartikel p.namaeditor {
 	margin-top: -18px;
 	font-size: 10px;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: #acacac;
 }
 
@@ -407,7 +415,7 @@ section.artikelt .buttonl a.lihat {
 /* akhir isi artikel */
 /* tentang */
 section#tentang {
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	padding-bottom: 40px;
 	background-color: #f1f1f1;
 }
@@ -434,7 +442,7 @@ section.sejarah .content-sejarah .image-sejarah img {
 }
 
 section.sejarah .teks-sejarah p {
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 
 	font-size: 16px !important;
 }
@@ -447,7 +455,7 @@ section.sejarah .teks-sejarah p {
 }
 
 section.visi {
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	/* margin-top: 20px; */
 	margin-bottom: 60px;
 	padding: 0 10px 0 10px;
@@ -477,7 +485,7 @@ section.visi p {
 
 /* struktur */
 section.struktur {
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 	padding-bottom: 100px;
 }
 
@@ -514,7 +522,7 @@ section.artikel .semua-artikel figcaption {
 	font-size: 16px;
 	text-align: left !important;
 	color: black;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 section.artikel .artikell h1 {
@@ -541,7 +549,7 @@ section.artikelt .artikell figure {
 /* tentang kami */
 section.tentangkami {
 	padding: 0 10px 50px 10px;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 section.tentangkami p {
@@ -553,7 +561,7 @@ section.tentangkami p {
 /* faq */
 section.faq {
 	padding-bottom: 50px;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 section.faq h5 button {
@@ -625,7 +633,7 @@ footer .logofooter img {
 
 section.jadwalkegiatan {
 	padding-bottom: 30px;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: #443f3f;
 }
 
@@ -667,7 +675,7 @@ section.jadwalkegiatan a {
 /* program kami */
 section.programkami {
 	margin-bottom: 60px;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	padding: 0 10px 0 10px;
 }
 
@@ -709,7 +717,7 @@ section.programkami .isiprogram p {
 	text-align: center;
 	padding: 20px 0 10px 0;
 	font-weight: 300;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 26px;
 }
 
@@ -831,7 +839,7 @@ section .teks-sejarah p {
 		font-size: 16px;
 		font-weight: 700;
 		color: #1c1d1d !important;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 		padding: 30px 0 25px 0;
 	}
 
@@ -943,7 +951,7 @@ section .teks-sejarah p {
 		text-align: center;
 		padding: 20px 0 10px 0;
 		font-weight: 300;
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 26px;
 	}
 
@@ -1101,11 +1109,14 @@ section .teks-sejarah p {
 	.section-judul {
 		font-size: 32px;
 		font-weight: 700;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Merriweather", sans-serif !important;
 		color: #1c1d1d !important;
-		padding: 65px 0 60px 0 !important;
+		padding: 65px 0 40px 0 !important;
 	}
-
+	section.visi h4{
+		font-family: "Montserrat", sans-serif !important;
+		font-size: 20px;
+	}
 	.manfaat {
 		padding-bottom: 60px;
 	}
@@ -1113,7 +1124,7 @@ section .teks-sejarah p {
 	.manfaat .sub-judul {
 		font-size: 20px;
 		font-weight: 700;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 	}
 
 	.manfaat p {
@@ -1224,6 +1235,13 @@ section .teks-sejarah p {
 		height: 106vh !important;
 	}
 
+	
+section.visi h4{
+	font-size: 20px !important;
+	font-weight:400;
+	font-family: "Montserrat", sans-serif;
+	/* margin-bottom: -10px; */
+}
 	/* manfaat */
 
 	/* proker */
@@ -1273,7 +1291,7 @@ section .teks-sejarah p {
 
 	.testimoni .owl-carousel .item .item-testi p {
 		padding: 20px;
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 14px !important;
 	}
 
@@ -1285,7 +1303,7 @@ section .teks-sejarah p {
 
 	.testimoni .owl-carousel .item .item-testi div.isi {
 		display: flex;
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 16px;
 	}
 
@@ -1305,14 +1323,14 @@ section .teks-sejarah p {
 	section.artikelt .capt p {
 		font-size: 12px !important;
 		color: #acacac;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 		padding-top: 10px;
 		margin-left: 5px;
 	}
 
 	section.artikelt .capt h6 {
 		font-size: 16px !important;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 		color: #443f3f !important;
 		margin-left: 5px;
 		margin-top: -15px;
@@ -1335,7 +1353,7 @@ section .teks-sejarah p {
 
 	section.artikelt .buttonl a.lihat {
 		font-size: 16px;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 		margin-top: 35px;
 	}
 
@@ -1355,20 +1373,20 @@ section .teks-sejarah p {
 
 	/* tentang */
 	section#tentang {
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Merriweather", sans-serif !important;
 		padding-bottom: 60px;
 		background-color: #f1f1f1;
 	}
 
 	section.tentang .container .isi-kiri .col-md-6 h1 {
 		font-size: 32px !important;
-		font-family: "Poppins", sans-serif;
+		font-family: "Merriweather", sans-serif !important;
 		text-align: left;
 	}
 
 	section.tentang .container p {
 		font-size: 16px !important;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Merriweather", sans-serif !important;
 	}
 
 	/* endtentang */
@@ -1392,7 +1410,7 @@ section .teks-sejarah p {
 	}
 
 	section .teks-sejarah p {
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Merriweather", sans-serif !important;
 		font-size: 16px;
 	}
 
@@ -1404,7 +1422,7 @@ section .teks-sejarah p {
 	}
 
 	section.visi {
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Merriweather", sans-serif !important;
 	}
 
 	section .visi {
@@ -1434,7 +1452,7 @@ section .teks-sejarah p {
 
 	/* struktur */
 	section.struktur {
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 		padding-bottom: 160px;
 	}
 
@@ -1475,7 +1493,7 @@ section .teks-sejarah p {
 	section.artikel .semua-artikel figcaption {
 		font-size: 16px;
 		text-align: left !important;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Merriweather", sans-serif !important;
 		color: #383838 !important;
 	}
 
@@ -1491,7 +1509,7 @@ section .teks-sejarah p {
 	}
 
 	.isiartikel p.tanggalpost {
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 11px;
 		color: #acacac;
 	}
@@ -1514,7 +1532,7 @@ section .teks-sejarah p {
 	}
 
 	.isiartikel .komentar {
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		margin-bottom: 60px;
 	}
 
@@ -1607,7 +1625,7 @@ section .teks-sejarah p {
 	/* faq */
 	section.faq {
 		padding-bottom: 60px;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 	}
 
 	section.faq h5 button {
@@ -1640,7 +1658,7 @@ section .teks-sejarah p {
 
 	section.jadwalkegiatan {
 		padding-bottom: 60px;
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		color: #443f3f;
 	}
 
@@ -1682,7 +1700,7 @@ section .teks-sejarah p {
 	/* program kami */
 	section.programkami {
 		padding-bottom: 60px;
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 	}
 
 	section.programkami .isiprogram img {
@@ -1726,7 +1744,7 @@ section .teks-sejarah p {
 		text-align: center;
 		padding: 20px 0 10px 0;
 		font-weight: 300;
-		font-family: "Poppins", sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-size: 32px;
 	}
 
@@ -1779,7 +1797,7 @@ section .teks-sejarah p {
 	footer {
 		background-color: rgba(0, 0, 0, 0.9);
 		color: white !important;
-		font-family: "Poppins", sans-serif !important;
+		font-family: "Montserrat", sans-serif !important;
 	}
 
 	footer .bio h3 {
