@@ -22,7 +22,7 @@
                     <br>
 
                     <h1 class="  judul-manfaat text-center misi"> Misi </h1>
-                    <p class="text-center">
+                    <p ">
                     <ol>
                         <li>Memperbanyak jumlah kader untuk menopang dakwah kampus LPT YAI.</li>
                         <li>Meningkatkan kualitas para kader yang islami, intelektualitas, humanitas dan profesionalitas.</li>
