@@ -14,15 +14,15 @@
                 <div class="col-lg-12 teks-visi">
                     <h1 class="  judul-manfaat text-center visi"> General Vision LDK Ishlah </h1>
 
-                    <p class="text-left">Terbentuk dan terwujudnya mahasiswa, karyawan dan segenap civitas akademika LPT YAI yang memiliki kenggulan, moralitas islam, intelektualitas, humanitas dan profesionalitas sehingga terwujudnya peradaban islam.</p>
+                    <p class="text-center">Terbentuk dan terwujudnya mahasiswa, karyawan dan segenap civitas akademika LPT YAI yang memiliki kenggulan, moralitas islam, intelektualitas, humanitas dan profesionalitas sehingga terwujudnya peradaban islam.</p>
                     <br>
                     <h1 class="  judul-manfaat text-center visi"> Visi LDK Ishlah periode 2021 </h1>
 
-                    <p class="text-left">Menjadi organisasi berkualitas sebagai wadah dalam mencetak pemuda berkarakter ishlam.</p>
+                    <p class="text-center">Menjadi organisasi berkualitas sebagai wadah dalam mencetak pemuda berkarakter ishlam.</p>
                     <br>
 
                     <h1 class="  judul-manfaat text-center misi"> Misi </h1>
-                    <p class="text-left">
+                    <p class="text-center">
                     <ol>
                         <li>Memperbanyak jumlah kader untuk menopang dakwah kampus LPT YAI.</li>
                         <li>Meningkatkan kualitas para kader yang islami, intelektualitas, humanitas dan profesionalitas.</li>
