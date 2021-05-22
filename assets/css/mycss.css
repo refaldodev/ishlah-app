@@ -244,7 +244,7 @@ a.btn.button-warna:hover {
 /* manfaat */
 .manfaat {
 	padding-bottom: 30px;
-	background-color: #f1f1f1;
+	background-color: #E7F1FC;
 }
 
 .manfaat p {
@@ -275,7 +275,7 @@ section.visi h4{
 }
 
 .proker .container .card.program-kerja p {
-	font-size: 9px;
+	font-size: 14px;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	color: #443f3f !important;
@@ -283,7 +283,7 @@ section.visi h4{
 
 /* testimonial */
 .testimoni {
-	background-color: #f1f1f1;
+	background-color: #E7F1FC;
 	padding-bottom: 30px;
 }
 
@@ -363,7 +363,9 @@ section.artikelt .capt h6 {
 section.artikelt .capt h6:hover {
 	color: #216656 !important;
 }
-
+section.artikelt figure:hover{
+	color: #216656 !important;
+}
 section.artikelt .buttonl a.lihat {
 	font-size: 12px;
 	font-family: "Montserrat", sans-serif !important;
@@ -417,7 +419,7 @@ section.artikelt .buttonl a.lihat {
 section#tentang {
 	font-family: "Montserrat", sans-serif !important;
 	padding-bottom: 40px;
-	background-color: #f1f1f1;
+	background-color: #E7F1FC;
 }
 
 section.tentang p {
@@ -1375,7 +1377,7 @@ section.visi h4{
 	section#tentang {
 		font-family: "Merriweather", sans-serif !important;
 		padding-bottom: 60px;
-		background-color: #f1f1f1;
+		background-color: #E7F1FC;
 	}
 
 	section.tentang .container .isi-kiri .col-md-6 h1 {

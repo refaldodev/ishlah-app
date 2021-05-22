@@ -7,7 +7,7 @@
             <?php
             foreach ($row as $data) {
             ?>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                     <div class="card isijadwal">
                         <div class="card-body text-center">
                             <h5 class="card-title"><?= $data->judul_kegiatan ?></h5>
