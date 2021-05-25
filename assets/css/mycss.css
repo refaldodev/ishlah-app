@@ -807,6 +807,15 @@ footer .bio .image-socmed img {
 	height: 30px;
 	cursor: pointer;
 }
+ footer h3{
+	font-size: 18px  !important;
+
+ }
+ footer h6{
+	font-size: 16px !important;
+	
+
+ }
 
 footer .logofooter img {
 	height: 120px;
