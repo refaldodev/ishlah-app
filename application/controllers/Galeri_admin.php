@@ -38,12 +38,13 @@ class Galeri_admin extends CI_Controller
         $judul = $this->input->post('judul');
 
         // get foto
+        $nmfile = "galeri_" . time();
         $config['upload_path'] = './assets/galeri';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
         // $config['max_height'] = '4480'; // pixel
-        $config['file_name'] = $_FILES['file']['name'];
+        $config['file_name'] = $nmfile;
 
         $this->upload->initialize($config);
 
@@ -106,12 +107,13 @@ class Galeri_admin extends CI_Controller
         $kondisi = array('id' => $id);
 
         // get foto
+        $nmfile = "galeri_" . time();
         $config['upload_path'] = './assets/galeri';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
         // $config['max_height'] = '4480'; // pixel
-        $config['file_name'] = $_FILES['file']['name'];
+        $config['file_name'] = $nmfile;
 
         $this->upload->initialize($config);
 

@@ -78,12 +78,14 @@ class Artikel_admin extends CI_Controller
 
 
         // get foto
+        $nmfile = "artikel_" . time();
         $config['upload_path'] = './assets/cover_artikel';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
         // $config['max_height'] = '4480'; // pixel
-        $config['file_name'] = $_FILES['fotopost']['name'];
+        // $config['file_name'] = $_FILES['fotopost']['name'];
+        $config['file_name'] = $nmfile;
 
         $this->upload->initialize($config);
 
@@ -159,12 +161,14 @@ class Artikel_admin extends CI_Controller
         $kondisi = array('id' => $id);
 
         // get foto
+        $nmfile = "artikel_" . time();
         $config['upload_path'] = './assets/cover_artikel';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
         // $config['max_height'] = '4480'; // pixel
-        $config['file_name'] = $_FILES['fotopost']['name'];
+        // $config['file_name'] = $_FILES['fotopost']['name'];
+        $config['file_name'] = $nmfile;
 
         $this->upload->initialize($config);
 
