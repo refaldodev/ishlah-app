@@ -587,8 +587,8 @@ section.galeri .galerys {
 section.galeri .galerys img {
 	min-width: 100%;
 	max-width: 100%;
-	min-height: 150px;
-	max-height: 150px;
+	min-height: 200px;
+	max-height: 200px;
 	border-radius: 0px;
 }
 
@@ -1645,8 +1645,8 @@ section.visi h4{
 	section.galeri .galerys img {
 		min-width: 100%;
 		max-width: 100%;
-		min-height: 150px;
-		max-height: 150px;
+		min-height: 250px;
+		max-height: 250px;
 		border-radius: 0px;
 	}
 

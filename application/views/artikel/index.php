@@ -6,7 +6,7 @@
                 <h1 class=" section-judul text-center judul-manfaat"> Artikel </h1>
             </div>
         </div>
-        <div class="row ">
+        <div class="row " id="artikel">
 
             <?php
             foreach ($artikel as $data) :

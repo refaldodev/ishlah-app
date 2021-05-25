@@ -30,7 +30,7 @@
 
 
   <!-- mycss -->
-  <link rel="stylesheet" href="<?= base_url(); ?>assets/css/mycss.css?v=1.0.0">
+  <link rel="stylesheet" href="<?= base_url(); ?>assets/css/mycss.css?v=1.0.1">
   <!-- xzoom -->
   <link rel="stylesheet" href="<?= base_url(); ?>assets/xzoom/xzoom.css">
   <!-- google fonts -->
