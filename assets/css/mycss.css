@@ -788,17 +788,35 @@ section.programkami .isiprogram p {
 }
 
 /* end pendaftaran */
+/* error */
+
+
+section.error img{
+	width: 100% !important;
+	height: 270px !important;
+}
+section.error h4{
+	font-size: 20px;
+
+}
+section.error p{
+	font-size: 12px;
+
+}
+/* end error */
 
 footer .logofooter {
 	margin: auto;
 }
 
 footer .bio h3 {
-	font-size: 14px;
+	font-size: 18px !important;
+	font-weight: bold;
 }
 
 footer .bio h6 {
-	font-size: 10px;
+	font-size: 14px !important;
+	font-weight: normal;
 }
 
 footer .bio .image-socmed img {
@@ -1804,6 +1822,18 @@ section.visi h4{
 
 	/* end pendaftaran */
 
+	section.error img{
+		width: 100% !important;
+		height: 500px !important;
+	}
+	section.error h4{
+		font-size: 30px;
+	
+	}
+	section.error p{
+		font-size: 18px;
+	
+	}
 	/* footer */
 	footer {
 		background-color: rgba(0, 0, 0, 0.9);

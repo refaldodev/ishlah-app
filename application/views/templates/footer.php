@@ -47,7 +47,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12 created">
-        <p class="text-center">© 2020 Sistem Informasi’17 - Made With Love &hearts;</p>
+        <p class="text-center">© 2021 Sistem Informasi’17 - Made With Love &hearts;</p>
       </div>
     </div>
   </div>
