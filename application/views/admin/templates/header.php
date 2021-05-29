@@ -105,35 +105,35 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item <?= isset($is_artikel) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('artikel_admin/index') ?>">
+                <a class="nav-link" href="<?= base_url('artikel_admin') ?>">
                     <i class="fas fa-fw fa-book"></i>
                     <span>Artikel</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item <?= isset($is_galeri) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('galeri_admin/index') ?>">
+                <a class="nav-link" href="<?= base_url('galeri_admin') ?>">
                     <i class="fas fa-fw fa-images"></i>
                     <span>Galeri</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item <?= isset($is_struktur) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('struktur/index') ?>">
+                <a class="nav-link" href="<?= base_url('struktur') ?>">
                     <i class="fas fa-fw fa-list-alt"></i>
                     <span>Struktur Organisasi</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item <?= isset($is_pendaftar) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('pendaftaran_admin/index') ?>">
+                <a class="nav-link" href="<?= base_url('pendaftaran_admin') ?>">
                     <i class="fas fa-fw fa-database"></i>
                     <span>Pendaftar</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item <?= isset($is_jadwal) ? "active" : "" ?>">
-                <a class="nav-link" href="<?= base_url('jadwalkegiatan_admin/index') ?>">
+                <a class="nav-link" href="<?= base_url('JadwalKegiatan_admin') ?>">
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>Jadwal Kegiatan</span></a>
             </li>
