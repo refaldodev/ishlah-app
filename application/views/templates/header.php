@@ -109,7 +109,7 @@
             <a class="nav-link nav-hover mr-3
              <?php if ($this->uri->segment('1') == 'jadwalkegiatan') {
                 echo "aktif";
-              } ?>" href="<?= base_url('jadwalkegiatan'); ?>">Jadwal Kegiatan</a>
+              } ?>" href="<?= base_url('JadwalKegiatan'); ?>">Jadwal Kegiatan</a>
           </li>
 
 
