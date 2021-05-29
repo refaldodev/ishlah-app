@@ -107,7 +107,7 @@
 
           <li class="nav-item ">
             <a class="nav-link nav-hover mr-3
-             <?php if ($this->uri->segment('1') == 'jadwalkegiatan') {
+             <?php if ($this->uri->segment('1') == 'JadwalKegiatan') {
                 echo "aktif";
               } ?>" href="<?= base_url('JadwalKegiatan'); ?>">Jadwal Kegiatan</a>
           </li>
