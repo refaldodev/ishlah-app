@@ -45,14 +45,14 @@ class JadwalKegiatan_admin extends CI_Controller
         );
         $this->Jadwal_model->tambah_data($data, 'tb_jadwal');
         $this->session->set_flashdata('flash', 'Ditambahkan');
-        redirect('jadwalkegiatan_admin/index');
+        redirect('JadwalKegiatan_admin/index');
     }
     public function hapus($id)
     {
         $where = array('id' => $id);
         $this->Jadwal_model->hapus_data($where, 'tb_jadwal');
         $this->session->set_flashdata('flash_hapus', 'Dihapus');
-        redirect('jadwalkegiatan_admin/index');
+        redirect('JadwalKegiatan_admin/index');
     }
     public function edit($id)
     {
@@ -92,6 +92,6 @@ class JadwalKegiatan_admin extends CI_Controller
 
         $this->Jadwal_model->update_data($where, $data, 'tb_jadwal');
         $this->session->set_flashdata('flash', 'Diedit');
-        redirect('jadwalkegiatan_admin/index');
+        redirect('JadwalKegiatan_admin/index');
     }
 }

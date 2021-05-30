@@ -15,7 +15,7 @@
              <?php
                 foreach ($jadwal as $data) {
                 ?>
-                 <form method="POST" action="<?= base_url('jadwalkegiatan_admin/update') ?>">
+                 <form method="POST" action="<?= base_url('JadwalKegiatan_admin/update') ?>">
 
                      <div class="form-group">
                          <label>Judul Kegiatan<span class="text-danger"> *</span></label>
@@ -42,7 +42,7 @@
                      <!-- ID -->
                      <input type="hidden" name="id" value="<?= $data->id ?>">
 
-                     <a href="<?= base_url('jadwalkegiatan_admin/index') ?>" class="btn btn-secondary">Kembali</a>
+                     <a href="<?= base_url('JadwalKegiatan_admin/index') ?>" class="btn btn-secondary">Kembali</a>
                      <button type="submit" class="btn btn-primary">Update</button>
 
                  </form>
