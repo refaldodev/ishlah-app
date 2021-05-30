@@ -111,6 +111,12 @@ class User extends CI_Controller
 
     public function edit($id)
     {
+        $data = array(
+            'row' => $this->User_model->getUserId($id),
+            'is_user' => true,
+            'title' => 'Edit Data',
+            'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
+        );
 
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
         $this->form_validation->set_rules('username', 'Username', 'required');
@@ -128,12 +134,6 @@ class User extends CI_Controller
         $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
 
         if ($this->form_validation->run() == FALSE) {
-            $data = array(
-                'row' => $this->User_model->getUserId($id),
-                'is_user' => true,
-                'title' => 'Edit Data',
-                'user' => $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array()
-            );
             $this->load->view('admin/templates/header', $data);
             $this->load->view('admin/templates/topbar', $data);
             $this->load->view('admin/user/edit', $data);
@@ -144,7 +144,7 @@ class User extends CI_Controller
             if ($this->db->affected_rows() > 0) {
                 // echo "<script>alert('data berhasil di simpan');</script>";
                 // echo "<script>alert('data berhasil ditambah') </script>";
-                $this->session->set_flashdata('success', 'Data berhasil ditambah');
+                $this->session->set_flashdata('success', 'Data berhasil diedit');
             }
 
             redirect('user');

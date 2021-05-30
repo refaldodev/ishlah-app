@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" class="form-control" placeholder="Username" name="username" value="<?= $row['username']  ?>">
+                    <input type="text" class="form-control" placeholder="Username" name="username" value="<?= $row['username']  ?>" readonly>
                     <?= form_error('username'); ?>
                 </div>
                 <div class="form-group">

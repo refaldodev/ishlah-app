@@ -57,26 +57,29 @@ class User_model extends CI_model
 
 
 
-    public function edit_data()
+    public function edit_data($post)
     {
         // $this->db->insert($this->table_name, $data);
-        // $params['name'] = htmlspecialchars($post['name']);
-        // $params['username'] = htmlspecialchars($post['username']);
-        // $params['image'] = 'default.jpg';
-        // $params['password'] = htmlspecialchars(password_hash($post['password'], PASSWORD_DEFAULT));
-        // $params['level'] = htmlspecialchars($post['level']);
-        // $params['date_created'] = time();
-        $data = [
-            "name" =>  $this->input->post('name', true),
-            "username" =>  $this->input->post('username', true),
-            "image" =>  'default.jpg',
-            "password" =>  password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
-            "level" =>  $this->input->post('level', true),
-            'date_created' => time()
+        $params['name'] = htmlspecialchars($post['name']);
+        $params['username'] = htmlspecialchars($post['username']);
+        $params['image'] = 'default.jpg';
+        if (!empty($post['password'])) {
 
-        ];
-        $this->db->where('id', $this->input->post('id'));
-        $this->db->update('user', $data);
+            $params['password'] = htmlspecialchars(password_hash($post['password'], PASSWORD_DEFAULT));
+        }
+        $params['level'] = htmlspecialchars($post['level']);
+        $params['date_created'] = time();
+        // $data = [
+        //     "name" =>  $this->input->post('name', true),
+        //     "username" =>  $this->input->post('username', true),
+        //     "image" =>  'default.jpg',
+        //     "password" =>  password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
+        //     "level" =>  $this->input->post('level', true),
+        //     'date_created' => time()
+
+        // ];
+        $this->db->where('id', $post['id']);
+        $this->db->update('user', $params);
     }
 
 
