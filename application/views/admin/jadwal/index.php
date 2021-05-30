@@ -50,8 +50,8 @@
                                  <td><?= $data->pic ?></td>
                                  <td>
 
-                                     <a href="<?= base_url('jadwalkegiatan_admin/edit/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
-                                     <a href="<?= base_url('jadwalkegiatan_admin/hapus/' . $data->id) ?>" onclick="javascript: return confirm('Anda Yakin ingin menghapus <?= $data->judul_kegiatan ?> ?')" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a>
+                                     <a href="<?= base_url('JadwalKegiatan_admin/edit/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
+                                     <a href="<?= base_url('JadwalKegiatan_admin/hapus/' . $data->id) ?>" onclick="javascript: return confirm('Anda Yakin ingin menghapus <?= $data->judul_kegiatan ?> ?')" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a>
 
 
 
@@ -79,7 +79,7 @@
                  </button>
              </div>
              <div class="modal-body">
-                 <form action="<?= base_url('jadwalkegiatan_admin/tambah') ?>" method="post">
+                 <form action="<?= base_url('JadwalKegiatan_admin/tambah') ?>" method="post">
                      <div class="form-group">
                          <label>Judul Kegiatan<span class="text-danger"> *</span></label>
                          <input type="text" class="form-control" placeholder="Judul Kegiatan" name="judul_kegiatan" required>

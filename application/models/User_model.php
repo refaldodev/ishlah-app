@@ -44,6 +44,7 @@ class User_model extends CI_model
         $params['image'] = 'default.jpg';
         $params['password'] = htmlspecialchars(password_hash($data['password'], PASSWORD_DEFAULT));
         $params['level'] = htmlspecialchars($data['level']);
+        $params['is_active'] = 1;
         $params['date_created'] = time();
         $this->db->insert('user', $params);
     }
