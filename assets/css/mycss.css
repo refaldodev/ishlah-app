@@ -332,8 +332,8 @@ section.artikelt {
 }
 
 section.artikelt.pembatas {
-	margin-top: -80px;
-	margin-bottom: -30px;
+	margin-top: -130px !important; 
+	margin-bottom: -30px !important;
 }
 
 section.artikelt img.gambarartikel {
@@ -405,7 +405,9 @@ section.artikelt .buttonl a.lihat {
 .isiartikel p.isitulisan {
 	margin-top: 40px;
 }
-
+.isiartikel .initulisan p{
+	font-size: 15px;
+}
 .isiartikel img {
 	min-width: 100%;
 	max-width: 100%;
@@ -830,9 +832,9 @@ footer .bio .image-socmed img {
 
  }
  footer h6{
-	font-size: 16px !important;
+	font-size: 14px !important;
 	
-
+	font-weight: 200 !important;
  }
 
 footer .logofooter img {
@@ -1157,7 +1159,7 @@ section .teks-sejarah p {
 	}
 
 	.manfaat p {
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 
 	.section-items {
@@ -1282,7 +1284,7 @@ section.visi h4{
 	.proker ul li a {
 		color: black;
 		font-family: "Montserrat", sans-serif;
-		font-size: 13px;
+		font-size: 16px !important;
 	}
 
 	.proker .container .card.program-kerja {
@@ -1297,7 +1299,7 @@ section.visi h4{
 	}
 
 	.proker .container .card.program-kerja p {
-		font-size: 13px;
+		font-size: 14px !important;
 		text-align: center;
 		font-family: "Montserrat", sans-serif;
 		color: #443f3f !important;
@@ -1376,10 +1378,10 @@ section.visi h4{
 	}
 
 	section.artikelt.pembatas {
-		margin-top: -50px;
-		margin-bottom: -50px;
+		margin-top: -50px !important; 
+		margin-bottom: -30px !important;
 	}
-
+	
 	section.artikelt .buttonl a.lihat {
 		font-size: 16px;
 		font-family: "Montserrat", sans-serif !important;
@@ -1551,6 +1553,9 @@ section.visi h4{
 
 	.isiartikel p.isitulisan {
 		margin-top: 50px;
+	}
+	.isiartikel .initulisan p{
+		font-size: 18px;
 	}
 
 	.isiartikel img {

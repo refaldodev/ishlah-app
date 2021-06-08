@@ -24,7 +24,7 @@ $b = $data->row_array(); ?>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 m-auto col-sm-12">
+                <div class="col-lg-8 m-auto col-sm-12 initulisan">
                     <img src="<?= base_url('assets/cover_artikel/' . $b['cover_artikel']) ?>" alt="">
                     <p class="isitulisan ">
                         <?= $b['isi_artikel'] ?>
