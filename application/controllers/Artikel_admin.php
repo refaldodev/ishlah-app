@@ -79,7 +79,7 @@ class Artikel_admin extends CI_Controller
 
         // get foto
         $nmfile = "artikel_" . time();
-        $config['upload_path'] = './assets/cover_artikel';
+        $config['upload_path'] = './assets/image/artikel';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
@@ -115,7 +115,7 @@ class Artikel_admin extends CI_Controller
     // delete
     public function deletedata($id, $cover_artikel)
     {
-        $path = './assets/cover_artikel/';
+        $path = './assets/image/artikel/';
         unlink($path . $cover_artikel);
 
 
@@ -156,13 +156,13 @@ class Artikel_admin extends CI_Controller
         $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
         $slug = $pre_slug;
 
-        $path = './assets/cover_artikel/';
+        $path = './assets/image/artikel/';
 
         $kondisi = array('id' => $id);
 
         // get foto
         $nmfile = "artikel_" . time();
-        $config['upload_path'] = './assets/cover_artikel';
+        $config['upload_path'] = './assets/image/artikel';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel

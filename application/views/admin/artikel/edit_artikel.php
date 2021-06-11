@@ -36,12 +36,12 @@
                      <!-- file lama -->
                      <input type="hidden" name="filelama" value="<?= $data->cover_artikel ?>">
                      <p>Foto saat ini </p>
-                     <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" alt="" width="200"><br>
+                     <img src="<?= base_url('assets/image/artikel/' . $data->cover_artikel) ?>" alt="" width="200"><br>
 
                  </div>
                  <div class="form-group">
                      <label>Uploader</label>
-                     <input type="text" class="form-control" name="post_by" value="<?= $data->post_by ?>" readonly>
+                     <input type="text" class="form-control" name="post_by" value="<?= $user['name'] ?>" readonly>
                  </div>
                  <input type="hidden" name="post_slug" value="<?= $data->post_slug ?>">
                  <a href="<?= base_url('artikel_admin/index') ?>" class="btn btn-secondary">Kembali</a>

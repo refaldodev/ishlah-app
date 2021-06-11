@@ -25,7 +25,7 @@ $b = $data->row_array(); ?>
             </div>
             <div class="row">
                 <div class="col-lg-8 m-auto col-sm-12 initulisan">
-                    <img src="<?= base_url('assets/cover_artikel/' . $b['cover_artikel']) ?>" alt="">
+                    <img src="<?= base_url('assets/image/artikel/' . $b['cover_artikel']) ?>" alt="">
                     <p class="isitulisan ">
                         <?= $b['isi_artikel'] ?>
                     </p>
@@ -67,7 +67,7 @@ $b = $data->row_array(); ?>
                         <div class="col-12 col-lg-4  col-md-4 col-sm-12 content-1">
                             <figure class="">
                                 <a href="<?= base_url('artikel/isiartikel/' . $data->post_slug) ?>" class="text-decoration-none">
-                                    <img src="<?= base_url('assets/cover_artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
+                                    <img src="<?= base_url('assets/image/artikel/' . $data->cover_artikel) ?>" class="img-fluid rounded gambarartikel" alt="...">
 
                                     <figcaption class="figure-caption capt">
                                         <h6><?= $data->judul_artikel ?></h6>

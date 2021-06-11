@@ -29,7 +29,7 @@
                         </small></span>
                     <input type="hidden" name="filelama" value="">
                     <p>Foto saat ini </p>
-                    <img src="<?= base_url('assets/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="200"><br>
+                    <img src="<?= base_url('assets/image/galeri/' . $result[0]['image_galeri']) ?>" alt="" width="200"><br>
                 </div>
 
 

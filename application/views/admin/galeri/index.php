@@ -41,7 +41,7 @@
                             <tr>
                                 <td><?= $no++ ?></td>
                                 <td><?= $data->judul ?></td>
-                                <td><img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="" width="90" height="110"></td>
+                                <td><img src="<?= base_url('assets/image/galeri/' . $data->image_galeri) ?>" alt="" width="90" height="110"></td>
                                 <td>
 
 

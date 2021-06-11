@@ -10,7 +10,7 @@
             foreach ($row as $data) {
             ?>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6 col-xl-3  pt-3">
-                    <a href="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" target="_blank" title="<?= $data->judul ?>"> <img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="gambar cis" class="img-fluid">
+                    <a href="<?= base_url('assets/image/galeri/' . $data->image_galeri) ?>" target="_blank" title="<?= $data->judul ?>"> <img src="<?= base_url('assets/galeri/' . $data->image_galeri) ?>" alt="gambar cis" class="img-fluid">
                     </a>
                 </div>
             <?php } ?>

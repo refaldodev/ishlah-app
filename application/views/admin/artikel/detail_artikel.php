@@ -25,7 +25,7 @@
                      </tr>
                      <tr>
                          <th>Cover Artikel</th>
-                         <td><img src="<?php echo base_url(); ?>assets/cover_artikel/<?php echo $detail->cover_artikel; ?>" width="90" height="110"></td>
+                         <td><img src="<?php echo base_url(); ?>assets/image/artikel/<?php echo $detail->cover_artikel; ?>" width="90" height="110"></td>
                      </tr>
                      <tr>
                          <th>Tanggal Posted</th>

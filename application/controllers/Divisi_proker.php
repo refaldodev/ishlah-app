@@ -150,7 +150,7 @@ class Divisi_proker extends CI_Controller
 
         // get foto
         $nmfile = "proker_" . time();
-        $config['upload_path'] = './assets/cover_proker';
+        $config['upload_path'] = './assets/image/proker';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
@@ -183,7 +183,7 @@ class Divisi_proker extends CI_Controller
     // delete
     public function hapus_isi($id, $cover_proker)
     {
-        $path = './assets/cover_proker/';
+        $path = './assets/image/proker/';
         @unlink($path . $cover_proker);
 
         $where = array('id' => $id);
@@ -225,13 +225,13 @@ class Divisi_proker extends CI_Controller
         $pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
         $slug = $pre_slug;
 
-        $path = './assets/cover_proker/';
+        $path = './assets/image/proker/';
 
         $kondisi = array('id' => $id);
 
         // get foto
         $nmfile = "proker_" . time();
-        $config['upload_path'] = './assets/cover_proker';
+        $config['upload_path'] = './assets/image/proker';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel

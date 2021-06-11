@@ -6,7 +6,7 @@
                 <?php
                 foreach ($row as $data) :
                 ?>
-                    <img src="<?= base_url('assets/struktur_organisasi/' . $data->image_struktur) ?>" alt="" class="gambar">
+                    <img src="<?= base_url('assets/image/struktur/' . $data->image_struktur) ?>" alt="" class="gambar">
                 <?php endforeach; ?>
 
             </div>
