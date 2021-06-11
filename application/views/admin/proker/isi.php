@@ -46,7 +46,7 @@
                                  <td><?= $data->nama_divisi ?></td>
                                  <td><?= $data->judul_proker ?></td>
                                  <td><?= $data->deskripsi_proker ?></td>
-                                 <td><img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" alt="" width="90" height="110"></td>
+                                 <td><img src="<?= base_url('assets/image/proker/' . $data->cover_proker) ?>" alt="" width="90" height="110"></td>
                                  <td>
 
                                      <a href="<?= base_url('divisi_proker/edit_isi/' . $data->id) ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>

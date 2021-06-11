@@ -39,7 +39,7 @@ class Galeri_admin extends CI_Controller
 
         // get foto
         $nmfile = "galeri_" . time();
-        $config['upload_path'] = './assets/galeri';
+        $config['upload_path'] = './assets//image/galeri';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel
@@ -73,7 +73,7 @@ class Galeri_admin extends CI_Controller
     // delete
     public function deletedata($id, $image_galeri)
     {
-        $path = './assets/galeri/';
+        $path = './assets/image/galeri/';
         @unlink($path . $image_galeri);
 
         $where = array('id' => $id);
@@ -101,14 +101,14 @@ class Galeri_admin extends CI_Controller
     public function updatedata()
     {
         $judul = $this->input->post('judul');
-        $path = './assets/galeri/';
+        $path = './assets/image/galeri/';
         $id   = $this->input->post('id');
 
         $kondisi = array('id' => $id);
 
         // get foto
         $nmfile = "galeri_" . time();
-        $config['upload_path'] = './assets/galeri';
+        $config['upload_path'] = './assets/image/galeri';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel

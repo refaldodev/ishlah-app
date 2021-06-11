@@ -89,12 +89,12 @@ class Struktur extends CI_Controller
     {
         $id   = $this->input->post('id');
 
-        $path = './assets/struktur_organisai/';
+        $path = './assets/image/struktur/';
 
         $kondisi = array('id' => $id);
 
         // get foto
-        $config['upload_path'] = './assets/struktur_organisasi';
+        $config['upload_path'] = './assets/image/struktur';
         $config['allowed_types'] = 'jpg|png|jpeg|gif';
         $config['max_size'] = '2048';  //2MB max
         // $config['max_width'] = '4480'; // pixel

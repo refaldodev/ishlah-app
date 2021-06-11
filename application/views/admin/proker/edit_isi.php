@@ -41,7 +41,7 @@
                                  Max Size : 2MB</p>
                          </small></span>
                      <p>Foto saat ini </p>
-                     <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" alt="" width="200" height="110"><br>
+                     <img src="<?= base_url('assets/image/proker/' . $data->cover_proker) ?>" alt="" width="200" height="110"><br>
                  </div>
 
                  <!-- file lama -->

@@ -11,7 +11,7 @@
 
              </div>
              <div class="col-12 m-auto text-center">
-                 <img src="<?= base_url('assets/cover_proker/' . $b['cover_proker']) ?>" alt="">
+                 <img src="<?= base_url('assets/image/proker/' . $b['cover_proker']) ?>" alt="">
              </div>
              <div class="col-12 col-lg-12 col-sm-12 col-md-12 isi ">
                  <!-- <h5>Judul Program : </h5> -->

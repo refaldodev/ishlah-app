@@ -76,7 +76,7 @@
                                 <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                                     <div class="card program-kerja mb-3">
                                         <a href="<?= base_url('home/programkami/' . $data->post_slug) ?>" class="text-decoration-none ">
-                                            <img src="<?= base_url('assets/cover_proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
+                                            <img src="<?= base_url('assets/image/proker/' . $data->cover_proker) ?>" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <p class="card-text section-items"><?= $data->judul_proker ?></p>
                                             </div>
@@ -101,7 +101,7 @@
                                         <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                                             <div class="card program-kerja mb-3">
                                                 <a href="<?= base_url('home/programkami/' . $data2->post_slug) ?>" class="text-decoration-none ">
-                                                    <img src="<?= base_url('assets/cover_proker/' . $data2->cover_proker) ?>" class="card-img-top" alt="...">
+                                                    <img src="<?= base_url('assets/image/proker/' . $data2->cover_proker) ?>" class="card-img-top" alt="...">
                                                     <div class="card-body">
                                                         <p class="card-text section-items"><?= $data2->judul_proker ?></p>
                                                     </div>
