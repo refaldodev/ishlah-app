@@ -9,10 +9,15 @@ class Auth extends CI_Controller
         parent::__construct();
         $this->load->model('User_model');
         $this->load->library('form_validation');
+        $this->load->library('session');
     }
 
     public function index()
     {
+        if ($this->session->userdata('username')) {
+            redirect('dashboard');
+        }
+
         if (!empty($this->input->post('username')) || !empty($this->input->post('password'))) {
             $this->_login();
         }
@@ -23,6 +28,7 @@ class Auth extends CI_Controller
 
     private function _login()
     {
+
         $this->form_validation->set_rules('username', 'Username', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
